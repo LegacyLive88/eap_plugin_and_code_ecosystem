@@ -1,0 +1,25 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^5.2",
+        "phpoffice/phpword": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "LLW\\EAP\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php -r \"echo 'Note: PHPOffice libraries are installed for optional server-side processing.\\n';\""
+        ],
+        "download-vendor-js": [
+            "curl -L -o js/vendor/xlsx.full.min.js https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js",
+            "curl -L -o js/vendor/mammoth.browser.min.js https://unpkg.com/mammoth@1.6.0/mammoth.browser.min.js",
+            "curl -L -o js/vendor/jszip.min.js https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"
+        ]
+    }
+}

@@ -1,182 +1,27 @@
 <?php
 
 /**
- * Add Accommodations to Bookings
+ * European Academy of Paediatrics — custom code snippets
+ *
+ * Event booking system integrating with the Amelia plugin (verified against Amelia 9.3.1).
+ * Integration surface used here (all present in Amelia 9.3.1):
+ *  - JS hooks:  window.ameliaActions (InitInfoStep, customValidation, beforeBooking, ...)
+ *  - DOM:       [name="cfN"] custom field inputs, #am-cf-N wrappers, .am-congrats screen
+ *  - DB tables: {prefix}amelia_users, _customer_bookings, _events, _events_periods,
+ *               _customer_bookings_to_events_periods, _locations
+ *  - PHP hook:  amelia_after_event_booking_saved (fires when an event booking is saved)
+ *
+ * Shareable booking link: append ?ameliaEventId=<EVENT_ID> to the page that hosts the
+ * Amelia Event List Booking form (single-event mode), e.g.
+ *   https://eapaediatrics.eu/eap-leadership-academy-2026/?ameliaEventId=2
+ * Add &ameliaEventPopup=<EVENT_ID> to auto-open the booking window on page load.
+ *
+ * NOTE: A legacy "Add Accommodations to Bookings" section was removed from this file.
+ * It relied on hooks that do not exist in Amelia (amelia_before_booking_form,
+ * amelia_booking_completed, amelia_booking_canceled, amelia_get_email_data) so it never
+ * executed, and it was fully superseded by the [accommodation_selection] system below.
+ * See git history if it is ever needed for reference.
  */
-// Define accommodation data
-function eap_get_accommodations() {
-    return [
-        [
-            'id' => 1,
-            'name' => 'Radisson Blu Hotel Leipzig',
-            'image' => 'https://eapaediatrics.eu/wp-content/uploads/2025/04/16256-116544-f64893257_3xl.webp',
-            'google_maps_url' => 'https://maps.google.com/?q=Augustusplatz+5-6,+Leipzig,+04109,+Germany',
-            'capacity' => 25,
-            'current_occupancy' => 0
-        ],
-        // Add more accommodations as needed
-    ];
-}
-
-// Add accommodation selection to booking form
-add_action('amelia_before_booking_form', 'eap_add_accommodation_selection');
-function eap_add_accommodation_selection() {
-    $accommodations = eap_get_accommodations();
-    $occupancy_data = get_option('eap_accommodation_occupancy', []);
-
-    // Update current occupancy from stored data
-    foreach ($accommodations as &$accommodation) {
-        $accommodation['current_occupancy'] = isset($occupancy_data[$accommodation['id']]) ? $occupancy_data[$accommodation['id']] : 0;
-    }
-    unset($accommodation);
-
-    ?>
-    <style>
-        .eap-accommodation-cards { display: flex; flex-wrap: wrap; gap: 20px; }
-        .eap-accommodation-card { border: 1px solid #ccc; padding: 10px; width: 200px; text-align: center; cursor: pointer; }
-        .eap-accommodation-card img { max-width: 100%; height: auto; }
-    </style>
-    <div id="eap-accommodation-step" style="display: none;">
-        <h3>Select Your Accommodation</h3>
-        <div class="eap-accommodation-cards">
-            <?php foreach ($accommodations as $acc) : ?>
-                <div class="eap-accommodation-card" 
-                     data-id="<?php echo esc_attr($acc['id']); ?>" 
-                     data-available="<?php echo esc_attr($acc['capacity'] - $acc['current_occupancy']); ?>">
-                    <img src="<?php echo esc_url($acc['image']); ?>" alt="<?php echo esc_attr($acc['name']); ?>">
-                    <h4><?php echo esc_html($acc['name']); ?></h4>
-                    <a href="<?php echo esc_url($acc['google_maps_url']); ?>" target="_blank">View on Google Maps</a>
-                    <p>Available: <?php echo esc_html($acc['capacity'] - $acc['current_occupancy']); ?></p>
-                </div>
-            <?php endforeach; ?>
-            <div class="eap-accommodation-card" data-id="self">
-                <h4>I will make my own accommodation arrangements</h4>
-            </div>
-        </div>
-        <button id="eap-accommodation-next" disabled>Next</button>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const step = document.getElementById('eap-accommodation-step');
-            const cards = document.querySelectorAll('.eap-accommodation-card');
-            const nextBtn = document.getElementById('eap-accommodation-next');
-            let selectedAccommodation = null;
-
-            // Fallback: Show step if service select isn’t found
-            const serviceSelect = document.querySelector('.amelia-service-select');
-            if (serviceSelect) {
-                serviceSelect.addEventListener('change', function() {
-                    step.style.display = 'block';
-                });
-            } else {
-                step.style.display = 'block'; // Show immediately as fallback
-                console.warn('Service select element not found; showing accommodation step by default.');
-            }
-
-            // Card selection logic
-            cards.forEach(card => {
-                card.addEventListener('click', function() {
-                    cards.forEach(c => c.style.border = '1px solid #ccc');
-                    this.style.border = '2px solid #0073aa';
-                    selectedAccommodation = this.dataset.id;
-                    nextBtn.disabled = false;
-
-                    if (this.dataset.id !== 'self' && parseInt(this.dataset.available) <= 0) {
-                        alert('This accommodation is fully booked.');
-                        nextBtn.disabled = true;
-                    }
-                });
-            });
-
-            // Proceed to next step
-            nextBtn.addEventListener('click', function() {
-                if (selectedAccommodation) {
-                    const input = document.createElement('input');
-                    input.type = 'hidden';
-                    input.name = 'eap_accommodation_id';
-                    input.value = selectedAccommodation;
-                    const form = document.querySelector('#amelia-booking-form');
-                    if (form) {
-                        form.appendChild(input);
-                        step.style.display = 'none';
-                        form.style.display = 'block';
-                    } else {
-                        console.error('Amelia booking form not found. Please check the form ID.');
-                    }
-                }
-            });
-        });
-    </script>
-    <?php
-}
-
-// Update occupancy on booking completion
-add_action('amelia_booking_completed', 'eap_update_occupancy_on_booking', 10, 1);
-function eap_update_occupancy_on_booking($booking) {
-    if (isset($_POST['eap_accommodation_id']) && $_POST['eap_accommodation_id'] !== 'self') {
-        $acc_id = intval($_POST['eap_accommodation_id']);
-        $occupancy_data = get_option('eap_accommodation_occupancy', []);
-
-        // Increment occupancy
-        $occupancy_data[$acc_id] = isset($occupancy_data[$acc_id]) ? $occupancy_data[$acc_id] + 1 : 1;
-        update_option('eap_accommodation_occupancy', $occupancy_data);
-
-        // Store accommodation ID with booking
-        global $wpdb;
-        $wpdb->update(
-            $wpdb->prefix . 'amelia_customer_bookings',
-            ['customFields' => json_encode(['eap_accommodation_id' => $acc_id])],
-            ['id' => $booking['id']]
-        );
-    }
-}
-
-// Update occupancy on cancellation
-add_action('amelia_booking_canceled', 'eap_update_occupancy_on_cancellation', 10, 1);
-function eap_update_occupancy_on_cancellation($booking) {
-    global $wpdb;
-    $booking_id = $booking['id'];
-
-    $custom_fields = $wpdb->get_var(
-        $wpdb->prepare(
-            "SELECT customFields FROM {$wpdb->prefix}amelia_customer_bookings WHERE id = %d",
-            $booking_id
-        )
-    );
-
-    $custom_fields = json_decode($custom_fields, true);
-    if (isset($custom_fields['eap_accommodation_id'])) {
-        $acc_id = intval($custom_fields['eap_accommodation_id']);
-        $occupancy_data = get_option('eap_accommodation_occupancy', []);
-
-        if (isset($occupancy_data[$acc_id]) && $occupancy_data[$acc_id] > 0) {
-            $occupancy_data[$acc_id]--;
-            update_option('eap_accommodation_occupancy', $occupancy_data);
-        }
-    }
-}
-
-// Add accommodation info to email
-add_filter('amelia_get_email_data', 'eap_add_accommodation_to_email', 10, 2);
-function eap_add_accommodation_to_email($data, $booking) {
-    $custom_fields = json_decode($booking['customFields'], true);
-    $acc_id = isset($custom_fields['eap_accommodation_id']) ? $custom_fields['eap_accommodation_id'] : 'self';
-
-    if ($acc_id === 'self') {
-        $data['accommodation_info'] = 'You have chosen to make your own accommodation arrangements.';
-    } else {
-        $accommodations = eap_get_accommodations();
-        foreach ($accommodations as $acc) {
-            if ($acc['id'] == $acc_id) {
-                $data['accommodation_info'] = "Accommodation: {$acc['name']}<br><a href='{$acc['google_maps_url']}'>View on Google Maps</a>";
-                break;
-            }
-        }
-    }
-
-    return $data;
-}
 
 /**
  * Amelia 3
@@ -185,7 +30,21 @@ add_action('wp_ajax_insert_temp_booking', 'insert_temp_booking');
 add_action('wp_ajax_nopriv_insert_temp_booking', 'insert_temp_booking');
 function insert_temp_booking() {
     check_ajax_referer('amelia_access_token_nonce', 'nonce');
-    $booking = $_POST['booking'];
+    $raw = isset($_POST['booking']) && is_array($_POST['booking']) ? $_POST['booking'] : [];
+    $booking = [
+        'event_id'         => intval($raw['event_id'] ?? 0),
+        'accommodation_id' => intval($raw['accommodation_id'] ?? 0),
+        'check_in'         => sanitize_text_field($raw['check_in'] ?? ''),
+        'check_out'        => sanitize_text_field($raw['check_out'] ?? ''),
+        'first_name'       => sanitize_text_field($raw['first_name'] ?? ''),
+        'last_name'        => sanitize_text_field($raw['last_name'] ?? ''),
+        'email'            => sanitize_email($raw['email'] ?? ''),
+        'ticket_type'      => sanitize_text_field($raw['ticket_type'] ?? ''),
+        'paid'             => intval($raw['paid'] ?? 0),
+    ];
+    if (!$booking['event_id'] || !is_email($booking['email'])) {
+        wp_send_json_error('Invalid booking data');
+    }
     global $wpdb;
     $table_name = 'llw_event_bookings';
 
@@ -237,16 +96,39 @@ function get_accommodation_availability($accommodation_id) {
     ));
 
     // Count approved bookings for this event and accommodation via customFields
+    // (custom field id 3 = "Accommodation"; stored as {"3":{"label":...,"type":...,"value":"<id>"}})
+    $cf_pattern = '%' . $wpdb->esc_like('"3":{"label":"Accommodation","type":"text","value":"' . intval($accommodation_id) . '"}') . '%';
     $booked = $wpdb->get_var($wpdb->prepare(
-        'SELECT COUNT(*) FROM `tsJCGvj_amelia_customer_bookings` WHERE status = "approved" 
-  AND customFields LIKE '."'".'%"3":{"label":"Accommodation","type":"text","value":"' . intval($accommodation_id) . '"}%'."'"));
+        "SELECT COUNT(*) FROM {$booking_table} WHERE status = 'approved' AND customFields LIKE %s",
+        $cf_pattern
+    ));
     $result = $wpdb->update($table_name, [
                 'availability' => intval($original_capacity) - intval($booked),
             ], ['id' => $accommodation_id]);
     return intval($original_capacity) - intval($booked);
 }
-function accommodation_selection_shortcode() {
+function accommodation_selection_shortcode($atts = []) {
     global $wpdb;
+
+    // Resolve the Amelia event ID: shortcode attribute > ?ameliaEventId= URL param > default 1.
+    // Usage: [accommodation_selection event_id="2"] or share the page with ?ameliaEventId=2
+    $atts = shortcode_atts(['event_id' => ''], $atts, 'accommodation_selection');
+    if ($atts['event_id'] !== '') {
+        $event_id = intval($atts['event_id']);
+    } elseif (isset($_GET['ameliaEventId'])) {
+        $event_id = intval($_GET['ameliaEventId']);
+    } else {
+        $event_id = 1;
+    }
+
+    // Pull the event period from Amelia so the check-in/check-out picker follows the event dates
+    $event_period = $wpdb->get_row($wpdb->prepare(
+        "SELECT periodStart, periodEnd FROM {$wpdb->prefix}amelia_events_periods WHERE eventId = %d ORDER BY periodStart ASC LIMIT 1",
+        $event_id
+    ));
+    $event_start = $event_period ? substr($event_period->periodStart, 0, 10) : '';
+    $event_end   = $event_period ? substr($event_period->periodEnd, 0, 10) : '';
+
     $table_name = 'llw_event_accommodations';
     $accommodations = $wpdb->get_results("SELECT * FROM $table_name");
     $accommodation_data = [];
@@ -301,8 +183,8 @@ function accommodation_selection_shortcode() {
             <input type="text" id="date-range" placeholder="Select dates" style="width:300px;">
         </div>
     </div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13"></script>
     <script>
 	var onInfo = false;
 	var onFinish = false;
@@ -311,8 +193,9 @@ function accommodation_selection_shortcode() {
     //document.onclick = function() { console.log(ThisTriggered); }	
     function updateBookingStatus() {
 		// Ensure bookingData is available (set in beforeBooking hook)
-		const customerEmail = emailField ?? document.querySelector('.am-fs__congrats-info-customer-email .am-congrats__info-item__value').value;
-		const eventId = 1; //make dynamic
+		// The congrats screen renders the email as a <span>, so read textContent (not .value)
+		const customerEmail = emailField ?? document.querySelector('.am-fs__congrats-info-customer-email .am-congrats__info-item__value')?.textContent?.trim();
+		const eventId = eapEventId;
 		const customerId = 0;
 
 		if (!customerEmail || !eventId) {
@@ -328,7 +211,7 @@ function accommodation_selection_shortcode() {
 				nonce: "<?= wp_create_nonce('amelia_access_token_nonce') ?>",
 				booking_data: {
 					customer_id: 0,
-					event_id: eventId, //ZZZ: Make dynamic:: Also event Id should be used
+					event_id: eventId,
 					email: customerEmail
 				}
 			},
@@ -403,9 +286,10 @@ function accommodation_selection_shortcode() {
     var selectedAccommodationName = "";
     let selectedCheckIn = null;
 	let selectedCheckOut = null;
-    // Define event dates (replace with dynamic values)
-    const eventStartDate = '2025-09-25'; // Example: fetch from event data
-    const eventEndDate = '2025-09-27';   // Example: fetch from event data
+    // Event ID and dates are resolved server-side (shortcode attr / ?ameliaEventId= / Amelia DB)
+    const eapEventId = "<?php echo esc_js($event_id); ?>";
+    const eventStartDate = "<?php echo esc_js($event_start); ?>";
+    const eventEndDate = "<?php echo esc_js($event_end); ?>";
     // Flatpickr instance
     let datePicker;
     var checkin = null;
@@ -421,9 +305,9 @@ function accommodation_selection_shortcode() {
 		});
         function initDatePicker() {
             datePicker = flatpickr('#date-range', {
-                mode: 'range',           // Enables range selection
-                minDate: eventStartDate, // Restrict to event start
-                maxDate: eventEndDate,   // Restrict to event end
+                mode: 'range',                    // Enables range selection
+                minDate: eventStartDate || null,  // Restrict to event start (null = unrestricted)
+                maxDate: eventEndDate || null,    // Restrict to event end
                 dateFormat: 'Y-m-d',     // Format for consistency
                 onChange: function(selectedDates) {
                     if (selectedDates.length === 2) {						
@@ -451,7 +335,7 @@ function accommodation_selection_shortcode() {
 
         let selectedAccommodation = null;
         let isInitialized = false;
-        const eventId = "1";//getUrlParameter('ameliaEventId'); //ZZZ Make dynamic when start adding new events
+        const eventId = eapEventId;
         const accommodationData = <?php echo json_encode($accommodation_data); ?>;
         const relevantAccommodations = accommodationData.filter(acc => acc.event_id.includes(eventId));
         const grid = $('#accommodation-grid');
@@ -627,12 +511,12 @@ function accommodation_selection_shortcode() {
 						}
 					} else {
 						console.error('Failed to insert booking:', response);
-						error('Booking processing failed');
+						if (typeof error === 'function') error('Booking processing failed');
 					}
 				},
-				error: function(xhr, status, error) {
-					console.error('AJAX error:', status, error);
-					error('Server error');
+				error: function(xhr, status, err) {
+					console.error('AJAX error:', status, err);
+					if (typeof error === 'function') error('Server error');
 				}
 			});
         }
@@ -667,35 +551,44 @@ function accommodation_selection_shortcode() {
 }
 add_shortcode('accommodation_selection', 'accommodation_selection_shortcode');
 
-add_action('amelia_booking_completed', 'update_booking_after_completion', 10, 1);
-function update_booking_after_completion($booking) {
+// NOTE: previously registered on 'amelia_booking_completed', which does not exist in Amelia.
+// 'amelia_after_event_booking_saved' is the real hook (fires when an event booking is saved,
+// with the booking and event as arrays). The old redirect/auth-cookie block was removed:
+// this hook runs inside Amelia's booking API request, so wp_redirect() + exit here would
+// corrupt the booking response. Post-booking login is handled by the access-token flow.
+add_action('amelia_after_event_booking_saved', 'update_booking_after_completion', 10, 2);
+function update_booking_after_completion($booking, $event) {
+    if (empty($booking)) {
+        return;
+    }
+
     global $wpdb;
     $table_name = 'llw_event_bookings';
-    $customer_id = $booking['customerId'];
-    $event_id = $booking['booking']['eventId'];
-    $email = $booking['customer']['email'];
+    $customer_id = isset($booking['customerId']) ? intval($booking['customerId']) : 0;
+    $event_id = isset($event['id']) ? intval($event['id']) : 0;
+    $email = $booking['customer']['email'] ?? '';
+
+    if (!$email && $customer_id) {
+        $email = $wpdb->get_var($wpdb->prepare(
+            "SELECT email FROM {$wpdb->prefix}amelia_users WHERE id = %d",
+            $customer_id
+        ));
+    }
+
+    if (!$email || !$event_id) {
+        return;
+    }
 
     $wpdb->update(
         $table_name,
-        ['user_id' => $customer_id, 'paid' => 1, 'date_updated' => current_time('mysql')],
+        ['paid' => 1, 'date_updated' => current_time('mysql')],
         ['email' => $email, 'event_id' => $event_id],
-        ['%d', '%d', '%s'],
+        ['%d', '%s'],
         ['%s', '%d']
     );
 
     if ($wpdb->last_error) {
         error_log('Update error: ' . $wpdb->last_error);
-    }
-
-    // Existing redirect logic
-    if ($customer_id) {
-        set_transient('allow_password_set_' . $customer_id, true, 3000);
-        if (!is_user_logged_in()) {
-            wp_set_current_user($customer_id);
-            wp_set_auth_cookie($customer_id);
-        }
-        wp_redirect(home_url('/system_reset_password_llw'));
-        exit;
     }
 }
 
@@ -806,6 +699,12 @@ add_action('wp_ajax_get_access_token', 'get_access_token_callback');
 add_action('wp_ajax_nopriv_get_access_token', 'get_access_token_callback');
 
 // Customize email notification
+// DISABLED: this was registered on 'amelia_before_notification_sent', a filter that does not
+// exist in Amelia (verified against 9.3.1), so it never ran. Amelia offers no filter for
+// modifying an outgoing email body. To include the ticket link in booking emails, add it
+// directly to the event notification template in Amelia > Notifications instead.
+// Kept for reference until that is set up:
+/*
 function customize_amelia_notification($notification, $booking) {
     if ($notification['type'] === 'booking_confirmation') {
         global $wpdb;
@@ -825,6 +724,7 @@ function customize_amelia_notification($notification, $booking) {
     return $notification;
 }
 add_filter('amelia_before_notification_sent', 'customize_amelia_notification', 10, 2);
+*/
 
 // Auto-login with token
 function auto_login_customer_panel() {

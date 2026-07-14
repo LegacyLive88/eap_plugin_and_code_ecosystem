@@ -1,0 +1,11282 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Amelia\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-01 14:22+0000\n"
+"PO-Revision-Date: 2025-11-20 16:11+0100\n"
+"Last-Translator: \n"
+"Language-Team: Amelia\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;gettext;gettext_noop;_\n"
+"X-Poedit-SearchPath-0: view/backend/view.php\n"
+"X-Poedit-SearchPath-1: src/Infrastructure/WP/Translations\n"
+
+msgid "2 years"
+msgstr ""
+
+msgid "3 years"
+msgstr ""
+
+msgid "Plugin has been activated"
+msgstr ""
+
+msgid "Plugin has been deactivated"
+msgstr ""
+
+msgid ""
+"It seems that Envato API is currently busy (please try again) or you don't "
+"have a valid purchase of Amelia"
+msgstr ""
+
+msgid "You have reached maximum number of registered domains"
+msgstr ""
+
+msgid "The purchase code is invalid or it has expired"
+msgstr ""
+
+msgid "Add package"
+msgstr ""
+
+msgid ""
+"Enable this option if you want to allow your customers to delete their "
+"profile data (bookings won't be deleted)."
+msgstr ""
+
+msgid "Appointments"
+msgstr ""
+
+msgid "Secret key (POSKey)"
+msgstr ""
+
+msgid "Sandbox secret key (POSKey)"
+msgstr ""
+
+msgid "Payee email"
+msgstr ""
+
+msgid "Please enter sandbox POSKey"
+msgstr ""
+
+msgid "Please enter live POSKey"
+msgstr ""
+
+msgid "Please enter payee email"
+msgstr ""
+
+msgid "Enter the event name that will be sent for tracking purposes."
+msgstr ""
+
+msgid "Round-robin"
+msgstr ""
+
+msgid "Highest price"
+msgstr ""
+
+msgid "Lowest price"
+msgstr ""
+
+msgid "Notify selected employees about empty package purchases"
+msgstr ""
+
+msgid ""
+"These employees will receive the package purchased e-mail notification when "
+"it is purchased without any appointments booked."
+msgstr ""
+
+msgid ""
+"Enable this option if you want to include Microsoft Teams in your event."
+msgstr ""
+
+msgid "Configure waiting list for appointments"
+msgstr ""
+
+msgid "Country"
+msgstr ""
+
+msgid "Custom fields"
+msgstr ""
+
+msgid ""
+"Enable this option to add event attendees to employees’ Google Calendar "
+"events."
+msgstr ""
+
+msgid ""
+"Enable this option to add event attendees to employees’ Outlook Calendar "
+"events."
+msgstr ""
+
+msgid ""
+"Enable this option to add event attendees to employees’ Apple Calendar "
+"events."
+msgstr ""
+
+msgid ""
+"Enter here URL of the page with [ameliacustomerpanel] shortcode if you want "
+"to send it to your customers in notifications. Make sure to also add the "
+"placeholder in notification so the URL can be sent."
+msgstr ""
+
+msgid ""
+"Enter here URL of the page with [ameliaemployeepanel] shortcode if you want "
+"to send it to your employees in notifications. Make sure to also add the "
+"placeholder in notification so the URL can be sent."
+msgstr ""
+
+msgid "Dashboard"
+msgstr ""
+
+msgid "1 day"
+msgstr ""
+
+msgid "2 days"
+msgstr ""
+
+msgid "3 days"
+msgstr ""
+
+msgid "4 days"
+msgstr ""
+
+msgid "5 days"
+msgstr ""
+
+msgid "6 days"
+msgstr ""
+
+msgid "Deactivate"
+msgstr ""
+
+msgid "Enabled"
+msgstr ""
+
+msgid "Endpoint"
+msgstr ""
+
+msgid "Enter here an endpoint if you are using Mailgun from EU countries"
+msgstr ""
+
+msgid "Please enter a valid URL with protocol (http:// or https://)."
+msgstr ""
+
+msgid "Activated with Envato"
+msgstr ""
+
+msgid "Event description"
+msgstr ""
+
+msgid "Event title"
+msgstr ""
+
+msgid "API Key"
+msgstr ""
+
+msgid "API Key copied to clipboard."
+msgstr ""
+
+msgid "Booking Confirmed"
+msgstr ""
+
+msgid ""
+"Your booking has been successfully completed and approved. You're all set "
+"and can expect everything to proceed smoothly."
+msgstr ""
+
+msgid "Booking Processed"
+msgstr ""
+
+msgid ""
+"Your booking was successfully processed, but it could not be approved. "
+"Please contact admin if you need assistance."
+msgstr ""
+
+msgid "Booking Approved with Issues"
+msgstr ""
+
+msgid ""
+"Your booking was approved, but there was an issue completing the process. "
+"Please reach out to admin to ensure everything is properly recorded."
+msgstr ""
+
+msgid "Booking Failed"
+msgstr ""
+
+msgid ""
+"We were unable to process your booking, and it was rejected. Please contact "
+"admin if you need help or want to try booking again."
+msgstr ""
+
+msgid "Booking Canceled"
+msgstr ""
+
+msgid ""
+"Your booking has been successfully canceled. If you have any questions or "
+"wish to reschedule, please contact admin."
+msgstr ""
+
+msgid "Booking Rejected"
+msgstr ""
+
+msgid ""
+"You have successfully declined this booking request. The status has been "
+"updated in the system."
+msgstr ""
+
+msgid "Cancellation Failed"
+msgstr ""
+
+msgid ""
+"We were unable to cancel your booking. Please contact admin for assistance "
+"with canceling this booking."
+msgstr ""
+
+msgid "Return to Home"
+msgstr ""
+
+msgid "Copy your API key now, as it won't be visible again."
+msgstr ""
+
+msgid "Add tracking"
+msgstr ""
+
+msgid "Please select a type."
+msgstr ""
+
+msgid ""
+"This is the path in your application where users will be redirected after "
+"authenticating with Google. Add this URI to your Google project credentials "
+"under 'Authorized redirect URIs'."
+msgstr ""
+
+msgid ""
+"This is the path in your application where users will be redirected after "
+"authenticating with Outlook. Add this URI to the 'Redirect URIs' section in "
+"your Outlook application settings."
+msgstr ""
+
+msgid ""
+"This is the path in your application where users will be redirected after "
+"authenticating with Apple. Add this URI to your Apple project credentials "
+"under 'Redirect URIs'."
+msgstr ""
+
+msgid "Count time from"
+msgstr ""
+
+msgid ""
+"'Booking Date and Time' sets the limit based on when the booking is made, "
+"regardless of the appointment date. 'Appointment Date and Time' sets the "
+"limit based on the scheduled appointment itself."
+msgstr ""
+
+msgid "Limit appointments per employee"
+msgstr ""
+
+msgid ""
+"Set this option if you want to limit the number of appointments that an "
+"employee can have daily no matter how many appointments ‘fit’ inside the "
+"working hours"
+msgstr ""
+
+msgid "Appointment date"
+msgstr ""
+
+msgid "Booking date"
+msgstr ""
+
+msgid ""
+"‘Booking date and time’ will set the limit based on the date when the "
+"booking is created, regardless of the event’s date and time.<br>The ‘Event "
+"start date and time’ will set it based on the event’s start date and time."
+msgstr ""
+
+msgid "Event start date and time"
+msgstr ""
+
+msgid "Number of events"
+msgstr ""
+
+msgid ""
+"Enable this option to display appointments with pending status in employees' "
+"calendars."
+msgstr ""
+
+msgid ""
+"Enable this option to create meetings for appointments with pending status."
+msgstr ""
+
+msgid "Live API key"
+msgstr ""
+
+msgid "Live client ID"
+msgstr ""
+
+msgid "Live key ID"
+msgstr ""
+
+msgid "Live key secret"
+msgstr ""
+
+msgid "Live publishable key"
+msgstr ""
+
+msgid "Live secret"
+msgstr ""
+
+msgid "Live secret key"
+msgstr ""
+
+msgid "Mailchimp List"
+msgstr ""
+
+msgid "Preselect the “Subscribe” checkbox"
+msgstr ""
+
+msgid ""
+"When enabled, the “Subscribe” checkbox will be selected by default. "
+"Customers can manually uncheck it if they do not wish to join your Mailchimp "
+"list."
+msgstr ""
+
+msgid "Sign In to Mailchimp"
+msgstr ""
+
+msgid "Sign Out of Mailchimp"
+msgstr ""
+
+msgid "Mailgun API Key"
+msgstr ""
+
+msgid "Please enter Mailgun API key"
+msgstr ""
+
+msgid "Mailgun Domain"
+msgstr ""
+
+msgid "Please enter Mailgun Domain"
+msgstr ""
+
+msgid "Mollie"
+msgstr ""
+
+msgid "Please enter test API Key"
+msgstr ""
+
+msgid "Please enter live API Key"
+msgstr ""
+
+msgid "3 months"
+msgstr ""
+
+msgid "6 months"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Number of appointments"
+msgstr ""
+
+msgid ""
+"Set the maximum number of busy events retrieved from calendar to block "
+"bookings in Amelia."
+msgstr ""
+
+msgid "Number of packages"
+msgstr ""
+
+msgid ""
+"Outlook Mailer is not fully configured. Please complete the account setup in "
+"the Outlook Integration settings."
+msgstr ""
+
+msgid "Auto-approve booking after payment"
+msgstr ""
+
+msgid ""
+"Automatically update the booking status to \"Approved\" after a successful "
+"payment is completed through the payment link."
+msgstr ""
+
+msgid "Please enter live client ID"
+msgstr ""
+
+msgid "Please enter live secret"
+msgstr ""
+
+msgid "Please enter test client ID"
+msgstr ""
+
+msgid "Please enter test secret"
+msgstr ""
+
+#, php-format
+msgid ""
+"To receive automatic updates license activation is required. Please visit %s "
+"to activate Amelia."
+msgstr ""
+
+msgid "Please enter live key ID"
+msgstr ""
+
+msgid "Please enter live key secret"
+msgstr ""
+
+msgid "Please enter test key ID"
+msgstr ""
+
+msgid "Please enter test key secret"
+msgstr ""
+
+msgid "Google reCAPTCHA v2 site key"
+msgstr ""
+
+msgid ""
+"Paste the site key you received after generating your API key pair in Google "
+"reCAPTCHA."
+msgstr ""
+
+msgid "Google reCAPTCHA v2 secret key"
+msgstr ""
+
+msgid ""
+"Paste the secret key you received after creating your API key pair in Google "
+"reCAPTCHA."
+msgstr ""
+
+msgid "reCAPTCHA configuration is invalid."
+msgstr ""
+
+msgid "reCAPTCHA validation failed."
+msgstr ""
+
+msgid "reCAPTCHA challenge expired. Please try again."
+msgstr ""
+
+msgid "reCAPTCHA could not be loaded."
+msgstr ""
+
+msgid ""
+"Prevent bookings during times marked as busy in the employee's Google "
+"Calendar."
+msgstr ""
+
+msgid ""
+"Block booking times that overlap with busy events in the employee’s Outlook "
+"Calendar."
+msgstr ""
+
+msgid ""
+"Block booking times that overlap with busy events in the employee’s Apple "
+"Calendar."
+msgstr ""
+
+msgid ""
+"If you disable this option, your customers will be able to access customer "
+"panel with link that is sent to their email account."
+msgstr ""
+
+msgid "Sandbox mode"
+msgstr ""
+
+msgid "Please select an option."
+msgstr ""
+
+msgid ""
+"When enabled, customers will receive a Google Calendar invitation for the "
+"event."
+msgstr ""
+
+msgid "Set metadata and description"
+msgstr ""
+
+msgid "settings"
+msgstr ""
+
+msgid ""
+"When enabled, customers will see all attendees listed in their Google "
+"Calendar event."
+msgstr ""
+
+msgid "SMTP Host"
+msgstr ""
+
+msgid "Please enter SMTP host"
+msgstr ""
+
+msgid "SMTP Password"
+msgstr ""
+
+msgid "Please enter SMTP password"
+msgstr ""
+
+msgid "SMTP Port"
+msgstr ""
+
+msgid "Please enter SMTP port"
+msgstr ""
+
+msgid "SMTP Secure"
+msgstr ""
+
+msgid "Disabled"
+msgstr ""
+
+msgid "SSL"
+msgstr ""
+
+msgid "TLS"
+msgstr ""
+
+msgid "SMTP Username"
+msgstr ""
+
+msgid "Please enter SMTP username"
+msgstr ""
+
+msgid "Add Stripe address fields"
+msgstr ""
+
+msgid "Please enter a live publishable key."
+msgstr ""
+
+msgid "Please enter a live secret key."
+msgstr ""
+
+msgid "Please enter a test publishable key."
+msgstr ""
+
+msgid "Please enter a test secret key."
+msgstr ""
+
+msgid "Include Taxes"
+msgstr ""
+
+msgid "Tax will be included in price calculation."
+msgstr ""
+
+msgid "Exclude Taxes"
+msgstr ""
+
+msgid "Tax will be excluded from price calculation and showed separately."
+msgstr ""
+
+msgid "Test API key"
+msgstr ""
+
+msgid "Test client ID"
+msgstr ""
+
+msgid "Test mode"
+msgstr ""
+
+msgid "Test publishable key"
+msgstr ""
+
+msgid "Test secret"
+msgstr ""
+
+msgid "Test secret Key"
+msgstr ""
+
+msgid "Time frame"
+msgstr ""
+
+msgid "Load page"
+msgstr ""
+
+msgid "Select category"
+msgstr ""
+
+msgid "Select service"
+msgstr ""
+
+msgid "Select employee"
+msgstr ""
+
+msgid "Select location"
+msgstr ""
+
+msgid "Select package"
+msgstr ""
+
+msgid "Select event"
+msgstr ""
+
+msgid "Complete booking with payment"
+msgstr ""
+
+msgid "Complete booking without payment"
+msgstr ""
+
+msgid "Show checkout form"
+msgstr ""
+
+msgid "Show customer information form"
+msgstr ""
+
+msgid "Select the action that will trigger the event for tracking."
+msgstr ""
+
+msgid "Property name"
+msgstr ""
+
+msgid "Property value"
+msgstr ""
+
+msgid "Unable to deactivate plugin. Please try again later."
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+msgid "Value"
+msgstr ""
+
+msgid "Configure notifications for waiting list updates"
+msgstr ""
+
+msgid "Go to Notifications"
+msgstr ""
+
+msgid "Redirect URL (denied)"
+msgstr ""
+
+msgid "Enter redirect URL"
+msgstr ""
+
+msgid ""
+"Add a redirect URL for cases when a customer attempts to book a time slot "
+"that has already been taken."
+msgstr ""
+
+msgid "Enable integration with WooCommerce"
+msgstr ""
+
+msgid "WooCommerce Product"
+msgstr ""
+
+msgid "Select the WooCommerce product that will be used for this package."
+msgstr ""
+
+msgid "Hide WooCommerce cart when price is 0"
+msgstr ""
+
+msgid "Redirect page"
+msgstr ""
+
+msgid "WooCommerce Thank you page"
+msgstr ""
+
+msgid "Amelia Add to calendar page"
+msgstr ""
+
+msgid "Default page"
+msgstr ""
+
+msgid "Cart"
+msgstr ""
+
+msgid "Checkout"
+msgstr ""
+
+msgid "Add rule"
+msgstr ""
+
+msgid "Draft"
+msgstr ""
+
+msgid "Pending payment"
+msgstr ""
+
+msgid "Processing"
+msgstr ""
+
+msgid "On hold"
+msgstr ""
+
+msgid "Completed"
+msgstr ""
+
+msgid "Cancelled"
+msgstr ""
+
+msgid "Refunded"
+msgstr ""
+
+msgid "Failed"
+msgstr ""
+
+msgid "Apply on"
+msgstr ""
+
+msgid "Order update"
+msgstr ""
+
+msgid "Order creation"
+msgstr ""
+
+msgid "Action"
+msgstr ""
+
+msgid "Please select an action."
+msgstr ""
+
+msgid "Booking added"
+msgstr ""
+
+msgid "Booking rescheduled"
+msgstr ""
+
+msgid "Booking canceled"
+msgstr ""
+
+msgid "Booking status changed"
+msgstr ""
+
+msgid "Package purchased"
+msgstr ""
+
+msgid "Package canceled"
+msgstr ""
+
+msgid "1 week"
+msgstr ""
+
+msgid "2 weeks"
+msgstr ""
+
+msgid "3 weeks"
+msgstr ""
+
+msgid "4 weeks"
+msgstr ""
+
+msgid "What's New"
+msgstr ""
+
+msgid "After"
+msgstr ""
+
+msgid "Before"
+msgstr ""
+
+msgid "Configure placeholder"
+msgstr ""
+
+msgid ""
+"This notification requires a cron job. Add the line below to your cron "
+"configuration."
+msgstr ""
+
+msgid "Custom notification"
+msgstr ""
+
+msgid ""
+"Dear <b>%customer_full_name%</b>, <br><br>Thank you for choosing our "
+"company, <br> <b>%company_name%</b>"
+msgstr ""
+
+msgid ""
+"Dear %customer_full_name%, Thank you for choosing our company, %company_name%"
+msgstr ""
+
+msgid ""
+"Hi <b>%employee_full_name%</b>, <br><br>Thank you, <br> <b>%company_name%</b>"
+msgstr ""
+
+msgid "Hi %employee_full_name%, Thank you, %company_name%"
+msgstr ""
+
+msgid "Details changed"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Please enter a name."
+msgstr ""
+
+msgid "Please enter a recipient email."
+msgstr ""
+
+msgid "Please enter a valid email address."
+msgstr ""
+
+msgid "Please enter a valid phone number."
+msgstr ""
+
+msgid "Loading..."
+msgstr ""
+
+msgid "Manage languages"
+msgstr ""
+
+msgid "Languages"
+msgstr ""
+
+msgid "Notification name"
+msgstr ""
+
+msgid "Notification has not been saved."
+msgstr ""
+
+msgid "Notification has been deleted."
+msgstr ""
+
+msgid "Scheduled notification"
+msgstr ""
+
+msgid "Action-based notification"
+msgstr ""
+
+msgid "Notification type"
+msgstr ""
+
+msgid "Package appointments details"
+msgstr ""
+
+msgid "Paddle"
+msgstr ""
+
+msgid "Password has been changed"
+msgstr ""
+
+msgid "Your password has been reset successfully."
+msgstr ""
+
+msgid "Passwords don't match."
+msgstr ""
+
+msgid "Unable to retrieve payments results"
+msgstr ""
+
+msgid "Payment ID"
+msgstr ""
+
+msgid "PayPal"
+msgstr ""
+
+msgid "Cancel appointment link"
+msgstr ""
+
+msgid "Approve appointment link"
+msgstr ""
+
+msgid "Reject appointment link"
+msgstr ""
+
+msgid "Appointment initial date"
+msgstr ""
+
+msgid "Appointment initial date & time"
+msgstr ""
+
+msgid "Appointment initial start time"
+msgstr ""
+
+msgid "Appointment initial end time"
+msgstr ""
+
+msgid "Appointment deposit"
+msgstr ""
+
+msgid "Payment link for Barion"
+msgstr ""
+
+msgid "Mollie payment link"
+msgstr ""
+
+msgid "PayPal payment link"
+msgstr ""
+
+msgid "Razorpay payment link"
+msgstr ""
+
+msgid "Stripe payment link"
+msgstr ""
+
+msgid "Square payment link"
+msgstr ""
+
+msgid "WooCommerce payment link"
+msgstr ""
+
+msgid "Cart appointments details"
+msgstr ""
+
+msgid "Used coupon"
+msgstr ""
+
+msgid "Customer panel access link"
+msgstr ""
+
+msgid "Employee panel access link"
+msgstr ""
+
+msgid "Employee password"
+msgstr ""
+
+msgid "Cancel event link"
+msgstr ""
+
+msgid "Event tickets"
+msgstr ""
+
+msgid "Event deposit"
+msgstr ""
+
+msgid "Event initial start date"
+msgstr ""
+
+msgid "Initial start date & time of the event"
+msgstr ""
+
+msgid "Initial start time of the event"
+msgstr ""
+
+msgid "Initial end date of the event"
+msgstr ""
+
+msgid "Initial end date & time of the event"
+msgstr ""
+
+msgid "Initial end time of the event"
+msgstr ""
+
+msgid "Selected extras details"
+msgstr ""
+
+msgid "Selected extras"
+msgstr ""
+
+msgid "Configure the cart appointments details placeholder."
+msgstr ""
+
+msgid "Group appointment details"
+msgstr ""
+
+msgid "Configure the group appointment details placeholder."
+msgstr ""
+
+msgid "Configure the group event details placeholder."
+msgstr ""
+
+msgid "Lesson Space link to join space"
+msgstr ""
+
+msgid "Date periods of the event with Lesson Space join links"
+msgstr ""
+
+msgid "Date & time periods of the event with Lesson Space join links"
+msgstr ""
+
+msgid "Location address"
+msgstr ""
+
+msgid "Location description"
+msgstr ""
+
+msgid "Location name"
+msgstr ""
+
+msgid "Location phone"
+msgstr ""
+
+msgid "Package name"
+msgstr ""
+
+msgid "Package description"
+msgstr ""
+
+msgid "Configure the package appointments details placeholder."
+msgstr ""
+
+msgid "Package duration"
+msgstr ""
+
+msgid "Package price"
+msgstr ""
+
+msgid "Package deposit"
+msgstr ""
+
+msgid "Recurring appointments details"
+msgstr ""
+
+msgid "Configure the recurring appointments details placeholder."
+msgstr ""
+
+msgid "Service or event description"
+msgstr ""
+
+msgid "Service or event name"
+msgstr ""
+
+msgid "Zoom start meeting (hosts) link"
+msgstr ""
+
+msgid "Event date periods with Zoom start links"
+msgstr ""
+
+msgid "Event date & time periods with Zoom start links"
+msgstr ""
+
+msgid "Zoom join meeting (participants) link"
+msgstr ""
+
+msgid "Event date periods with Zoom join links"
+msgstr ""
+
+msgid "Event date & time periods with Zoom join links"
+msgstr ""
+
+msgid "Event date periods with Google Meet join links"
+msgstr ""
+
+msgid "Event date & time periods with Google Meet join links"
+msgstr ""
+
+msgid "Google Meet join link"
+msgstr ""
+
+msgid "Microsoft Teams join link"
+msgstr ""
+
+msgid "Event date periods with Microsoft Teams join links"
+msgstr ""
+
+msgid "Event date & time periods with Microsoft Teams join links"
+msgstr ""
+
+msgid "Package"
+msgstr ""
+
+msgid "Coupon"
+msgstr ""
+
+msgid "Placeholder"
+msgstr ""
+
+msgid "Placeholders"
+msgstr ""
+
+msgid "Recipient phone"
+msgstr ""
+
+msgid "Password reset link has been sent to your email."
+msgstr ""
+
+msgid "Reset password"
+msgstr ""
+
+msgid "On the same day"
+msgstr ""
+
+msgid "Send after appointment"
+msgstr ""
+
+msgid "Send after event"
+msgstr ""
+
+msgid "Send at"
+msgstr ""
+
+msgid ""
+"GSM (standard Latin) segments contain 160 characters, while UCS-2 (non-GSM - "
+"Cyrillic, emoji, non-standard symbols) contain 70 characters, etc."
+msgstr ""
+
+msgid "Please select an email template."
+msgstr ""
+
+msgid "Send only this notification"
+msgstr ""
+
+msgid ""
+"If enabled, the default notification will not be sent for the selected "
+"services."
+msgstr ""
+
+msgid ""
+"If enabled, the default notification will not be sent for the selected "
+"events."
+msgstr ""
+
+msgid "Test WhatsApp"
+msgstr ""
+
+msgid "Special characters are not allowed"
+msgstr ""
+
+msgid "Sender ID must be between 3 and 11 characters"
+msgstr ""
+
+msgid "Your ID must include at least one letter"
+msgstr ""
+
+msgid "Alpha sender ID can't be empty"
+msgstr ""
+
+msgid "Sent"
+msgstr ""
+
+msgid "Time"
+msgstr ""
+
+msgid "Undelivered"
+msgstr ""
+
+msgid "Use this placeholder:"
+msgstr ""
+
+msgid ""
+"This is a unique security token. Copy it into the 'Verify token' field in "
+"WhatsApp when creating a webhook."
+msgstr ""
+
+msgid ""
+"This message is sent when a customer replies via WhatsApp, informing them "
+"that responses via WhatsApp are not supported."
+msgstr ""
+
+msgid "Make sure you are using the correct WhatsApp credentials."
+msgstr ""
+
+msgid ""
+"Only templates in the default language will be displayed in the back-end. If "
+"a template doesn’t exist in the customer’s language, the default language "
+"version will be sent instead."
+msgstr ""
+
+msgid "Header"
+msgstr ""
+
+msgid "Header Image URL"
+msgstr ""
+
+msgid ""
+"The message header must be configured in the Facebook Developers settings. "
+"The character limit is 60 characters after placeholders are replaced."
+msgstr ""
+
+msgid ""
+"The message body must be configured in the Facebook Developers settings."
+msgstr ""
+
+msgid "Template name"
+msgstr ""
+
+msgid ""
+"This is a temporary WhatsApp token and will automatically expire after 24 "
+"hours. Make sure to complete the setup before it expires."
+msgstr ""
+
+msgid "E-ticket"
+msgstr ""
+
+msgid "Failed to send test WhatsApp message."
+msgstr ""
+
+msgid "Test WhatsApp message sent successfully"
+msgstr ""
+
+msgid "Failed to send test SMS."
+msgstr ""
+
+msgid "Test SMS sent successfully."
+msgstr ""
+
+msgid "Times bought"
+msgstr ""
+
+msgid "YouTube"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Duplicate"
+msgstr ""
+
+msgid "Address"
+msgstr ""
+
+msgid "Are you sure you want to delete this location?"
+msgstr ""
+
+msgid "Are you sure you want to duplicate this location?"
+msgstr ""
+
+msgid "Are you sure you want to hide this location?"
+msgstr ""
+
+msgid "Are you sure you want to show this location?"
+msgstr ""
+
+msgid "Edit location"
+msgstr ""
+
+msgid "Google Maps failed to load. Check your API key and restrictions."
+msgstr ""
+
+msgid ""
+"Places API (New) is required but not enabled. Please enable it in Google "
+"Cloud Console."
+msgstr ""
+
+msgid "Latitude"
+msgstr ""
+
+msgid "Location has been deleted."
+msgstr ""
+
+msgid "Location has been hidden."
+msgstr ""
+
+msgid "Location is now visible."
+msgstr ""
+
+msgid "Longitude"
+msgstr ""
+
+msgid "New Location"
+msgstr ""
+
+msgid "Wrong address?"
+msgstr ""
+
+msgid "Pin icon"
+msgstr ""
+
+msgid "Orange"
+msgstr ""
+
+msgid "Purple"
+msgstr ""
+
+msgid "Red"
+msgstr ""
+
+msgid "Green"
+msgstr ""
+
+msgid "Add duration"
+msgstr ""
+
+msgid "Add day(s)"
+msgstr ""
+
+msgid "All employees"
+msgstr ""
+
+msgid "All locations"
+msgstr ""
+
+msgid "All services"
+msgstr ""
+
+msgid "Book package"
+msgstr ""
+
+msgid "'Bringing anyone with you' popup"
+msgstr ""
+
+msgid ""
+"Disable this option to allow only individual customers to book group "
+"appointments, without the ability to bring additional people."
+msgstr ""
+
+msgid "Category"
+msgstr ""
+
+msgid "Are you sure you want to delete this resource?"
+msgstr ""
+
+msgid "Are you sure you want to duplicate this resource?"
+msgstr ""
+
+msgid "Are you sure you want to hide this resource?"
+msgstr ""
+
+msgid "Are you sure you want to show this resource?"
+msgstr ""
+
+msgid "Are you sure you want to delete this package?"
+msgstr ""
+
+msgid "Are you sure you want to duplicate this package?"
+msgstr ""
+
+msgid "Are you sure you want to hide this package?"
+msgstr ""
+
+msgid "Are you sure you want to show this package?"
+msgstr ""
+
+msgid "Custom Duration & Pricing"
+msgstr ""
+
+msgid "Edit package"
+msgstr ""
+
+msgid "Edit resource"
+msgstr ""
+
+msgid "Please enter waiting list capacity"
+msgstr ""
+
+msgid "Waiting list capacity must be at least 1"
+msgstr ""
+
+msgid "Extra people limit must be 0 or greater"
+msgstr ""
+
+msgid "Extra people limit cannot exceed waiting list capacity"
+msgstr ""
+
+msgid "Maximum quantity"
+msgstr ""
+
+msgid "Multiply price by number of people"
+msgstr ""
+
+msgid ""
+"If disabled, the price will remain the same regardless of how many people "
+"are included in the group appointment."
+msgstr ""
+
+msgid "New package"
+msgstr ""
+
+msgid "New resource"
+msgstr ""
+
+msgid "Allow customers to choose employee on the customer panel"
+msgstr ""
+
+msgid ""
+"When disabled, the employee chosen during the first booking will be used for "
+"this service throughout the entire package."
+msgstr ""
+
+msgid "Date purchased"
+msgstr ""
+
+msgid "Package details"
+msgstr ""
+
+msgid "Package has been hidden."
+msgstr ""
+
+msgid "Package is now visible."
+msgstr ""
+
+msgid "Package has been deleted."
+msgstr ""
+
+msgid "Calculated"
+msgstr ""
+
+msgid "Calculated package price"
+msgstr ""
+
+msgid "Custom"
+msgstr ""
+
+msgid "Period"
+msgstr ""
+
+msgid "Pricing"
+msgstr ""
+
+msgid "Enable resource usage for a group booking"
+msgstr ""
+
+msgid ""
+"Enable this option if you want to count resource quantity usage for each "
+"additional person added during the booking."
+msgstr ""
+
+msgid "Resource has been deleted."
+msgstr ""
+
+msgid "Resource has been hidden."
+msgstr ""
+
+msgid ""
+"The resource name is only visible to you and won't appear during booking. "
+"It's used for internal management purposes."
+msgstr ""
+
+msgid "Search Resources"
+msgstr ""
+
+msgid "Quantity is shared"
+msgstr ""
+
+msgid ""
+"The resource quantity is shared across all selected services, employees, and "
+"locations. "
+msgstr ""
+
+msgid "Resource is now visible."
+msgstr ""
+
+msgid "Quantity"
+msgstr ""
+
+msgid "Minimum bookings required"
+msgstr ""
+
+msgid "Maximum bookings allowed"
+msgstr ""
+
+msgid "Please select at least one service."
+msgstr ""
+
+msgid "Please select at least one employee."
+msgstr ""
+
+msgid "When recurring dates are unavailable"
+msgstr ""
+
+msgid ""
+"Choose how Amelia suggests an alternative date when the selected recurring "
+"date has no available time slots."
+msgstr ""
+
+msgid "Suggest next available date"
+msgstr ""
+
+msgid "Suggest previous available date"
+msgstr ""
+
+msgid "Suggest closest available date"
+msgstr ""
+
+msgid "Recurring appointment payment"
+msgstr ""
+
+msgid ""
+"Choose how payments are handled for recurring appointments. If payment is "
+"collected only for the first one, the remaining appointments are paid on-"
+"site."
+msgstr ""
+
+msgid "Pay only for the first appointment"
+msgstr ""
+
+msgid "Pay for all appointments at once"
+msgstr ""
+
+msgid ""
+"When enabled, the total number of appointments is shared across the entire "
+"package instead of being set per service."
+msgstr ""
+
+msgid "Update for all"
+msgstr ""
+
+msgid "Make extra mandatory"
+msgstr ""
+
+msgid "Minimum number of required extras"
+msgstr ""
+
+msgid "Available"
+msgstr ""
+
+msgid "iCloud email address"
+msgstr ""
+
+msgid "iCloud app-specific password"
+msgstr ""
+
+msgid "On Break"
+msgstr ""
+
+msgid "Busy"
+msgstr ""
+
+msgid "Are you sure you want to duplicate this employee?"
+msgstr ""
+
+msgid "Connect"
+msgstr ""
+
+msgid "Day Off"
+msgstr ""
+
+msgid "Disconnect"
+msgstr ""
+
+msgid "Disconnect employee account"
+msgstr ""
+
+msgid "Employee calendar has been updated successfully."
+msgstr ""
+
+msgid "Employee calendar disconnected successfully"
+msgstr ""
+
+msgid "Search employees"
+msgstr ""
+
+msgid "Please select a location."
+msgstr ""
+
+msgid "Sign in with Outlook"
+msgstr ""
+
+msgid "Sign out from Outlook"
+msgstr ""
+
+msgid "Overridden by employee"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Stripe Account"
+msgstr ""
+
+msgid "Standard Account"
+msgstr ""
+
+msgid "Express Account"
+msgstr ""
+
+msgid ""
+"This charge type will not be be used when booking multiple appointments "
+"(cart feature or recurring feature) OR when booking event with multiple "
+"employees."
+msgstr ""
+
+msgid "Direct charge"
+msgstr ""
+
+msgid "Transfer"
+msgstr ""
+
+msgid "Card payment"
+msgstr ""
+
+msgid "Transfer amount (%)"
+msgstr ""
+
+msgid "Application fee amount (%)"
+msgstr ""
+
+msgid "Stripe Connect"
+msgstr ""
+
+msgid "Charge type"
+msgstr ""
+
+msgid ""
+"Here you can define the charge type that will be used for employees with "
+"\"Stripe Connected Account\""
+msgstr ""
+
+msgid "Express account capabilities"
+msgstr ""
+
+msgid ""
+"Define which capabilities will be requested when creating an Express "
+"connected account"
+msgstr ""
+
+msgid "Note (internal)"
+msgstr ""
+
+msgid "Please check your .csv file and try again."
+msgstr ""
+
+msgid "Download .csv"
+msgstr ""
+
+msgid "Import Failed"
+msgstr ""
+
+msgid "Import Partially Successful"
+msgstr ""
+
+msgid "Overwrite Records"
+msgstr ""
+
+msgid ""
+"We've prepared a .csv file with the customers that were not imported. After "
+"fixing the issues, you can try again."
+msgstr ""
+
+msgid "Skip Import"
+msgstr ""
+
+msgid "Need help?"
+msgstr ""
+
+msgid "Version "
+msgstr ""
+
+msgid "Are you sure you want to refund this payment?"
+msgstr ""
+
+msgid "The refund amount will be"
+msgstr ""
+
+msgid "Deduction"
+msgstr ""
+
+msgid "Deposit"
+msgstr ""
+
+msgid "Expiration date"
+msgstr ""
+
+msgid "Invoice Format"
+msgstr ""
+
+msgid ""
+"Choose the invoice format that will be used in notifications and on the "
+"customer panel."
+msgstr ""
+
+msgid "Invoice has been sent."
+msgstr ""
+
+msgid "Failed to send invoice."
+msgstr ""
+
+msgid "Paid"
+msgstr ""
+
+msgid "Active"
+msgstr ""
+
+msgid "All extras"
+msgstr ""
+
+msgid "All packages"
+msgstr ""
+
+msgid "Fixed amount"
+msgstr ""
+
+msgid "Percentage"
+msgstr ""
+
+msgid "Badge color"
+msgstr ""
+
+msgid "Badge label"
+msgstr ""
+
+msgid "Bookings"
+msgstr ""
+
+msgid "Canceled By Admin"
+msgstr ""
+
+msgid "Canceled By Attendee"
+msgstr ""
+
+msgid "Confirm"
+msgstr ""
+
+msgid "Specific date & time"
+msgstr ""
+
+msgid "Semicolon (;)"
+msgstr ""
+
+msgid "The coupon you entered is not valid"
+msgstr ""
+
+msgid "Create new badge"
+msgstr ""
+
+msgid "Specific Date"
+msgstr ""
+
+msgid "Expired"
+msgstr ""
+
+msgid "Discard"
+msgstr ""
+
+msgid "Discount (%)"
+msgstr ""
+
+msgid "Fully booked"
+msgstr ""
+
+msgid ""
+"Name of the space (room) that will be created for appointments. You can use "
+"placeholders from the Notifications page. If left empty, the space will be "
+"named after the appointment ID."
+msgstr ""
+
+msgid ""
+"Enable this option to create spaces for appointments with pending status."
+msgstr ""
+
+msgid "Lesson Space link"
+msgstr ""
+
+msgid "Manage badges"
+msgstr ""
+
+msgid ""
+"<p>The <strong>Amelia</strong> plugin requires PHP version 5.5 or greater.</"
+"p>"
+msgstr ""
+
+msgid "Plugin Activation Error"
+msgstr ""
+
+msgid ""
+"Please use the built-in Elementor shortcode widget instead of Amelia widget "
+"when adding Amelia to a popup"
+msgstr ""
+
+msgid "Hide Employee Profile"
+msgstr ""
+
+msgid "Daily"
+msgstr ""
+
+msgid "Monthly"
+msgstr ""
+
+msgid "Weekly"
+msgstr ""
+
+msgid "Yearly"
+msgstr ""
+
+msgid "Refund"
+msgstr ""
+
+msgid "Rescheduled"
+msgstr ""
+
+msgid "Resource"
+msgstr ""
+
+msgid "This field is required."
+msgstr ""
+
+msgid "Every"
+msgstr ""
+
+msgid "Sort"
+msgstr ""
+
+msgid "Start date"
+msgstr ""
+
+msgid "Zoom user"
+msgstr ""
+
+msgid ""
+"Some employees assigned to this service are not connected to Zoom. Please go "
+"to their profiles and connect them to Zoom to use this integration properly."
+msgstr ""
+
+msgid ""
+"Some employees assigned to this event are not connected to Zoom. Please go "
+"to their profiles and connect them to Zoom to use this integration properly."
+msgstr ""
+
+msgid "Unlimited"
+msgstr ""
+
+msgid "Order"
+msgstr ""
+
+msgid "WooCommerce Order Id"
+msgstr ""
+
+msgid "Woo Order Id"
+msgstr ""
+
+msgid "Warning"
+msgstr ""
+
+msgid "Day of the week"
+msgstr ""
+
+msgid "E-ticket scanner"
+msgstr ""
+
+msgid "Ticket ID"
+msgstr ""
+
+msgid "Ticket is valid"
+msgstr ""
+
+msgid "Ticket cannot be scanned for this date"
+msgstr ""
+
+msgid "Ticket not valid"
+msgstr ""
+
+msgid "Ticket not found"
+msgstr ""
+
+msgid "Ticket Name"
+msgstr ""
+
+msgid "Ticket has already been scanned"
+msgstr ""
+
+msgid "Group ticket has already been scanned"
+msgstr ""
+
+msgid "All tickets have already been scanned"
+msgstr ""
+
+msgid "Booking ID"
+msgstr ""
+
+msgid "Attendees Allowed"
+msgstr ""
+
+msgid "Start scanner"
+msgstr ""
+
+msgid "Stop scanner"
+msgstr ""
+
+msgid "Ticket code"
+msgstr ""
+
+msgid "Validate ticket"
+msgstr ""
+
+msgid "Camera permission denied. Please allow camera access and try again."
+msgstr ""
+
+msgid "No camera found on this device."
+msgstr ""
+
+msgid "Camera not supported by this browser."
+msgstr ""
+
+msgid "Failed to access camera. Please try again."
+msgstr ""
+
+msgid "Checked in"
+msgstr ""
+
+msgid "To"
+msgstr ""
+
+msgid "Ticket Type"
+msgstr ""
+
+msgid "Are you sure you want to delete this tax?"
+msgstr ""
+
+msgid "Are you sure you want to hide this tax?"
+msgstr ""
+
+msgid "Are you sure you want to show this tax?"
+msgstr ""
+
+msgid "Invoice details"
+msgstr ""
+
+msgid "Tax has been deleted."
+msgstr ""
+
+msgid "Tax has been hidden."
+msgstr ""
+
+msgid "Tax is now visible."
+msgstr ""
+
+msgid "Edit Tax"
+msgstr ""
+
+msgid "Search Taxes"
+msgstr ""
+
+msgid "New tax"
+msgstr ""
+
+msgid "Code"
+msgstr ""
+
+msgid ""
+"Create a coupon code customers can enter during booking to get a discount."
+msgstr ""
+
+msgid "Are you sure you want to delete this coupon?"
+msgstr ""
+
+msgid "Are you sure you want to duplicate this coupon?"
+msgstr ""
+
+msgid "Are you sure you want to hide this coupon?"
+msgstr ""
+
+msgid "Are you sure you want to show this coupon?"
+msgstr ""
+
+msgid "Coupon has been deleted."
+msgstr ""
+
+msgid "Coupon has been hidden."
+msgstr ""
+
+msgid "Coupon is now visible."
+msgstr ""
+
+msgid "Coupons"
+msgstr ""
+
+msgid "Download"
+msgstr ""
+
+msgid "Download PDF"
+msgstr ""
+
+msgid "Download XML"
+msgstr ""
+
+msgid "Edit Coupon"
+msgstr ""
+
+msgid "Please enter a code."
+msgstr ""
+
+msgid "Event name"
+msgstr ""
+
+msgid "Search Coupons"
+msgstr ""
+
+msgid "Invoice"
+msgstr ""
+
+msgid "Additional information"
+msgstr ""
+
+msgid "Item"
+msgstr ""
+
+msgid "Unit price"
+msgstr ""
+
+msgid " (Incl. Tax)"
+msgstr ""
+
+msgid "Tax amount"
+msgstr ""
+
+msgid "Subtotal"
+msgstr ""
+
+msgid "Discount"
+msgstr ""
+
+msgid "Tax"
+msgstr ""
+
+msgid "Invoice total"
+msgstr ""
+
+msgid "Left to pay"
+msgstr ""
+
+msgid "PAYMENT METHOD"
+msgstr ""
+
+msgid "Qty"
+msgstr ""
+
+msgid "Tax rate"
+msgstr ""
+
+msgid "Total price"
+msgstr ""
+
+msgid "Issued"
+msgstr ""
+
+msgid "Limit"
+msgstr ""
+
+msgid "New coupon"
+msgstr ""
+
+msgid "Coupon needs to have discount or deduction"
+msgstr ""
+
+msgid "Select the packages this coupon can be used for."
+msgstr ""
+
+msgid "Partially Paid"
+msgstr ""
+
+msgid "Pending"
+msgstr ""
+
+msgid "Preview"
+msgstr ""
+
+msgid "Send invoice"
+msgstr ""
+
+msgid ""
+"The customer didn’t provide an email address, so the invoice couldn’t be "
+"sent."
+msgstr ""
+
+msgid "Notification interval"
+msgstr ""
+
+msgid ""
+"Set the number of approved bookings after which the customer will "
+"automatically receive the coupon in a notification. Note: To enable this, "
+"the coupon placeholder must be included in the notification template."
+msgstr ""
+
+msgid "Recurring notification"
+msgstr ""
+
+msgid "Enable this option to repeat the notification at the defined interval."
+msgstr ""
+
+msgid "Select the services this coupon can be used for."
+msgstr ""
+
+msgid "Select the events this coupon can be used for."
+msgstr ""
+
+msgid "Times used"
+msgstr ""
+
+msgid "Usage limit"
+msgstr ""
+
+msgid ""
+"Define the total number of uses allowed for this coupon. Once the limit is "
+"reached, the coupon becomes inactive."
+msgstr ""
+
+msgid "Maximum usage per customer"
+msgstr ""
+
+msgid ""
+"Define the maximum number of uses per customer. Once the limit is reached, "
+"the coupon will no longer be valid for that customer."
+msgstr ""
+
+msgid "Used"
+msgstr ""
+
+msgid "Appointment ID"
+msgstr ""
+
+msgid "Assigned"
+msgstr ""
+
+msgid "Barion"
+msgstr ""
+
+msgid "Create new"
+msgstr ""
+
+msgid "Customer phone"
+msgstr ""
+
+msgid "Customers"
+msgstr ""
+
+msgid "Customers in Waiting list"
+msgstr ""
+
+msgid "Linked"
+msgstr ""
+
+msgid ""
+"By booking this time slot you will book appointment on top of existing group "
+"appointment!"
+msgstr ""
+
+msgid "Price"
+msgstr ""
+
+msgid "Package deal"
+msgstr ""
+
+msgid "Razorpay"
+msgstr ""
+
+msgid "Stripe"
+msgstr ""
+
+msgid ""
+"Check this option if you want your customers to have the option to choose "
+"whether they will pay the full amount or just a deposit. If unchecked, "
+"customers will only be able to pay the deposit during the booking process."
+msgstr ""
+
+msgid "Deposit amount"
+msgstr ""
+
+msgid "Deposit type"
+msgstr ""
+
+msgid ""
+"A percentage deposit is calculated based on the total booking price. A fixed "
+"amount can either be multiplied by the number of people or applied as a "
+"single total amount."
+msgstr ""
+
+msgid "The remaining balance can be paid on-site or through a payment link."
+msgstr ""
+
+msgid "Multiply deposit by number of people"
+msgstr ""
+
+msgid "Multiply deposit amount by the number of people in one booking."
+msgstr ""
+
+msgid "Allow customers to pay full amount"
+msgstr ""
+
+msgid "Pricing by date range"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Event"
+msgstr ""
+
+msgid ""
+"If this option is unchecked, the plugin will calculate the booking closing "
+"time based on the time set for the first event."
+msgstr ""
+
+msgid ""
+"If this option is unchecked, the plugin will calculate the booking opening "
+"time based on the time set for the first event."
+msgstr ""
+
+msgid "Repeat event"
+msgstr ""
+
+msgid "Set the event period first to enable pricing by date range."
+msgstr ""
+
+msgid ""
+"Date ranges that are not defined will use the default price from the ticket "
+"category."
+msgstr ""
+
+msgid "Add date range"
+msgstr ""
+
+msgid "Select"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Scan e-ticket"
+msgstr ""
+
+msgid "Event has been canceled"
+msgstr ""
+
+msgid "Day"
+msgstr ""
+
+msgid "List"
+msgstr ""
+
+msgid "Month"
+msgstr ""
+
+msgid "Today"
+msgstr ""
+
+msgid "Week"
+msgstr ""
+
+msgid "Add option"
+msgstr ""
+
+msgid "All bookings"
+msgstr ""
+
+msgid "Google/Outlook location"
+msgstr ""
+
+msgid ""
+"Enable this option to use this custom field as the location in Google and "
+"Outlook Calendar events, ICS files, and ‘Add to Calendar’ events."
+msgstr ""
+
+msgid "Set your Google Map API Key in General Settings"
+msgstr ""
+
+msgid ""
+"For this field to work correctly, please add your Google Maps API key in the "
+"General Settings. Otherwise, it will function as a simple text field."
+msgstr ""
+
+msgid "All events"
+msgstr ""
+
+msgid "Any Employee"
+msgstr ""
+
+msgid "Any Location"
+msgstr ""
+
+msgid "Auto-fill your details using:"
+msgstr ""
+
+msgid "filled"
+msgstr ""
+
+msgid "plain"
+msgstr ""
+
+msgid "text"
+msgstr ""
+
+msgid "Number of Additional People"
+msgstr ""
+
+msgid "Person"
+msgstr ""
+
+msgid "People"
+msgstr ""
+
+msgid "Extra"
+msgstr ""
+
+msgid "John Doe"
+msgstr ""
+
+msgid "Jane Doe"
+msgstr ""
+
+msgid "Colors & Fonts"
+msgstr ""
+
+msgid "Continue"
+msgstr ""
+
+msgid "Coupon field"
+msgstr ""
+
+msgid "Custom Field"
+msgstr ""
+
+msgid "Custom field"
+msgstr ""
+
+msgid "Custom field has been added"
+msgstr ""
+
+msgid "Custom field has been deleted."
+msgstr ""
+
+msgid "Unable to save custom fields positions"
+msgstr ""
+
+msgid "Custom field has been saved"
+msgstr ""
+
+msgid "Download invoice"
+msgstr ""
+
+msgid "First booking only"
+msgstr ""
+
+msgid "Visible at"
+msgstr ""
+
+msgid "Label"
+msgstr ""
+
+msgid "Label name"
+msgstr ""
+
+msgid "Include in invoice"
+msgstr ""
+
+msgid "Notification Placeholder"
+msgstr ""
+
+msgid "Or enter details below"
+msgstr ""
+
+msgid "Service"
+msgstr ""
+
+msgid "Primary Gradient"
+msgstr ""
+
+msgid "Required"
+msgstr ""
+
+msgid "Parts"
+msgstr ""
+
+msgid "Send custom fields info for each customer separately"
+msgstr ""
+
+msgid ""
+"Enable this option if you want your employee to receive data from the custom "
+"fields only for the last customer when there is a group booking"
+msgstr ""
+
+msgid ""
+"Global Settings apply only to the Event Calendar and Search Booking forms, "
+"to customize other booking forms use the settings on the right."
+msgstr ""
+
+msgid "Employee"
+msgstr ""
+
+msgid "Location"
+msgstr ""
+
+msgid "Repeat:"
+msgstr ""
+
+msgid "Days"
+msgstr ""
+
+msgid "Weeks"
+msgstr ""
+
+msgid "Months"
+msgstr ""
+
+msgid "On:"
+msgstr ""
+
+msgid "Time(s):"
+msgstr ""
+
+msgid "Recurring appointments"
+msgstr ""
+
+msgid "You can edit or delete each appointment"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Location:"
+msgstr ""
+
+msgid "Location 1"
+msgstr ""
+
+msgid "Every Day until"
+msgstr ""
+
+msgid "Birthday"
+msgstr ""
+
+msgid "Payment method:"
+msgstr ""
+
+msgid "On-site"
+msgstr ""
+
+msgid "Online"
+msgstr ""
+
+msgid "Payment Type:"
+msgstr ""
+
+msgid "Credit Card"
+msgstr ""
+
+msgid "Credit or debit card:"
+msgstr ""
+
+msgid "Card number"
+msgstr ""
+
+msgid "Total number of people:"
+msgstr ""
+
+msgid "Base Price:"
+msgstr ""
+
+msgid "Total Cost:"
+msgstr ""
+
+msgid "Please select package:"
+msgstr ""
+
+msgid "Package:"
+msgstr ""
+
+msgid "Back"
+msgstr ""
+
+msgid "All services are booked separately"
+msgstr ""
+
+msgid "This appointment is a part of a package."
+msgstr ""
+
+msgid "appointment is required to be booked now."
+msgstr ""
+
+msgid "appointments are required to be booked now."
+msgstr ""
+
+msgid "Preview invoice"
+msgstr ""
+
+msgid "Select date and time"
+msgstr ""
+
+msgid "Overview"
+msgstr ""
+
+msgid "End Time Visibility:"
+msgstr ""
+
+msgid "Any Employee Option Visibility:"
+msgstr ""
+
+msgid "Capacity"
+msgstr ""
+
+msgid "Event Date and Time"
+msgstr ""
+
+msgid "About this event"
+msgstr ""
+
+msgid "Book this event"
+msgstr ""
+
+msgid "Number of people"
+msgstr ""
+
+msgid "Categories"
+msgstr ""
+
+msgid "services"
+msgstr ""
+
+msgid "Image thumbs"
+msgstr ""
+
+msgid "View more"
+msgstr ""
+
+msgid "Service employees list"
+msgstr ""
+
+msgid "Package badge"
+msgstr ""
+
+msgid "Package services list"
+msgstr ""
+
+msgid "h"
+msgstr ""
+
+msgid "min"
+msgstr ""
+
+msgid "Service Info"
+msgstr ""
+
+msgid "Maximum Quantity:"
+msgstr ""
+
+msgid "Description:"
+msgstr ""
+
+msgid "Category:"
+msgstr ""
+
+msgid "Capacity:"
+msgstr ""
+
+msgid "The package is time-limited to"
+msgstr ""
+
+msgid "Package rules and description"
+msgstr ""
+
+msgid "Selected services"
+msgstr ""
+
+msgid "Time zone"
+msgstr ""
+
+msgid "Thank you! Your booking is completed."
+msgstr ""
+
+msgid "Thank you! Your booking is completed and now is pending confirmation."
+msgstr ""
+
+msgid "Select Calendar"
+msgstr ""
+
+msgid "Form colors"
+msgstr ""
+
+msgid "Event List Booking Form"
+msgstr ""
+
+msgid "Event Calendar Booking Form"
+msgstr ""
+
+msgid "Event employee"
+msgstr ""
+
+msgid "Spot"
+msgstr ""
+
+msgid "Spots"
+msgstr ""
+
+msgid "No spots left"
+msgstr ""
+
+msgid "Spots capacity"
+msgstr ""
+
+msgid "Book now"
+msgstr ""
+
+msgid "There are no upcoming events for this period"
+msgstr ""
+
+msgid "Event Day"
+msgstr ""
+
+msgid "Date range"
+msgstr ""
+
+msgid "Show more"
+msgstr ""
+
+msgid "Show less"
+msgstr ""
+
+msgid "Schedule:"
+msgstr ""
+
+msgid "Hosted by:"
+msgstr ""
+
+msgid "How many people are coming?"
+msgstr ""
+
+msgid "Catalog Booking Form"
+msgstr ""
+
+msgid "Catalog"
+msgstr ""
+
+msgid "Catalog Service"
+msgstr ""
+
+msgid "Catalog Package"
+msgstr ""
+
+msgid "Show single Event details on the page"
+msgstr ""
+
+msgid "Deposit only"
+msgstr ""
+
+msgid "Whole amount"
+msgstr ""
+
+msgid "Font URL"
+msgstr ""
+
+msgid "\"Payment Method\" View"
+msgstr ""
+
+msgid "Please select employee"
+msgstr ""
+
+msgid "Please select a location"
+msgstr ""
+
+msgid "Bringing anyone with you?"
+msgstr ""
+
+msgid "Number of people that are coming with you."
+msgstr ""
+
+msgid "The total number of people for the booking."
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Pricing by the number of people"
+msgstr ""
+
+msgid "Package Selection"
+msgstr ""
+
+msgid "Hey, there are special packages with this service, check them out!"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Or"
+msgstr ""
+
+msgid "Skip packages and continue with the selected service"
+msgstr ""
+
+msgid "Package Info"
+msgstr ""
+
+msgid "Expires at"
+msgstr ""
+
+msgid "Expires after"
+msgstr ""
+
+msgid "day"
+msgstr ""
+
+msgid "days"
+msgstr ""
+
+msgid "week"
+msgstr ""
+
+msgid "weeks"
+msgstr ""
+
+msgid "month"
+msgstr ""
+
+msgid "months"
+msgstr ""
+
+msgid "Without expiration"
+msgstr ""
+
+msgid "Multiple locations"
+msgstr ""
+
+msgid "includes"
+msgstr ""
+
+msgid "Employees"
+msgstr ""
+
+msgid "Number of appointments required for booking"
+msgstr ""
+
+msgid ""
+"The rest of the appointments can be booked later on the Customers panel."
+msgstr ""
+
+msgid "Date and time"
+msgstr ""
+
+msgid "Selected"
+msgstr ""
+
+msgid "Add more appointments"
+msgstr ""
+
+msgid "All slots are selected"
+msgstr ""
+
+msgid "Booking Overview"
+msgstr ""
+
+msgid "All appointments are selected"
+msgstr ""
+
+msgid "All appointments will be selected later"
+msgstr ""
+
+msgid "Appointment information"
+msgstr ""
+
+msgid "Extras"
+msgstr ""
+
+msgid "Extras available"
+msgstr ""
+
+msgid "Minimum required extras"
+msgstr ""
+
+msgid "Learn More"
+msgstr ""
+
+msgid "Hide"
+msgstr ""
+
+msgid "Repeat appointment"
+msgstr ""
+
+msgid "Do you want to repeat this appointment?"
+msgstr ""
+
+msgid "Recurring appointment"
+msgstr ""
+
+msgid "Recurrence"
+msgstr ""
+
+msgid "Choose time you want to repeat appointment"
+msgstr ""
+
+msgid "Repeat every"
+msgstr ""
+
+msgid "Repeat on"
+msgstr ""
+
+msgid "Specific date"
+msgstr ""
+
+msgid "First"
+msgstr ""
+
+msgid "Second"
+msgstr ""
+
+msgid "Third"
+msgstr ""
+
+msgid "Fourth"
+msgstr ""
+
+msgid "Fifth"
+msgstr ""
+
+msgid "Last"
+msgstr ""
+
+msgid "Ends"
+msgstr ""
+
+msgid "Choose when the repeating ends"
+msgstr ""
+
+msgid "Number of recurrences:"
+msgstr ""
+
+msgid "On"
+msgstr ""
+
+msgid "On the same day each month"
+msgstr ""
+
+msgid "Select date"
+msgstr ""
+
+msgid "Occurrences"
+msgstr ""
+
+msgid "Appointment repeats"
+msgstr ""
+
+msgid "on"
+msgstr ""
+
+msgid "at"
+msgstr ""
+
+msgid "from"
+msgstr ""
+
+msgid "Ends after"
+msgstr ""
+
+msgid "Ends on"
+msgstr ""
+
+msgid "Recurring summary"
+msgstr ""
+
+msgid "Unavailable time slots"
+msgstr ""
+
+msgid ""
+"slots you selected are busy. We offered you the nearest time slots instead."
+msgstr ""
+
+msgid "Choose date and time"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "Recurrences"
+msgstr ""
+
+msgid "Extras subtotal"
+msgstr ""
+
+msgid "Paying now"
+msgstr ""
+
+msgid "Paying later"
+msgstr ""
+
+msgid "I want to pay full amount"
+msgstr ""
+
+msgid "Payment protected by policy and powered by"
+msgstr ""
+
+msgid "You will be redirected to the payment checkout."
+msgstr ""
+
+msgid "Customer panel"
+msgstr ""
+
+msgid "BETA"
+msgstr ""
+
+msgid "Primary"
+msgstr ""
+
+msgid "Main content"
+msgstr ""
+
+msgid "Employee information"
+msgstr ""
+
+msgid "Select this employee"
+msgstr ""
+
+msgid "Location information"
+msgstr ""
+
+msgid "Fonts and colors"
+msgstr ""
+
+msgid "Change colors"
+msgstr ""
+
+msgid "Sub step title"
+msgstr ""
+
+msgid "Heading content"
+msgstr ""
+
+msgid "Input field"
+msgstr ""
+
+msgid "Cards and buttons"
+msgstr ""
+
+msgid "Page content"
+msgstr ""
+
+msgid "Card content"
+msgstr ""
+
+msgid "Alert content"
+msgstr ""
+
+msgid "Popup title"
+msgstr ""
+
+msgid "Popup buttons"
+msgstr ""
+
+msgid "Primary Button Type"
+msgstr ""
+
+msgid "Secondary Button Type"
+msgstr ""
+
+msgid "Recurring popup"
+msgstr ""
+
+msgid "Button Type"
+msgstr ""
+
+msgid "Book another"
+msgstr ""
+
+msgid "View Cart"
+msgstr ""
+
+msgid ""
+"You can find below the appointments you selected for booking. If you want to "
+"book more, click on the button below."
+msgstr ""
+
+msgid "'Cancel' button style"
+msgstr ""
+
+msgid "'Book another' button style"
+msgstr ""
+
+msgid "VAT"
+msgstr ""
+
+msgid "Incl. VAT"
+msgstr ""
+
+msgid "VAT info"
+msgstr ""
+
+msgid "Set up visibility and labels"
+msgstr ""
+
+msgid "Cart description"
+msgstr ""
+
+msgid "Set up visibility, button type and labels"
+msgstr ""
+
+msgid "Layout and labels options"
+msgstr ""
+
+msgid "placeholder"
+msgstr ""
+
+msgid "mandatory notice"
+msgstr ""
+
+msgid "Book appointment"
+msgstr ""
+
+msgid "Cancel appointment"
+msgstr ""
+
+msgid "Cancel event"
+msgstr ""
+
+msgid "Cancel package"
+msgstr ""
+
+msgid "Package selection"
+msgstr ""
+
+msgid "Set up Labels and Buttons"
+msgstr ""
+
+msgid "Package info"
+msgstr ""
+
+msgid "Services list, Appointments"
+msgstr ""
+
+msgid "Package appointments"
+msgstr ""
+
+msgid "Set up Content, Buttons and Labels"
+msgstr ""
+
+msgid "Package overview"
+msgstr ""
+
+msgid "Registration, Telephone Number, Email"
+msgstr ""
+
+msgid "Payment type, deposit payment..."
+msgstr ""
+
+msgid "Service Input Field"
+msgstr ""
+
+msgid "Location Input Field"
+msgstr ""
+
+msgid "Info"
+msgstr ""
+
+msgid "Popup Heading"
+msgstr ""
+
+msgid "Extras Heading"
+msgstr ""
+
+msgid "Extras Description"
+msgstr ""
+
+msgid "Extras Duration"
+msgstr ""
+
+msgid "Services and packages overview"
+msgstr ""
+
+msgid "Set up Services and Packages view"
+msgstr ""
+
+msgid "Set up Package detailed view"
+msgstr ""
+
+msgid "Card"
+msgstr ""
+
+msgid "Package count"
+msgstr ""
+
+msgid "Tabs (All / Packages / Services)"
+msgstr ""
+
+msgid "'View employee' button style"
+msgstr ""
+
+msgid "Book option on employee dialog"
+msgstr ""
+
+msgid "Employee dialog"
+msgstr ""
+
+msgid "Book this service"
+msgstr ""
+
+msgid "Package category"
+msgstr ""
+
+msgid "Package capacity"
+msgstr ""
+
+msgid "Package location"
+msgstr ""
+
+msgid "Service capacity"
+msgstr ""
+
+msgid "Service location"
+msgstr ""
+
+msgid "About package"
+msgstr ""
+
+msgid "Packages block"
+msgstr ""
+
+msgid "Employee filter"
+msgstr ""
+
+msgid "Location filter"
+msgstr ""
+
+msgid "Filter by employee"
+msgstr ""
+
+msgid "Filter by location"
+msgstr ""
+
+msgid "Packages"
+msgstr ""
+
+msgid "Services"
+msgstr ""
+
+msgid "View employees"
+msgstr ""
+
+msgid "In package"
+msgstr ""
+
+msgid "This service is available in a package"
+msgstr ""
+
+msgid "View more packages"
+msgstr ""
+
+msgid "View less packages"
+msgstr ""
+
+msgid "Package includes"
+msgstr ""
+
+msgid "Employee price"
+msgstr ""
+
+msgid "Extras cost:"
+msgstr ""
+
+msgid "Subtotal:"
+msgstr ""
+
+msgid "Recurring appointments:"
+msgstr ""
+
+msgid "Set up visibility and labels of ticket selection"
+msgstr ""
+
+msgid "Calendar"
+msgstr ""
+
+msgid "Select tickets"
+msgstr ""
+
+msgid "Select the number of tickets that you want to book for each ticket type"
+msgstr ""
+
+msgid "Ticket types"
+msgstr ""
+
+msgid "tickets left"
+msgstr ""
+
+msgid "ticket left"
+msgstr ""
+
+msgid "Organizer"
+msgstr ""
+
+msgid "Tickets"
+msgstr ""
+
+msgid "Coupon limit reached"
+msgstr ""
+
+msgid "Number of appointments with applied coupon is"
+msgstr ""
+
+msgid "Total services booked"
+msgstr ""
+
+msgid "Sidebar"
+msgstr ""
+
+msgid "Log out"
+msgstr ""
+
+msgid "Google Meet link"
+msgstr ""
+
+msgid "Microsoft Teams link"
+msgstr ""
+
+msgid "Zoom link"
+msgstr ""
+
+msgid "My profile"
+msgstr ""
+
+msgid "Personal information"
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Profile data updated successfully"
+msgstr ""
+
+msgid "Password changed successfully"
+msgstr ""
+
+msgid "Customer"
+msgstr ""
+
+msgid "Are you sure you want to cancel this appointment?"
+msgstr ""
+
+msgid "Duration:"
+msgstr ""
+
+msgid "Timetable"
+msgstr ""
+
+msgid "Ticket"
+msgstr ""
+
+msgid "Are you sure you want to cancel your attendance?"
+msgstr ""
+
+msgid "Appointments booked"
+msgstr ""
+
+msgid "Appointment booked"
+msgstr ""
+
+msgid "Valid until"
+msgstr ""
+
+msgid "This package deal will expire in"
+msgstr ""
+
+msgid "book appointments before the deal expires!"
+msgstr ""
+
+msgid "Are you sure you want to cancel this package?"
+msgstr ""
+
+msgid "Pay now"
+msgstr ""
+
+msgid "Profile deleted"
+msgstr ""
+
+msgid "Welcome back"
+msgstr ""
+
+msgid "Enter your credentials to access your account."
+msgstr ""
+
+msgid "Email or Username"
+msgstr ""
+
+msgid "Please enter email or username"
+msgstr ""
+
+msgid "Please enter a password."
+msgstr ""
+
+msgid "Forgot your password?"
+msgstr ""
+
+msgid "Sign In"
+msgstr ""
+
+msgid "Send access link"
+msgstr ""
+
+msgid ""
+"Enter your account email address and we will send you an access link to your "
+"inbox."
+msgstr ""
+
+msgid "Send"
+msgstr ""
+
+msgid "Check your email"
+msgstr ""
+
+msgid "Click on the activation link in the e-mail we sent to"
+msgstr ""
+
+msgid "Did not receive the email? Check your spam filter, or"
+msgstr ""
+
+msgid "try different email"
+msgstr ""
+
+msgid "Employee profile"
+msgstr ""
+
+msgid "Time slot is unavailable"
+msgstr ""
+
+msgid "Booking is unavailable"
+msgstr ""
+
+msgid "The appointment can't be rescheduled."
+msgstr ""
+
+msgid "Staff"
+msgstr ""
+
+msgid "Appointment price"
+msgstr ""
+
+msgid "Appointment has been rescheduled"
+msgstr ""
+
+msgid "Appointment canceled"
+msgstr ""
+
+msgid "Booking can't be canceled"
+msgstr ""
+
+msgid "Successfully added booking"
+msgstr ""
+
+msgid "Purchase is canceled"
+msgstr ""
+
+msgid "You have already booked this appointment"
+msgstr ""
+
+msgid "Tab title"
+msgstr ""
+
+msgid "Mobile menu"
+msgstr ""
+
+msgid "'Delete' button style"
+msgstr ""
+
+msgid "'Save changes' button style"
+msgstr ""
+
+msgid "'Change password' button style"
+msgstr ""
+
+msgid "'Close' button style"
+msgstr ""
+
+msgid "'Confirm' button style"
+msgstr ""
+
+msgid "Step message"
+msgstr ""
+
+msgid "Item status"
+msgstr ""
+
+msgid "Page card"
+msgstr ""
+
+msgid "Page messages"
+msgstr ""
+
+msgid "\"Go back\" Button Type"
+msgstr ""
+
+msgid "\"Paying now\" Button Type"
+msgstr ""
+
+msgid "\"Book now\" Button Type"
+msgstr ""
+
+msgid "Alert message"
+msgstr ""
+
+msgid "Footer content"
+msgstr ""
+
+msgid "'Sign in' button style"
+msgstr ""
+
+msgid "'Send' button style"
+msgstr ""
+
+msgid "'Set password' button style"
+msgstr ""
+
+msgid "Profile"
+msgstr ""
+
+msgid "Field order, mandatory fields, labels and display options"
+msgstr ""
+
+msgid "Events"
+msgstr ""
+
+msgid "Packages appointments"
+msgstr ""
+
+msgid "Set up display options and labels"
+msgstr ""
+
+msgid "Service filter"
+msgstr ""
+
+msgid "Customer filter"
+msgstr ""
+
+msgid "Package filter"
+msgstr ""
+
+msgid "Event filter"
+msgstr ""
+
+msgid "Customer email"
+msgstr ""
+
+msgid "Sign in"
+msgstr ""
+
+msgid "Set up button type and labels"
+msgstr ""
+
+msgid "Access link"
+msgstr ""
+
+msgid "Access link success"
+msgstr ""
+
+msgid "Set up labels"
+msgstr ""
+
+msgid "Set new password"
+msgstr ""
+
+msgid "Date of birth"
+msgstr ""
+
+msgid "Enter date of birth"
+msgstr ""
+
+msgid "Please enter date of birth"
+msgstr ""
+
+msgid "Set password"
+msgstr ""
+
+msgid "Enter, and re-enter your new password to continue"
+msgstr ""
+
+msgid "New password"
+msgstr ""
+
+msgid "Please enter new password"
+msgstr ""
+
+msgid "Password must be longer than 3 characters"
+msgstr ""
+
+msgid "Password Updated!"
+msgstr ""
+
+msgid ""
+"Your password has been changed successfully. Use your new password to log in."
+msgstr ""
+
+msgid "Passwords do not match"
+msgstr ""
+
+msgid "Delete profile"
+msgstr ""
+
+msgid ""
+"Are you sure you want to delete your profile? You will lose access to all "
+"your bookings and access to the customer panel."
+msgstr ""
+
+msgid "Save changes"
+msgstr ""
+
+msgid "Change password"
+msgstr ""
+
+msgid "No appointments found"
+msgstr ""
+
+msgid "You don't have any appointments"
+msgstr ""
+
+msgid "No packages found"
+msgstr ""
+
+msgid "You don't have any packages"
+msgstr ""
+
+msgid "No events found"
+msgstr ""
+
+msgid "You don't have any events"
+msgstr ""
+
+msgid "Empty state"
+msgstr ""
+
+msgid "Step tickets tab"
+msgstr ""
+
+msgid "Coupon segment"
+msgstr ""
+
+msgid "Waiting button background color"
+msgstr ""
+
+msgid "Waiting button text color"
+msgstr ""
+
+msgid ""
+"Set up Location, Images, Filters, Capacity, Price, and Status visibility "
+"options"
+msgstr ""
+
+msgid "Join waiting list"
+msgstr ""
+
+msgid "people waiting"
+msgstr ""
+
+msgid "person waiting"
+msgstr ""
+
+msgid "Waiting list"
+msgstr ""
+
+msgid "Upcoming"
+msgstr ""
+
+msgid "Waiting"
+msgstr ""
+
+msgid "'Join waiting list' button style"
+msgstr ""
+
+msgid "You are on the waiting list with position"
+msgstr ""
+
+msgid "We'll notify you if a spot opens up and your booking is approved."
+msgstr ""
+
+msgid "Add Attendee"
+msgstr ""
+
+msgid "New appointment"
+msgstr ""
+
+msgid "'New appointment' button style"
+msgstr ""
+
+msgid "'New Event' button style"
+msgstr ""
+
+msgid "'Scan e-ticket' button"
+msgstr ""
+
+msgid "View in Package"
+msgstr ""
+
+msgid "'View in package' button"
+msgstr ""
+
+msgid "Notice: Please select at least one panel."
+msgstr ""
+
+msgid "Preselect Current Date"
+msgstr ""
+
+msgid "AM - Search view"
+msgstr ""
+
+msgid "AM - Customer Panel"
+msgstr ""
+
+msgid "AM - Employee Panel"
+msgstr ""
+
+msgid "Amelia - Search view"
+msgstr ""
+
+msgid ""
+"Front-end Booking Search is shortcode that give your customers the "
+"possibility to search for appointment by selecting several filters so that "
+"they could find the best time slots and services for their needs."
+msgstr ""
+
+msgid "Amelia - Customer Panel"
+msgstr ""
+
+msgid ""
+"Front-end Customer Panel is a shortcode that gives your customers the "
+"possibility to manage their bookings and profile information."
+msgstr ""
+
+msgid "Amelia - Employee Panel"
+msgstr ""
+
+msgid ""
+"Front-end Employee Panel is a shortcode that gives your employees the "
+"possibility to manage their bookings, working hours, days off, assigned "
+"services and profile information."
+msgstr ""
+
+msgid "Amelia Profile Settings"
+msgstr ""
+
+msgid "Amelia Users Settings"
+msgstr ""
+
+msgid "Enable Amelia"
+msgstr ""
+
+msgid "Enable Amelia Tabs on Profiles"
+msgstr ""
+
+msgid "Booking form on customer profile enabled"
+msgstr ""
+
+msgid "Booking form tab enabled"
+msgstr ""
+
+msgid "Booking form on employee profile enabled"
+msgstr ""
+
+msgid "Booking form type"
+msgstr ""
+
+msgid "Booking form type on employee profile page"
+msgstr ""
+
+msgid "Booking tab name"
+msgstr ""
+
+msgid "Book subtab name"
+msgstr ""
+
+msgid "Panel subtab name"
+msgstr ""
+
+msgid "Booking on employee page tab name"
+msgstr ""
+
+msgid "Events List"
+msgstr ""
+
+msgid "Events Calendar"
+msgstr ""
+
+msgid "Automatically create Amelia Customers from WP Users "
+msgstr ""
+
+msgid ""
+"After account activation, subscribers will be created as customers in Amelia "
+msgstr ""
+
+msgid "Create Employees from WP Users with Amelia Employee Role"
+msgstr ""
+
+msgid "Create Amelia Employees"
+msgstr ""
+
+msgid "Create Amelia Customers"
+msgstr ""
+
+msgid "Create Customers from WP Users with Amelia Customer Role"
+msgstr ""
+
+msgid "Enable guest booking"
+msgstr ""
+
+msgid "Allow booking without a prior login"
+msgstr ""
+
+msgid "Number of adjusted time slots: "
+msgstr ""
+
+msgid "Until"
+msgstr ""
+
+msgid "All customers"
+msgstr ""
+
+msgid "Apply 'Booking close' settings to all recurring events"
+msgstr ""
+
+msgid "Apply 'Booking open' settings to all recurring events"
+msgstr ""
+
+msgid ""
+"You're editing a recurring event. Apply changes only to this one, or to this "
+"and all future events? Note: Tickets for events with attendees will not be "
+"updated."
+msgstr ""
+
+msgid "Apply Changes to Events"
+msgstr ""
+
+msgid "Apply to future recurring events"
+msgstr ""
+
+msgid "Apply"
+msgstr ""
+
+msgid "{count} Appointment | {count} Appointments"
+msgstr ""
+
+msgid "Appointment not found."
+msgstr ""
+
+msgid "Appointment note"
+msgstr ""
+
+msgid "Appointment has been updated."
+msgstr ""
+
+msgid "{count}x Appointment | {count}x Appointments"
+msgstr ""
+
+msgid "Backend"
+msgstr ""
+
+msgid "{booked}/{total} Booked"
+msgstr ""
+
+msgid "Buffer Time After: {value}"
+msgstr ""
+
+msgid "Buffer Time Before: {value}"
+msgstr ""
+
+msgid "Collapse all"
+msgstr ""
+
+msgid "{count} Assigned"
+msgstr ""
+
+msgid "{count} Employees"
+msgstr ""
+
+msgid "{count} Extras"
+msgstr ""
+
+msgid "Count Once"
+msgstr ""
+
+msgid "Count per Person"
+msgstr ""
+
+msgid "{count} Spots"
+msgstr ""
+
+msgid "{count} Total"
+msgstr ""
+
+msgid "Offer multiple durations and prices for this service."
+msgstr ""
+
+msgid "Set pricing based on the number of people in the booking."
+msgstr ""
+
+msgid "Set different prices for specific days, times, or custom dates."
+msgstr ""
+
+msgid "Choose how custom field data is sent in group bookings."
+msgstr ""
+
+msgid "Custom fields delivery"
+msgstr ""
+
+msgid ""
+"{count} customers with the same email address already exist in your customer "
+"list. If you choose to overwrite these records, some of their current data "
+"will be replaced with new information."
+msgstr ""
+
+msgid ""
+"{count} customers were not imported due to missing First Name, Last Name, "
+"invalid Email, Phone number, or a combination of these reasons."
+msgstr ""
+
+msgid "Customer note has been added."
+msgstr ""
+
+msgid "Repeat"
+msgstr ""
+
+msgid "Data that remains unchanged:"
+msgstr ""
+
+msgid "Data to be updated:"
+msgstr ""
+
+msgid "Date Purchased Asc"
+msgstr ""
+
+msgid "Date Purchased Desc"
+msgstr ""
+
+msgid "{count} Day | {count} Days"
+msgstr ""
+
+msgid "Deduction Asc"
+msgstr ""
+
+msgid "Deduction Desc"
+msgstr ""
+
+msgid ""
+"Could not delete category. This category has services available for booking "
+"in purchased package."
+msgstr ""
+
+msgid "Are you sure? This action can't be undone."
+msgstr ""
+
+msgid "Delete custom field"
+msgstr ""
+
+msgid ""
+"This location has {count} service connected to it. | This location has "
+"{count} services connected to it."
+msgstr ""
+
+msgid "Are you sure you want to delete this package booking?"
+msgstr ""
+
+msgid "Delete Package Booking"
+msgstr ""
+
+msgid ""
+"This package has {count} appointment in the future. | This package has "
+"{count} appointments in the future."
+msgstr ""
+
+msgid ""
+"This package has {count} appointment in the past. | This package has {count} "
+"appointments in the past."
+msgstr ""
+
+msgid ""
+"This service is available for booking in purchased package. Are you sure you "
+"want to delete this service?"
+msgstr ""
+
+msgid ""
+"This user has bookings in purchased package.. Are you sure you want to "
+"delete this user?"
+msgstr ""
+
+msgid "Enable to require a deposit payment."
+msgstr ""
+
+msgid "Discount Asc"
+msgstr ""
+
+msgid "Discount Desc"
+msgstr ""
+
+msgid "Duplicate fields are not allowed."
+msgstr ""
+
+msgid "Edit Extra"
+msgstr ""
+
+msgid "Edit Package Booking"
+msgstr ""
+
+msgid "Expand all"
+msgstr ""
+
+msgid "Extras are included in the deposit amount."
+msgstr ""
+
+msgid "Extras are not included in the deposit amount."
+msgstr ""
+
+msgid "Failed to load appointment details. Please try again later."
+msgstr ""
+
+msgid "Failed to load package details. Please try again later."
+msgstr ""
+
+msgid "Filter"
+msgstr ""
+
+msgid "Frontend & Backend"
+msgstr ""
+
+msgid "Frontend"
+msgstr ""
+
+msgid "Group booking"
+msgstr ""
+
+msgid ""
+"{successfulImports} out of {totalRows} customers have been imported to your "
+"customer list."
+msgstr ""
+
+msgid "Join"
+msgstr ""
+
+msgid "Keep Individual"
+msgstr ""
+
+msgid "Location has been added."
+msgstr ""
+
+msgid "Location details"
+msgstr ""
+
+msgid "Location has been updated."
+msgstr ""
+
+msgid ""
+"Enable this option if you want customers to select at least one extra when "
+"booking. You can also choose how many extras are required."
+msgstr ""
+
+msgid "Max"
+msgstr ""
+
+msgid "Missing required fields:"
+msgstr ""
+
+msgid "{count} Month | {count} Months"
+msgstr ""
+
+msgid "Multiple"
+msgstr ""
+
+msgid "New package booking"
+msgstr ""
+
+msgid "New Space"
+msgstr ""
+
+msgid "There are no booked appointments for this package."
+msgstr ""
+
+msgid "No booked appointments"
+msgstr ""
+
+msgid "No bookings found"
+msgstr ""
+
+msgid ""
+"Once you add your first Coupon, it will appear here. Click + Coupon above to "
+"get started."
+msgstr ""
+
+msgid "No coupons yet"
+msgstr ""
+
+msgid ""
+"Once you add your first custom field, it will appear here. Click + Custom "
+"Field below to get started."
+msgstr ""
+
+msgid "No custom fields yet"
+msgstr ""
+
+msgid "No customers were imported to your customer list."
+msgstr ""
+
+msgid "No Employees Assigned to This Location"
+msgstr ""
+
+msgid ""
+"Once you add your first extra, it will appear here. Click + Extra above to "
+"get started."
+msgstr ""
+
+msgid "No extras yet"
+msgstr ""
+
+msgid ""
+"Once you start adding locations, they will appear here. You can also get "
+"started by clicking the Add button below."
+msgstr ""
+
+msgid "No locations yet"
+msgstr ""
+
+msgid ""
+"Once you receive package bookings, they will be displayed here. You can also "
+"get started by clicking the Book Package button below."
+msgstr ""
+
+msgid "No package bookings yet"
+msgstr ""
+
+msgid ""
+"Once you add your first package, it will appear here. Click + Package below "
+"to get started."
+msgstr ""
+
+msgid "There are no packages. Please create a new package."
+msgstr ""
+
+msgid "No packages yet"
+msgstr ""
+
+msgid "No Packages"
+msgstr ""
+
+msgid ""
+"Once you add your first resource, it will appear here. Click + Resource "
+"below to get started."
+msgstr ""
+
+msgid "No resources yet"
+msgstr ""
+
+msgid "No Show"
+msgstr ""
+
+msgid "Option {number}"
+msgstr ""
+
+msgid "Package has been created."
+msgstr ""
+
+msgid "Package Asc"
+msgstr ""
+
+msgid "Package booking has been created."
+msgstr ""
+
+msgid "Package booking has been updated."
+msgstr ""
+
+msgid "Package booking details"
+msgstr ""
+
+msgid "Package booking is not available for this time slot."
+msgstr ""
+
+msgid "Package Desc"
+msgstr ""
+
+msgid "Package price:"
+msgstr ""
+
+msgid "Package has been updated."
+msgstr ""
+
+msgid "Failed to reorder packages."
+msgstr ""
+
+msgid "Packages have been reordered."
+msgstr ""
+
+msgid "Per customer"
+msgstr ""
+
+msgid "The resource quantity is counted separately for each selected location."
+msgstr ""
+
+msgid "Per Location"
+msgstr ""
+
+msgid "The resource quantity is counted separately for each selected service."
+msgstr ""
+
+msgid "Per Service"
+msgstr ""
+
+msgid "Please select a date range that is within the period range."
+msgstr ""
+
+msgid "Price type"
+msgstr ""
+
+msgid "Quantity Asc"
+msgstr ""
+
+msgid "Quantity Desc"
+msgstr ""
+
+msgid "Reordering packages affects how they are displayed on the website."
+msgstr ""
+
+msgid "Reorder Packages"
+msgstr ""
+
+msgid ""
+"The time slot you tried to reschedule to is not available. Please select a "
+"different time slot for the selected date."
+msgstr ""
+
+msgid "Resource has been added."
+msgstr ""
+
+msgid "Tax has been added."
+msgstr ""
+
+msgid "Tax has been updated."
+msgstr ""
+
+msgid "Coupon has been created."
+msgstr ""
+
+msgid "Coupon has been updated."
+msgstr ""
+
+msgid "Resource Details"
+msgstr ""
+
+msgid "Quantity per location"
+msgstr ""
+
+msgid "Quantity per service"
+msgstr ""
+
+msgid "Resource has been updated."
+msgstr ""
+
+msgid "Search booked appointments"
+msgstr ""
+
+msgid "Search extras"
+msgstr ""
+
+msgid "Please select an end date."
+msgstr ""
+
+msgid "Please select a package."
+msgstr ""
+
+msgid "A server error occurred. Please try again later."
+msgstr ""
+
+msgid "{count} Service | {count} Services"
+msgstr ""
+
+msgid "Don't suggest alternatives"
+msgstr ""
+
+msgid "Services Asc"
+msgstr ""
+
+msgid "Services Desc"
+msgstr ""
+
+msgid "Shared capacity across services"
+msgstr ""
+
+msgid "Shared Pool"
+msgstr ""
+
+msgid "Start"
+msgstr ""
+
+msgid "This & Future"
+msgstr ""
+
+msgid "This Only"
+msgstr ""
+
+msgid "This time slot is no longer available. Please select a different time."
+msgstr ""
+
+msgid "Time Used Asc"
+msgstr ""
+
+msgid "Time Used Desc"
+msgstr ""
+
+msgid "Location WP Hooks"
+msgstr ""
+
+msgid "Locations setup"
+msgstr ""
+
+msgid "Managing packages"
+msgstr ""
+
+msgid "Package management"
+msgstr ""
+
+msgid "Packages overview"
+msgstr ""
+
+msgid "Resource booking setup"
+msgstr ""
+
+msgid "Webhooks setup"
+msgstr ""
+
+msgid "Service packages overview"
+msgstr ""
+
+msgid "Outlook Calendar setup"
+msgstr ""
+
+msgid "Microsoft Teams setup"
+msgstr ""
+
+msgid "WhatsApp setup"
+msgstr ""
+
+msgid "Total number of appointments"
+msgstr ""
+
+msgid "An unexpected error occurred. Please try again later."
+msgstr ""
+
+msgid "View packages"
+msgstr ""
+
+msgid "{count} Week | {count} Weeks"
+msgstr ""
+
+msgid "Discount type"
+msgstr ""
+
+msgid "Percentage amount"
+msgstr ""
+
+msgid "No usage limit"
+msgstr ""
+
+msgid "No limit per customer"
+msgstr ""
+
+msgid "Coupons overview"
+msgstr ""
+
+msgid "Coupon Details"
+msgstr ""
+
+msgid "Limit per customer"
+msgstr ""
+
+msgid "Usage"
+msgstr ""
+
+msgid "Invoice Number Asc"
+msgstr ""
+
+msgid "Invoice Number Desc"
+msgstr ""
+
+msgid "No invoices yet"
+msgstr ""
+
+msgid "Once you start receiving bookings, invoices will be displayed here."
+msgstr ""
+
+msgid "Invoice #{count}"
+msgstr ""
+
+msgid "Invoice date"
+msgstr ""
+
+msgid "Refund Transaction"
+msgstr ""
+
+msgid "Type Asc"
+msgstr ""
+
+msgid "Type Desc"
+msgstr ""
+
+msgid ""
+"Once you add your first tax, it will appear here. Click + Tax below to get "
+"started."
+msgstr ""
+
+msgid "No taxes yet"
+msgstr ""
+
+msgid "Taxes overview"
+msgstr ""
+
+msgid "Tax rate name"
+msgstr ""
+
+msgid "Please enter tax rate name."
+msgstr ""
+
+msgid "Please enter a tax amount."
+msgstr ""
+
+msgid "Tax details"
+msgstr ""
+
+msgid "Fixed"
+msgstr ""
+
+msgid "Badge"
+msgstr ""
+
+msgid "Role"
+msgstr ""
+
+msgid "Connect your personal Zoom account to host virtual meetings and chats."
+msgstr ""
+
+msgid ""
+"Connecting to Zoom is not available. Please contact an administrator for "
+"assistance."
+msgstr ""
+
+msgid ""
+"Sync your schedule with your personal Google Calendar to prevent double "
+"bookings."
+msgstr ""
+
+msgid ""
+"You are currently connected to Google Calendar by Admin. Overriding Google "
+"Calendar connection is not available."
+msgstr ""
+
+msgid ""
+"Connecting to Google Calendar is not available. Please contact an "
+"administrator for assistance."
+msgstr ""
+
+msgid ""
+"Sync your schedule with your personal Outlook Calendar to prevent double "
+"bookings."
+msgstr ""
+
+msgid ""
+"Connecting to Outlook Calendar is not available. Please contact an "
+"administrator for assistance."
+msgstr ""
+
+msgid ""
+"Sync your schedule with your personal Apple Calendar to prevent double "
+"bookings."
+msgstr ""
+
+msgid ""
+"Connecting to Apple Calendar is not available. Please contact an "
+"administrator for assistance."
+msgstr ""
+
+msgid ""
+"Sync your Stripe Connect account for effortless payments and seamless "
+"payouts."
+msgstr ""
+
+msgid ""
+"Connecting to Stripe is not available. Please contact an administrator for "
+"assistance."
+msgstr ""
+
+msgid "Connected"
+msgstr ""
+
+msgid "Not connected"
+msgstr ""
+
+msgid "Not available"
+msgstr ""
+
+msgid "Sync with"
+msgstr ""
+
+msgid "There are upcoming appointments for the {service} service."
+msgstr ""
+
+msgid "This employee is the only one assigned to {service}."
+msgstr ""
+
+msgid "Edit special day"
+msgstr ""
+
+msgid "Times"
+msgstr ""
+
+msgid "First {day}"
+msgstr ""
+
+msgid "Second {day}"
+msgstr ""
+
+msgid "Third {day}"
+msgstr ""
+
+msgid "Fourth {day}"
+msgstr ""
+
+msgid ""
+"The proposed date and time are different from your selected pattern due to "
+"unavailable time slots on the expected date and time."
+msgstr ""
+
+msgid ""
+"The proposed date is different from your selected pattern due to unavailable "
+"time slots on the expected date."
+msgstr ""
+
+msgid ""
+"The proposed time is different from your selected pattern due to unavailable "
+"time slots at the expected time."
+msgstr ""
+
+msgid "Oliver"
+msgstr ""
+
+msgid "Unique (Service)"
+msgstr ""
+
+msgid "Unique (Location)"
+msgstr ""
+
+msgid "Shared"
+msgstr ""
+
+msgid "Buffer Time"
+msgstr ""
+
+msgid "Phone number copied to clipboard."
+msgstr ""
+
+msgid "Email copied to clipboard."
+msgstr ""
+
+msgid "Link copied to clipboard."
+msgstr ""
+
+msgid "Placeholder copied to clipboard."
+msgstr ""
+
+msgid "Payment currency"
+msgstr ""
+
+msgid "Package ID"
+msgstr ""
+
+msgid "Delete coupon"
+msgstr ""
+
+msgid "Delete event booking"
+msgstr ""
+
+msgid "Delete location"
+msgstr ""
+
+msgid "Delete package"
+msgstr ""
+
+msgid "Delete resource"
+msgstr ""
+
+msgid "Delete tax"
+msgstr ""
+
+msgid "Hide location"
+msgstr ""
+
+msgid "Hide package"
+msgstr ""
+
+msgid "Hide resource"
+msgstr ""
+
+msgid "Hide coupon"
+msgstr ""
+
+msgid "Hide tax"
+msgstr ""
+
+msgid "Show location"
+msgstr ""
+
+msgid "Show package"
+msgstr ""
+
+msgid "Show resource"
+msgstr ""
+
+msgid "Show coupon"
+msgstr ""
+
+msgid "Show tax"
+msgstr ""
+
+msgid "Duplicate coupon"
+msgstr ""
+
+msgid "Duplicate employee"
+msgstr ""
+
+msgid "Duplicate location"
+msgstr ""
+
+msgid "Duplicate package"
+msgstr ""
+
+msgid "Duplicate resource"
+msgstr ""
+
+msgid ""
+"The total number of persons ({waitingPersonsCount}) exceeds the maximum "
+"waiting list capacity of {waitingListMaxCapacity}."
+msgstr ""
+
+msgid "Custom fields have been updated."
+msgstr ""
+
+msgid "+{count} more"
+msgstr ""
+
+msgid "Package booking has been deleted."
+msgstr ""
+
+msgid ""
+"{count} resource has been deleted. | {count} resources have been deleted."
+msgstr ""
+
+msgid ""
+"{count} resource has not been deleted. | {count} resources have not been "
+"deleted."
+msgstr ""
+
+msgid "{count} package has been deleted. | {count} packages have been deleted."
+msgstr ""
+
+msgid ""
+"{count} package has not been deleted due to future bookings. | {count} "
+"packages have not been deleted due to future bookings."
+msgstr ""
+
+msgid "Invoice not found."
+msgstr ""
+
+msgid ""
+"{count} package booking has been deleted. | {count} package bookings have "
+"been deleted."
+msgstr ""
+
+msgid ""
+"{count} package booking has not been deleted. | {count} package bookings "
+"have not been deleted."
+msgstr ""
+
+msgid "Package appointment has been updated."
+msgstr ""
+
+msgid "Also delete future events"
+msgstr ""
+
+msgid "Also cancel and delete future events"
+msgstr ""
+
+msgid "You can also cancel its future events."
+msgstr ""
+
+msgid "You can also open its future events."
+msgstr ""
+
+msgid "You can also delete its future events."
+msgstr ""
+
+msgid "Also cancel future events"
+msgstr ""
+
+msgid "Also open future events"
+msgstr ""
+
+msgid "{count} tax has been deleted. | {count} taxes have been deleted."
+msgstr ""
+
+msgid ""
+"{count} tax has not been deleted. | {count} taxes have not been deleted."
+msgstr ""
+
+msgid "{count} coupon has been deleted. | {count} coupons have been deleted."
+msgstr ""
+
+msgid ""
+"{count} coupon has not been deleted. | {count} coupons have not been deleted."
+msgstr ""
+
+msgid ""
+"{count} employee has been deleted. | {count} employees have been deleted."
+msgstr ""
+
+msgid ""
+"{count} employee has not been deleted due to future bookings. | {count} "
+"employees have not been deleted due to future bookings."
+msgstr ""
+
+msgid ""
+"{count} location has been deleted. | {count} locations have been deleted."
+msgstr ""
+
+msgid ""
+"{count} location has not been deleted due to future bookings. | {count} "
+"locations have not been deleted due to future bookings."
+msgstr ""
+
+msgid "New language"
+msgstr ""
+
+msgid "Group booking export format"
+msgstr ""
+
+msgid "Attendees Export Format"
+msgstr ""
+
+msgid "Single-row export"
+msgstr ""
+
+msgid "Separate-row export"
+msgstr ""
+
+msgid "Error while generating CSV."
+msgstr ""
+
+msgid "{count} item selected | {count} items selected"
+msgstr ""
+
+msgid "{count} event | {count} events"
+msgstr ""
+
+msgid "Online meetings"
+msgstr ""
+
+msgid "Show All Periods"
+msgstr ""
+
+msgid "Show Less Periods"
+msgstr ""
+
+msgid "Appointment details"
+msgstr ""
+
+msgid "Booking Details"
+msgstr ""
+
+msgid "On-site payment"
+msgstr ""
+
+msgid "Host link"
+msgstr ""
+
+msgid "Join link"
+msgstr ""
+
+msgid "Invoice #"
+msgstr ""
+
+msgid "Event_bookings"
+msgstr ""
+
+msgid ""
+"Set the title that will appear in the calendar event. You can use "
+"placeholders available on the Notifications page."
+msgstr ""
+
+msgid ""
+"Set the description that will appear in the calendar event. You can use "
+"placeholders available on the Notifications page."
+msgstr ""
+
+msgid "Please enter an event."
+msgstr ""
+
+msgid "Webhook"
+msgstr ""
+
+msgid "Edit Webhook"
+msgstr ""
+
+msgid "Add Webhook"
+msgstr ""
+
+msgid "Microsoft"
+msgstr ""
+
+msgid "How to get your"
+msgstr ""
+
+msgid "application (client) ID and secret"
+msgstr ""
+
+msgid "Include buffer time in calendar events"
+msgstr ""
+
+msgid ""
+"Enable this option to include buffer time for scheduled appointments in "
+"Apple Calendar events."
+msgstr ""
+
+msgid ""
+"Enable this option to include buffer time for scheduled appointments in "
+"Google Calendar events."
+msgstr ""
+
+msgid ""
+"Enable this option to include buffer time for scheduled appointments in "
+"Outlook Calendar events."
+msgstr ""
+
+msgid "application ID, client ID and client secret"
+msgstr ""
+
+msgid "Apple"
+msgstr ""
+
+msgid "Apple Calendar setup"
+msgstr ""
+
+msgid "iCloud email address and iCloud app-specific password"
+msgstr ""
+
+msgid "Google"
+msgstr ""
+
+msgid "Google Calendar setup"
+msgstr ""
+
+msgid "Google Analytics setup"
+msgstr ""
+
+msgid "Social login setup"
+msgstr ""
+
+msgid "Client ID and secret"
+msgstr ""
+
+msgid "Edit Tracking"
+msgstr ""
+
+msgid "Lesson Space setup"
+msgstr ""
+
+msgid "Mailchimp setup"
+msgstr ""
+
+msgid "Meta"
+msgstr ""
+
+msgid "Pixel ID"
+msgstr ""
+
+msgid "reCAPTCHA setup"
+msgstr ""
+
+msgid "Zoom WP hooks"
+msgstr ""
+
+msgid "Meta Pixel setup"
+msgstr ""
+
+msgid "API setup"
+msgstr ""
+
+msgid "Outlook Calendar WP hooks"
+msgstr ""
+
+msgid "Don't send reminders within the selected time"
+msgstr ""
+
+msgid ""
+"When enabled, reminders will not be sent if a booking is made within the "
+"selected time before the appointment or event."
+msgstr ""
+
+msgid "This placeholder's content will be applied wherever it is used."
+msgstr ""
+
+msgid "SMS History"
+msgstr ""
+
+msgid "Payment History"
+msgstr ""
+
+msgid "Auto-Reply Message"
+msgstr ""
+
+msgid "WhatsApp history"
+msgstr ""
+
+msgid "WhatsApp settings"
+msgstr ""
+
+msgid "Select placeholder"
+msgstr ""
+
+msgid "WhatsApp Not Connected"
+msgstr ""
+
+msgid ""
+"To use WhatsApp notifications, connect your WhatsApp account in Settings."
+msgstr ""
+
+msgid "Edit custom notification"
+msgstr ""
+
+msgid "Delete Notification"
+msgstr ""
+
+msgid "Are you sure you want to delete this notification?"
+msgstr ""
+
+msgid "Rules"
+msgstr ""
+
+msgid "Manage personal schedule"
+msgstr ""
+
+msgid "Panel & access permissions"
+msgstr ""
+
+msgid "Waiting list capacity"
+msgstr ""
+
+msgid "reCAPTCHA on Customer Panel"
+msgstr ""
+
+msgid "reCAPTCHA on Employee Panel"
+msgstr ""
+
+msgid "Scheduled Before Appointment"
+msgstr ""
+
+msgid "Scheduled Before Event"
+msgstr ""
+
+msgid "Duplicate Event"
+msgstr ""
+
+msgid "Badges setup"
+msgstr ""
+
+msgid "Coupons setup"
+msgstr ""
+
+msgid "Custom fields setup"
+msgstr ""
+
+msgid "Invoices setup"
+msgstr ""
+
+msgid "Tax setup"
+msgstr ""
+
+msgid "Close Event"
+msgstr ""
+
+msgid "Are you sure you want to close this event?"
+msgstr ""
+
+msgid "(+ Woo Tax)"
+msgstr ""
+
+msgid "Sign in as "
+msgstr ""
+
+msgid "Scan"
+msgstr ""
+
+msgid "Please enter a ticket code."
+msgstr ""
+
+msgid "Enter ticket code manually"
+msgstr ""
+
+msgid "reCAPTCHA Type"
+msgstr ""
+
+msgid "\"I'm not a robot\" checkbox"
+msgstr ""
+
+msgid "Invisible reCAPTCHA badge"
+msgstr ""
+
+msgid "Total custom fields"
+msgstr ""
+
+msgid "Total tickets"
+msgstr ""
+
+msgid "Total extras"
+msgstr ""
+
+msgid "Edit custom field"
+msgstr ""
+
+msgid "Custom font family"
+msgstr ""
+
+msgid "Subscribe to our mailing list"
+msgstr ""
+
+msgid "Single Ticket"
+msgstr ""
+
+msgid "Group Ticket"
+msgstr ""
+
+msgid "Heading"
+msgstr ""
+
+msgid "E-Tickets"
+msgstr ""
+
+msgid ""
+"You are currently connected to Outlook Calendar by Admin. Overriding Outlook "
+"Calendar connection is not available."
+msgstr ""
+
+msgid "1/2 width"
+msgstr ""
+
+msgid "1/1 width"
+msgstr ""
+
+msgid ""
+"If this option is disabled, the item will be available only for booking from "
+"the backend."
+msgstr ""
+
+msgid "Show on website"
+msgstr ""
+
+msgid ""
+"Check this option if you want your<br> customers to have the option to "
+"choose<br> whether they will pay a full amount<br> or just a deposit. If "
+"unchecked,<br> customers will only have deposit<br> as a payment option."
+msgstr ""
+
+msgid ""
+"Check this option if you want the deposit<br> amount to be multiplied by the "
+"number<br> of people that customers add in the<br> \"Bringing anyone with "
+"you\" section."
+msgstr ""
+
+msgid "Allow customers to pay total appointment amount"
+msgstr ""
+
+msgid "Allow customers to pay total event amount"
+msgstr ""
+
+msgid "(Paying now)"
+msgstr ""
+
+msgid "Deposit Payment"
+msgstr ""
+
+msgid ""
+"Percentage deposit will be calculated on the total booking price<br>and "
+"fixed amount can be multiplied by the number of people or stay fixed on the "
+"total booking price."
+msgstr ""
+
+msgid "Remaining of total amount will be paid on site."
+msgstr ""
+
+msgid "Multiply deposit amount by the number of people in one booking"
+msgstr ""
+
+msgid "Custom Pricing"
+msgstr ""
+
+msgid "Pricing by Date range"
+msgstr ""
+
+msgid "No results found..."
+msgstr ""
+
+msgid "Add Coupon"
+msgstr ""
+
+msgid "and"
+msgstr ""
+
+msgid "Apple Calendar"
+msgstr ""
+
+msgid "Apple Calendar (Personal)"
+msgstr ""
+
+msgid "Choose Apple Calendar"
+msgstr ""
+
+msgid "Select Apple Calendar"
+msgstr ""
+
+msgid "iCloud Email Address"
+msgstr ""
+
+msgid "iCloud App-specific Password"
+msgstr ""
+
+msgid "Disconnect from Apple"
+msgstr ""
+
+msgid "Connect to Apple Calendar"
+msgstr ""
+
+msgid "Connect to your personal Apple Calendar"
+msgstr ""
+
+msgid ""
+"It seems like there are no available or visible services assigned to the "
+"packages, at this moment."
+msgstr ""
+
+msgid "Appointment"
+msgstr ""
+
+msgid "Appointment Info"
+msgstr ""
+
+msgid "We'll notify you if a spot opens up."
+msgstr ""
+
+msgid "Book"
+msgstr ""
+
+msgid "An email with details of your booking has been sent to you."
+msgstr ""
+
+msgid "Client Time:"
+msgstr ""
+
+msgid "Summary"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Closed"
+msgstr ""
+
+msgid "Booking is currently unavailable. Please try again later."
+msgstr ""
+
+msgid "This coupon is not valid anymore"
+msgstr ""
+
+msgid "This coupon has expired"
+msgstr ""
+
+msgid "Please enter coupon"
+msgstr ""
+
+msgid "You can use this coupon for next booking: "
+msgstr ""
+
+msgid "Custom Fields"
+msgstr ""
+
+msgid "Customer has already booked this appointment"
+msgstr ""
+
+msgid "Unfortunately a server error occurred and your email was not sent."
+msgstr ""
+
+msgid "example@mail.com"
+msgstr ""
+
+msgid "Email field is required"
+msgstr ""
+
+msgid "employee"
+msgstr ""
+
+msgid "employees"
+msgstr ""
+
+msgid "locations"
+msgstr ""
+
+msgid "Event booking is unavailable"
+msgstr ""
+
+msgid "Extras Cost:"
+msgstr ""
+
+msgid "Drop file here or click to upload"
+msgstr ""
+
+msgid "Please upload the file"
+msgstr ""
+
+msgid "This file is forbidden for upload"
+msgstr ""
+
+msgid "Outlook Calendar"
+msgstr ""
+
+msgid "Your card's security code is incomplete"
+msgstr ""
+
+msgid "Your card's expiration date is incomplete"
+msgstr ""
+
+msgid "Your card number is incomplete"
+msgstr ""
+
+msgid "Your postal code is incomplete"
+msgstr ""
+
+msgid "Your card's expiration year is in the past"
+msgstr ""
+
+msgid "Your card number is invalid"
+msgstr ""
+
+msgid "Maximum capacity is reached"
+msgstr ""
+
+msgid "Number of Additional People:"
+msgstr ""
+
+msgid "Opened"
+msgstr ""
+
+msgid "out of"
+msgstr ""
+
+msgid "Paid deposit"
+msgstr ""
+
+msgid "Paid remaining amount"
+msgstr ""
+
+msgid "Please fill in your address."
+msgstr ""
+
+msgid ""
+"Sorry, there was an error processing your payment. Please try again later."
+msgstr ""
+
+msgid "Payment error"
+msgstr ""
+
+msgid ""
+"Sorry, there was an error creating a payment link. Please try again later."
+msgstr ""
+
+msgid "Payment Method:"
+msgstr ""
+
+msgid "people"
+msgstr ""
+
+msgid "Phone"
+msgstr ""
+
+msgid "Please Wait"
+msgstr ""
+
+msgid "Please confirm you are not a robot"
+msgstr ""
+
+msgid "Verification expired. Please try again."
+msgstr ""
+
+msgid "This field is required"
+msgstr ""
+
+msgid "Select Date"
+msgstr ""
+
+msgid "Text Mode"
+msgstr ""
+
+msgid "HTML Mode"
+msgstr ""
+
+msgid "Time slots are unavailable"
+msgstr ""
+
+msgid "Waiting for payment"
+msgstr ""
+
+msgid "On-line"
+msgstr ""
+
+msgid "Appointment is removed from the cart."
+msgstr ""
+
+msgid "Sorry, there was an error while adding booking to WooCommerce cart."
+msgstr ""
+
+msgid "Join Zoom Meeting"
+msgstr ""
+
+msgid "Start Zoom Meeting"
+msgstr ""
+
+msgid "Join Google Meeting"
+msgstr ""
+
+msgid "Join With Microsoft Teams"
+msgstr ""
+
+msgid "Waiting list is empty"
+msgstr ""
+
+msgid "Year"
+msgstr ""
+
+msgid "Years"
+msgstr ""
+
+msgid "Day of the Week"
+msgstr ""
+
+msgid "Specific Date & Time"
+msgstr ""
+
+msgid "Appointment Date:"
+msgstr ""
+
+msgid "Book Package"
+msgstr ""
+
+msgid "Please enter appointment date..."
+msgstr ""
+
+msgid "From"
+msgstr ""
+
+msgid "Name Ascending"
+msgstr ""
+
+msgid "Name Descending"
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid "of"
+msgstr ""
+
+msgid "Price Ascending"
+msgstr ""
+
+msgid "Price Descending"
+msgstr ""
+
+msgid "Please refine your search criteria"
+msgstr ""
+
+msgid "results"
+msgstr ""
+
+msgid "Search..."
+msgstr ""
+
+msgid "Search Filters"
+msgstr ""
+
+msgid "Search Results"
+msgstr ""
+
+msgid "Select the Appointment Time"
+msgstr ""
+
+msgid "Select the Extras you'd like"
+msgstr ""
+
+msgid "Select Location"
+msgstr ""
+
+msgid "Showing"
+msgstr ""
+
+msgid "Time Range:"
+msgstr ""
+
+msgid "to"
+msgstr ""
+
+msgid "Add appointment"
+msgstr ""
+
+msgid "Add extra"
+msgstr ""
+
+msgid "Any"
+msgstr ""
+
+msgid "Book Appointment"
+msgstr ""
+
+msgid "Coupon Limit Reached"
+msgstr ""
+
+msgid ""
+"Popup Blocker is enabled! To add your appointment to your calendar, please "
+"allow popups and add this site to your exception list."
+msgstr ""
+
+msgid "Extra:"
+msgstr ""
+
+msgid "Please select the extra:"
+msgstr ""
+
+msgid "includes:"
+msgstr ""
+
+msgid "Minimum required extras:"
+msgstr ""
+
+msgid "Multiple Locations"
+msgstr ""
+
+msgid "Available in package"
+msgstr ""
+
+msgid "Save "
+msgstr ""
+
+msgid "All services are booked separately."
+msgstr ""
+
+msgid "This package has"
+msgstr ""
+
+msgid "Valid Until:"
+msgstr ""
+
+msgid "Multiple packages purchased."
+msgstr ""
+
+msgid "Appointments from the first package expire on:"
+msgstr ""
+
+msgid "Next Service"
+msgstr ""
+
+msgid "Payment was canceled."
+msgstr ""
+
+msgid "+more"
+msgstr ""
+
+msgid ""
+"This change will lead to a price increase for certain bookings. Do you want "
+"payment links to be created?"
+msgstr ""
+
+msgid "Qty:"
+msgstr ""
+
+msgid "Recurring"
+msgstr ""
+
+msgid "Recurring Appointments:"
+msgstr ""
+
+msgid "Recurring Appointments"
+msgstr ""
+
+msgid ""
+"Some of the desired slots are busy. We offered you the nearest time slots "
+"instead."
+msgstr ""
+
+msgid "Repeat this appointment"
+msgstr ""
+
+msgid "Every:"
+msgstr ""
+
+msgid "Until:"
+msgstr ""
+
+msgid "until"
+msgstr ""
+
+msgid "Each:"
+msgstr ""
+
+msgid "Do you want to delete this appointment?"
+msgstr ""
+
+msgid ""
+"List of your appointments has changed. Take one more look and continue by "
+"clicking the Save button."
+msgstr ""
+
+msgid "Remaining Amount:"
+msgstr ""
+
+msgid "Repeat Appointment"
+msgstr ""
+
+msgid "Select this Employee"
+msgstr ""
+
+msgid "Upload file here"
+msgstr ""
+
+msgid "Select Employee"
+msgstr ""
+
+msgid "Please select location"
+msgstr ""
+
+msgid "No matching data"
+msgstr ""
+
+msgid "Bringing Anyone With You"
+msgstr ""
+
+msgid "Additional people"
+msgstr ""
+
+msgid "Total people"
+msgstr ""
+
+msgid "Recurring Appointment"
+msgstr ""
+
+msgid "Appointment Repeats"
+msgstr ""
+
+msgid "Recurring Summary"
+msgstr ""
+
+msgid "Unavailable Time Slots"
+msgstr ""
+
+msgid "Choose Date and Time"
+msgstr ""
+
+msgid "Number of Recurrences:"
+msgstr ""
+
+msgid "Date and Time"
+msgstr ""
+
+msgid "Add more Appointments"
+msgstr ""
+
+msgid "The coupon field is mandatory"
+msgstr ""
+
+msgid "Service Subtotal"
+msgstr ""
+
+msgid "Extras Subtotal"
+msgstr ""
+
+msgid "Event Subtotal"
+msgstr ""
+
+msgid "Total Amount"
+msgstr ""
+
+msgid "Customer Panel"
+msgstr ""
+
+msgid "Total Services Booked"
+msgstr ""
+
+msgid ""
+"By entering your phone number you agree to receive messages via WhatsApp"
+msgstr ""
+
+msgid "Add Pricing Category"
+msgstr ""
+
+msgid "Apply this to all recurring events"
+msgstr ""
+
+msgid "Custom pricing spots will override Maximum allowed spots value."
+msgstr ""
+
+msgid ""
+"Custom/regular pricing adjustments are not permitted for events with "
+"confirmed attendees."
+msgstr ""
+
+msgid "Set event period first to enable pricing by date range."
+msgstr ""
+
+msgid "About this Event"
+msgstr ""
+
+msgid "Add Date Range"
+msgstr ""
+
+msgid "Free"
+msgstr ""
+
+msgid "Number of tickets"
+msgstr ""
+
+msgid ""
+"Date Ranges that are not defined will use default price from ticket category."
+msgstr ""
+
+msgid "Show from date"
+msgstr ""
+
+msgid "Event Type"
+msgstr ""
+
+msgid "Event Status"
+msgstr ""
+
+msgid "Event Employee"
+msgstr ""
+
+msgid "Upcoming events"
+msgstr ""
+
+msgid "spot left"
+msgstr ""
+
+msgid "spots left"
+msgstr ""
+
+msgid ""
+"Here you can assign yourself to be the organizer of the Google/Outlook event."
+"<br> Otherwise you will be assigned as staff and added as a guest in the "
+"event"
+msgstr ""
+
+msgid "Ticket name"
+msgstr ""
+
+msgid "Ticket Types"
+msgstr ""
+
+msgid "Select Tickets"
+msgstr ""
+
+msgid "Page"
+msgstr ""
+
+msgid "Begins"
+msgstr ""
+
+msgid "About"
+msgstr ""
+
+msgid "Go Back"
+msgstr ""
+
+msgid "Booking Appointment"
+msgstr ""
+
+msgid "Filter by Employee"
+msgstr ""
+
+msgid "Filter by Location"
+msgstr ""
+
+msgid "View Employees"
+msgstr ""
+
+msgid "In Package"
+msgstr ""
+
+msgid "About Package"
+msgstr ""
+
+msgid "This service is available in a Package"
+msgstr ""
+
+msgid "View More Packages"
+msgstr ""
+
+msgid "View Less Packages"
+msgstr ""
+
+msgid "Book This Service"
+msgstr ""
+
+msgid "Book This Package"
+msgstr ""
+
+msgid "Send Access Link"
+msgstr ""
+
+msgid "Please enter password"
+msgstr ""
+
+msgid "Forgot Password?"
+msgstr ""
+
+msgid "Reset Password"
+msgstr ""
+
+msgid "Current Password"
+msgstr ""
+
+msgid "Not match to your current password"
+msgstr ""
+
+msgid "Set Password"
+msgstr ""
+
+msgid "New Password"
+msgstr ""
+
+msgid "Re-type New Password"
+msgstr ""
+
+msgid "Welcome Back"
+msgstr ""
+
+msgid "Add Customer"
+msgstr ""
+
+msgid "Add Date"
+msgstr ""
+
+msgid "Add Day Off"
+msgstr ""
+
+msgid "Enter holiday or day off name"
+msgstr ""
+
+msgid "Add Period"
+msgstr ""
+
+msgid "Add Break"
+msgstr ""
+
+msgid "Add Special Day"
+msgstr ""
+
+msgid "Apply to All Days"
+msgstr ""
+
+msgid ""
+"Here you can connect employee with Apple Calendar,<br/>so once the booking "
+"is scheduled it will be<br/>automatically added to employee's calendar."
+msgstr ""
+
+msgid ""
+"Here, you can connect your personal Apple Calendar,<br/>so once the booking "
+"is scheduled,<br/>it will be automatically added to your calendar of choice."
+msgstr ""
+
+msgid "Disconnect Employee"
+msgstr ""
+
+msgid "Appointment Canceled"
+msgstr ""
+
+msgid ""
+"To reschedule your appointment, select an available date time from the "
+"calendar, then click Confirm."
+msgstr ""
+
+msgid "Appointment has been deleted"
+msgstr ""
+
+msgid "Appointment has been saved"
+msgstr ""
+
+msgid "Appointments to book"
+msgstr ""
+
+msgid "Approved"
+msgstr ""
+
+msgid "Assigned Services"
+msgstr ""
+
+msgid "Attendees"
+msgstr ""
+
+msgid "Away"
+msgstr ""
+
+msgid "Booking Closes"
+msgstr ""
+
+msgid "Booking Opens"
+msgstr ""
+
+msgid "Appointment can't be rescheduled"
+msgstr ""
+
+msgid "Break Hours"
+msgstr ""
+
+msgid "Breaks"
+msgstr ""
+
+msgid "Cancel Appointment"
+msgstr ""
+
+msgid "Cancel Event"
+msgstr ""
+
+msgid "Cancel following"
+msgstr ""
+
+msgid "Cancel Package"
+msgstr ""
+
+msgid "Canceled"
+msgstr ""
+
+msgid "Change group status"
+msgstr ""
+
+msgid "Change Password"
+msgstr ""
+
+msgid "Choose a group service"
+msgstr ""
+
+msgid "Please choose appointment date"
+msgstr ""
+
+msgid "Please choose appointment time"
+msgstr ""
+
+msgid "Company Days off"
+msgstr ""
+
+msgid "Are you sure you want to cancel this event?"
+msgstr ""
+
+msgid "Do you want to cancel following events?"
+msgstr ""
+
+msgid "Do you want to cancel this purchase?"
+msgstr ""
+
+msgid "Are you sure you want to delete this event?"
+msgstr ""
+
+msgid "Are you sure you want to delete this appointment?"
+msgstr ""
+
+msgid "Are you sure you want to delete selected attendee?"
+msgstr ""
+
+msgid "Are you sure you want to delete selected attendees?"
+msgstr ""
+
+msgid "Do you want to delete following canceled events?"
+msgstr ""
+
+msgid "Are you sure you want to duplicate this appointment?"
+msgstr ""
+
+msgid "Are you sure you want to duplicate this event?"
+msgstr ""
+
+msgid "Are you sure you want to open this event?"
+msgstr ""
+
+msgid "Do you want to open following events?"
+msgstr ""
+
+msgid "Do you want to update following events?"
+msgstr ""
+
+msgid "Tickets for events with attendees will not be updated"
+msgstr ""
+
+msgid ""
+"There is an event in Google/Outlook Calendar that overlaps this one for a "
+"specific employee, are you sure you want to create another one?"
+msgstr ""
+
+msgid "Create New"
+msgstr ""
+
+msgid "Customer Profile "
+msgstr ""
+
+msgid "Customer(s)"
+msgstr ""
+
+msgid ""
+"Indicates the number of new and returning customers<br/>for the selected "
+"date range."
+msgstr ""
+
+msgid "Customize"
+msgstr ""
+
+msgid "Date of Birth"
+msgstr ""
+
+msgid "Day Off name"
+msgstr ""
+
+msgid "Days Off"
+msgstr ""
+
+msgid "Please enter date"
+msgstr ""
+
+msgid "Please enter name"
+msgstr ""
+
+msgid "Repeat Yearly"
+msgstr ""
+
+msgid "Delete following"
+msgstr ""
+
+msgid "Details"
+msgstr ""
+
+msgid "Download Invoice"
+msgstr ""
+
+msgid "Download PDF Invoice"
+msgstr ""
+
+msgid "Download XML Invoice"
+msgstr ""
+
+msgid "PDF"
+msgstr ""
+
+msgid "XML"
+msgstr ""
+
+msgid "Duration"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Edit Appointment"
+msgstr ""
+
+msgid "Edit Customer"
+msgstr ""
+
+msgid "Edit Event"
+msgstr ""
+
+msgid "Employee Days off"
+msgstr ""
+
+msgid "Enter Address"
+msgstr ""
+
+msgid "Enter Apple Calendar iCloud Id"
+msgstr ""
+
+msgid "Enter Apple Calendar app specific password"
+msgstr ""
+
+msgid "Enter Event Name"
+msgstr ""
+
+msgid "Please enter a valid email address"
+msgstr ""
+
+msgid "Error"
+msgstr ""
+
+msgid "Attendee have been deleted"
+msgstr ""
+
+msgid "Attendee have not been deleted"
+msgstr ""
+
+msgid "Remove Attendee"
+msgstr ""
+
+msgid "Attendee has been saved"
+msgstr ""
+
+msgid "Edit Attendees"
+msgstr ""
+
+msgid "The price will multiply by the number of people/spots"
+msgstr ""
+
+msgid "Attendees have been deleted"
+msgstr ""
+
+msgid "Attendees have not been deleted"
+msgstr ""
+
+msgid "Allow the same customer to book more than once"
+msgstr ""
+
+msgid "Find Attendees"
+msgstr ""
+
+msgid "Booking closes when event starts"
+msgstr ""
+
+msgid "Closes on:"
+msgstr ""
+
+msgid ""
+"If this option is not checked the plugin will calculate the time <br> for "
+"closing the booking based on the selected time for the first event"
+msgstr ""
+
+msgid ""
+"If this option is not checked the plugin will calculate the time <br> for "
+"opening the booking based on the selected time for the first event"
+msgstr ""
+
+msgid "Booking opens immediately"
+msgstr ""
+
+msgid "Opens on:"
+msgstr ""
+
+msgid "Allow bringing more people"
+msgstr ""
+
+msgid "Close Event after certain minimum is reached"
+msgstr ""
+
+msgid "Minimum of attendees"
+msgstr ""
+
+msgid "Minimum of bookings"
+msgstr ""
+
+msgid "One spot is equal to one attendee."
+msgstr ""
+
+msgid "One booking can have multiple attendees/spots in it."
+msgstr ""
+
+msgid "Set Minimum"
+msgstr ""
+
+msgid "Event Colors:"
+msgstr ""
+
+msgid "Custom Color"
+msgstr ""
+
+msgid "Preset Colors"
+msgstr ""
+
+msgid "Custom Address"
+msgstr ""
+
+msgid "Delete Event"
+msgstr ""
+
+msgid "Event has been deleted"
+msgstr ""
+
+msgid "Edit Attendee"
+msgstr ""
+
+msgid "Event Gallery:"
+msgstr ""
+
+msgid "Maximum allowed spots"
+msgstr ""
+
+msgid "Name:"
+msgstr ""
+
+msgid "Open Event"
+msgstr ""
+
+msgid "Event has been opened"
+msgstr ""
+
+msgid "Dates:"
+msgstr ""
+
+msgid "Time:"
+msgstr ""
+
+msgid "This is recurring event"
+msgstr ""
+
+msgid "Enable recurring event"
+msgstr ""
+
+msgid "Repeat Event"
+msgstr ""
+
+msgid "Until when?"
+msgstr ""
+
+msgid "Event has been saved"
+msgstr ""
+
+msgid "Select Address"
+msgstr ""
+
+msgid "Show event on site"
+msgstr ""
+
+msgid "Show waiting list after booking is full"
+msgstr ""
+
+msgid "Booking status has been changed to "
+msgstr ""
+
+msgid "Tags"
+msgstr ""
+
+msgid "No Tags. Create a new one."
+msgstr ""
+
+msgid "Select or Create Tag"
+msgstr ""
+
+msgid "Export"
+msgstr ""
+
+msgid ""
+"You can use this option to export attendees in CSV file<br/>for the selected "
+"event."
+msgstr ""
+
+msgid "General"
+msgstr ""
+
+msgid "Google Calendar"
+msgstr ""
+
+msgid ""
+"Connect your Google Calendar here so once<br/>the appointment is scheduled "
+"it can be added<br/>to your Google Calendar automatically."
+msgstr ""
+
+msgid "Sign in with Google"
+msgstr ""
+
+msgid "Sign out from Google"
+msgstr ""
+
+msgid "1h"
+msgstr ""
+
+msgid "10h"
+msgstr ""
+
+msgid "11h"
+msgstr ""
+
+msgid "12h"
+msgstr ""
+
+msgid "1h 30min"
+msgstr ""
+
+msgid "2h"
+msgstr ""
+
+msgid "3h"
+msgstr ""
+
+msgid "4h"
+msgstr ""
+
+msgid "6h"
+msgstr ""
+
+msgid "8h"
+msgstr ""
+
+msgid "9h"
+msgstr ""
+
+msgid "Incorrect email or password"
+msgstr ""
+
+msgid "Integrations"
+msgstr ""
+
+msgid "Lesson Space"
+msgstr ""
+
+msgid "Join Space"
+msgstr ""
+
+msgid "Lesson Space Link"
+msgstr ""
+
+msgid "Lesson Space Links"
+msgstr ""
+
+msgid "Limit the additional number of people"
+msgstr ""
+
+msgid "Set Limit"
+msgstr ""
+
+msgid "Limit the number of people that one customer can add during the booking"
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
+msgid "Enter your email"
+msgstr ""
+
+msgid "Enter your password"
+msgstr ""
+
+msgid "Logout"
+msgstr ""
+
+msgid "You are the only provider on"
+msgstr ""
+
+msgid "You are the only provider for this service"
+msgstr ""
+
+msgid "Max. Capacity"
+msgstr ""
+
+msgid "1min"
+msgstr ""
+
+msgid "10min"
+msgstr ""
+
+msgid "12min"
+msgstr ""
+
+msgid "15min"
+msgstr ""
+
+msgid "2min"
+msgstr ""
+
+msgid "20min"
+msgstr ""
+
+msgid "30min"
+msgstr ""
+
+msgid "45min"
+msgstr ""
+
+msgid "5min"
+msgstr ""
+
+msgid "Min. Capacity"
+msgstr ""
+
+msgid "Minimum time required before canceling"
+msgstr ""
+
+msgid ""
+"Set the time before the appointment when customers<br/>will not be able to "
+"cancel the appointment."
+msgstr ""
+
+msgid "Multiple Emails"
+msgstr ""
+
+msgid "My Profile"
+msgstr ""
+
+msgid "New Appointment"
+msgstr ""
+
+msgid "New Event"
+msgstr ""
+
+msgid "There are no attendees yet..."
+msgstr ""
+
+msgid "There are no special days yet..."
+msgstr ""
+
+msgid "There are no days off yet..."
+msgstr ""
+
+msgid "Select customer, employee and service"
+msgstr ""
+
+msgid "No-show"
+msgstr ""
+
+msgid "Note"
+msgstr ""
+
+msgid "Note (Internal)"
+msgstr ""
+
+msgid "Notify the attendee(s)"
+msgstr ""
+
+msgid ""
+"Check this checkbox if you want your attendee(s) to<br/>receive an email "
+"about the event’s updated information."
+msgstr ""
+
+msgid "Notify the customer(s)"
+msgstr ""
+
+msgid ""
+"Check this checkbox if you want your customer to<br/>receive an email about "
+"the scheduled appointment."
+msgstr ""
+
+msgid "Once Off"
+msgstr ""
+
+msgid "Open following"
+msgstr ""
+
+msgid "Back to appointments"
+msgstr ""
+
+msgid "Back to packages"
+msgstr ""
+
+msgid "Appointments in this service"
+msgstr ""
+
+msgid "Appointments in this package"
+msgstr ""
+
+msgid "appointment slots left to be booked"
+msgstr ""
+
+msgid "Book next appointment"
+msgstr ""
+
+msgid "Package Canceled"
+msgstr ""
+
+msgid "Continue Booking"
+msgstr ""
+
+msgid "Booked Appointments"
+msgstr ""
+
+msgid "This booking is part of a package deal"
+msgstr ""
+
+msgid "Service info"
+msgstr ""
+
+msgid "Partially Refunded"
+msgstr ""
+
+msgid "Password is set"
+msgstr ""
+
+msgid "Payment"
+msgstr ""
+
+msgid "Pay"
+msgstr ""
+
+msgid "Payment Method"
+msgstr ""
+
+msgid "Payment Status"
+msgstr ""
+
+msgid "Enable Payment from Link"
+msgstr ""
+
+msgid "Allow payment via Payment Link"
+msgstr ""
+
+msgid ""
+"If this option is enabled customers will be able to pay via email "
+"notifications or through their Customer panel."
+msgstr ""
+
+msgid "Update booking status automatically"
+msgstr ""
+
+msgid "Update booking status to approved after succesfull payment from link"
+msgstr ""
+
+msgid "Redirect URL after Payment"
+msgstr ""
+
+msgid ""
+"Customer will be redirected to this URL once the payment from the link is "
+"processed."
+msgstr ""
+
+msgid ""
+"Please note: For this option to work you need to add new payment link "
+"placeholders to the message templates"
+msgstr ""
+
+msgid "Payments"
+msgstr ""
+
+msgid "Select specific location for this period."
+msgstr ""
+
+msgid "Select specific location for each period."
+msgstr ""
+
+msgid "Applied for all assigned services"
+msgstr ""
+
+msgid ""
+"Select only specific services for this period.<br/>If no services are "
+"selected, then all assigned services for this employee<br/>will be available "
+"for booking in this period."
+msgstr ""
+
+msgid "Select specific services for each period."
+msgstr ""
+
+msgid "Periods"
+msgstr ""
+
+msgid "Pick a date or range"
+msgstr ""
+
+msgid "Pick a year"
+msgstr ""
+
+msgid "Preview Invoice"
+msgstr ""
+
+msgid "Price per Spot"
+msgstr ""
+
+msgid "Profile has been updated"
+msgstr ""
+
+msgid "Employee Profile"
+msgstr ""
+
+msgid "Purchased"
+msgstr ""
+
+msgid "Please enter new password again"
+msgstr ""
+
+msgid "Email with access link has been sent"
+msgstr ""
+
+msgid "Check this option if you want to create recurring appointments"
+msgstr ""
+
+msgid "Create Appointments list"
+msgstr ""
+
+msgid "Back to recurring settings"
+msgstr ""
+
+msgid "Redirect URL After Booking"
+msgstr ""
+
+msgid ""
+"Customer will be redirected to this URL once he schedules the appointment."
+msgstr ""
+
+msgid ""
+"Customer will be redirected to this URL once he schedules the appointment or "
+"package."
+msgstr ""
+
+msgid "Rejected"
+msgstr ""
+
+msgid "Repeat Every Year"
+msgstr ""
+
+msgid "Reschedule"
+msgstr ""
+
+msgid "Save Changes"
+msgstr ""
+
+msgid "No, just this one"
+msgstr ""
+
+msgid "Save Special Day"
+msgstr ""
+
+msgid "Schedule"
+msgstr ""
+
+msgid "Please select at least one customer"
+msgstr ""
+
+msgid "Please select customer"
+msgstr ""
+
+msgid "Select Customer(s)"
+msgstr ""
+
+msgid "Please select date"
+msgstr ""
+
+msgid "Please select repeat period"
+msgstr ""
+
+msgid "Please select repeat interval"
+msgstr ""
+
+msgid "Select Coupon"
+msgstr ""
+
+msgid "Maximum number of places is"
+msgstr ""
+
+msgid "Select Repeat Period"
+msgstr ""
+
+msgid "Select Repeat Interval"
+msgstr ""
+
+msgid "Select Service Category"
+msgstr ""
+
+msgid "Please select service"
+msgstr ""
+
+msgid "Select Time"
+msgstr ""
+
+msgid "Please select time"
+msgstr ""
+
+msgid "Selected Customers"
+msgstr ""
+
+msgid "Service Category"
+msgstr ""
+
+msgid "This service does not have any extras"
+msgstr ""
+
+msgid "Service Price"
+msgstr ""
+
+msgid "You have appointments for this service"
+msgstr ""
+
+msgid "You have appointments for"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "Please enter end time"
+msgstr ""
+
+msgid "Please add period"
+msgstr ""
+
+msgid "Please enter start time"
+msgstr ""
+
+msgid "Special Days"
+msgstr ""
+
+msgid "Reflect On"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "OnBoard"
+msgstr ""
+
+msgid "Success"
+msgstr ""
+
+msgid "Tomorrow"
+msgstr ""
+
+msgid "Total"
+msgstr ""
+
+msgid "Total Price"
+msgstr ""
+
+msgid "Created On"
+msgstr ""
+
+msgid "Update following"
+msgstr ""
+
+msgid "User Profile"
+msgstr ""
+
+msgid "Friday"
+msgstr ""
+
+msgid "Monday"
+msgstr ""
+
+msgid "Saturday"
+msgstr ""
+
+msgid "Sunday"
+msgstr ""
+
+msgid "Thursday"
+msgstr ""
+
+msgid "Tuesday"
+msgstr ""
+
+msgid "Wednesday"
+msgstr ""
+
+msgid "Select WooCommerce product"
+msgstr ""
+
+msgid ""
+"Here you can choose the product that will be used for WooCommerce "
+"integration."
+msgstr ""
+
+msgid "WooCommerce Service"
+msgstr ""
+
+msgid "Work Hours"
+msgstr ""
+
+msgid "Working Hours"
+msgstr ""
+
+msgid "Timezone"
+msgstr ""
+
+msgid ""
+"Here you can connect employee with Outlook Calendar,<br/>so once the "
+"appointment is scheduled it will be<br/>automatically added to employee's "
+"calendar."
+msgstr ""
+
+msgid "Zoom"
+msgstr ""
+
+msgid "Zoom Join Link (Participants)"
+msgstr ""
+
+msgid "Zoom Link"
+msgstr ""
+
+msgid "Zoom Links"
+msgstr ""
+
+msgid "Zoom Start Link (Host)"
+msgstr ""
+
+msgid "Zoom User"
+msgstr ""
+
+msgid "Select Zoom User"
+msgstr ""
+
+msgid ""
+"Here you can select Zoom User,<br/>so once the appointment is scheduled,<br/"
+">zoom meeting will be automatically created."
+msgstr ""
+
+msgid "Due"
+msgstr ""
+
+msgid "Google Meet Link"
+msgstr ""
+
+msgid "Microsoft Teams Link"
+msgstr ""
+
+msgid "Personal Information"
+msgstr ""
+
+msgid "Toggle Sidebar"
+msgstr ""
+
+msgid "Filters"
+msgstr ""
+
+msgid "Notification Language"
+msgstr ""
+
+msgid "Language"
+msgstr ""
+
+msgid "Select or Create New"
+msgstr ""
+
+msgid "WordPress User"
+msgstr ""
+
+msgid "Female"
+msgstr ""
+
+msgid "Male"
+msgstr ""
+
+msgid "Gender"
+msgstr ""
+
+msgid "Start Date"
+msgstr ""
+
+msgid "End Date"
+msgstr ""
+
+msgid "Start Time"
+msgstr ""
+
+msgid "End Time"
+msgstr ""
+
+msgid "Delete Period"
+msgstr ""
+
+msgid "New Customer"
+msgstr ""
+
+msgid "Appointment status has been changed to "
+msgstr ""
+
+msgid "Booking not found"
+msgstr ""
+
+msgid "Booking not paid"
+msgstr ""
+
+msgid "Booking is canceled"
+msgstr ""
+
+msgid "Scan E-Ticket"
+msgstr ""
+
+msgid "E-Ticket Scanner"
+msgstr ""
+
+msgid "Torch off"
+msgstr ""
+
+msgid "Torch on"
+msgstr ""
+
+msgid "Switch Camera"
+msgstr ""
+
+msgid "Start Scanner"
+msgstr ""
+
+msgid "Stop Scanner"
+msgstr ""
+
+msgid "Enter E-Ticket details manually"
+msgstr ""
+
+msgid "Enter ticket code"
+msgstr ""
+
+msgid "Enter booking ID"
+msgstr ""
+
+msgid "Admin"
+msgstr ""
+
+msgid "Add period"
+msgstr ""
+
+msgid "Amount"
+msgstr ""
+
+msgid "Attendee"
+msgstr ""
+
+msgid "Booked"
+msgstr ""
+
+msgid "Booking"
+msgstr ""
+
+msgid ""
+"HTML formatting may be overridden by plain text formatting upon switching "
+"between modes."
+msgstr ""
+
+msgid "Created on"
+msgstr ""
+
+msgid "Select delimiter"
+msgstr ""
+
+msgid "Comma (,)"
+msgstr ""
+
+msgid "Coupon code"
+msgstr ""
+
+msgid "Minutes"
+msgstr ""
+
+msgid "Hour"
+msgstr ""
+
+msgid "Hours"
+msgstr ""
+
+msgid "Delivered"
+msgstr ""
+
+msgid "Employee Badge"
+msgstr ""
+
+msgid "Employee badges"
+msgstr ""
+
+msgid "Company days off"
+msgstr ""
+
+msgid "Employee days off"
+msgstr ""
+
+msgid "Please enter an email."
+msgstr ""
+
+msgid "Error occurred"
+msgstr ""
+
+msgid "Extras total price"
+msgstr ""
+
+msgid "Join with Google Meet"
+msgstr ""
+
+msgid "Join with Microsoft Teams"
+msgstr ""
+
+msgid "ID"
+msgstr ""
+
+msgid "Interested in unlocking this feature?"
+msgstr ""
+
+msgid "Available from Starter license"
+msgstr ""
+
+msgid "Available from Standard license"
+msgstr ""
+
+msgid "Available from Pro license"
+msgstr ""
+
+msgid "Available in Elite licence"
+msgstr ""
+
+msgid "Upgrade"
+msgstr ""
+
+msgid "Delete Amelia content"
+msgstr ""
+
+msgid ""
+"Delete tables, roles, files and settings once the Amelia plugin is deleted."
+msgstr ""
+
+msgid ""
+"Enable this option if you want to delete plugin tables, roles, files and "
+"settings<br>when deleting the plugin from plugins page"
+msgstr ""
+
+msgid "Appointment space name"
+msgstr ""
+
+msgid "Event space name"
+msgstr ""
+
+msgid "Create spaces for pending appointments"
+msgstr ""
+
+msgid "Limit additional people"
+msgstr ""
+
+msgid "Set a maximum number of people a customer can add when booking."
+msgstr ""
+
+msgid "Locations"
+msgstr ""
+
+msgid "Measurement ID"
+msgstr ""
+
+msgid "Name Asc"
+msgstr ""
+
+msgid "Name Desc"
+msgstr ""
+
+msgid "Notifications"
+msgstr ""
+
+msgid "Open"
+msgstr ""
+
+msgid "Partially paid"
+msgstr ""
+
+msgid "Payment amount"
+msgstr ""
+
+msgid "Payment method"
+msgstr ""
+
+msgid "Payment status"
+msgstr ""
+
+msgid ""
+"If all payment methods are disabled on the service/event, the default "
+"payment method will be used."
+msgstr ""
+
+msgid "Resources"
+msgstr ""
+
+msgid "Please select a date."
+msgstr ""
+
+msgid "Please select a time."
+msgstr ""
+
+msgid "Settings have been saved."
+msgstr ""
+
+msgid "Social login"
+msgstr ""
+
+msgid "Text"
+msgstr ""
+
+msgid "HTML"
+msgstr ""
+
+msgid "Tag"
+msgstr ""
+
+msgid "Translate"
+msgstr ""
+
+msgid "Join Zoom"
+msgstr ""
+
+msgid "Start Zoom"
+msgstr ""
+
+msgid "Grid view"
+msgstr ""
+
+msgid "List view"
+msgstr ""
+
+msgid "Choose layout version"
+msgstr ""
+
+msgid "Dropdown layout"
+msgstr ""
+
+msgid "List layout"
+msgstr ""
+
+msgid "Choosing layout of first step in step by step form"
+msgstr ""
+
+msgid ""
+"You have disabled all available payment methods. The default payment method "
+"from the general settings will be used instead."
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Add booking"
+msgstr ""
+
+msgid "Add customer"
+msgstr ""
+
+msgid "Add event"
+msgstr ""
+
+msgid "Import"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "1 year"
+msgstr ""
+
+msgid "Activate"
+msgstr ""
+
+msgid "Activation"
+msgstr ""
+
+msgid "After with space"
+msgstr ""
+
+msgid ""
+"If enabled, customers can book with Pending status even after maximum "
+"capacity is reached."
+msgstr ""
+
+msgid ""
+"If disabled, booking must meet the minimum capacity, and the time slot "
+"closes after the first booking."
+msgstr ""
+
+msgid "Keep slot available after first booking"
+msgstr ""
+
+msgid "Allow admin to book appointment at any time"
+msgstr ""
+
+msgid "Allow admin to book over an existing appointment"
+msgstr ""
+
+msgid ""
+"If you enable this option, Admin will be able to book appointment at any "
+"time (working hours, special days and days off for all employees will be "
+"ignored)."
+msgstr ""
+
+msgid ""
+"If you enable this option, Admin will be able to book appointment over or "
+"during another appointment."
+msgstr ""
+
+msgid "Allow employees to manage their days off"
+msgstr ""
+
+msgid "Allow employees to manage their services"
+msgstr ""
+
+msgid "Allow employees to manage their schedule"
+msgstr ""
+
+msgid "Allow employees to manage their special days"
+msgstr ""
+
+msgid "Allow booking above maximum capacity"
+msgstr ""
+
+msgid "Allow customers to reschedule their own appointments"
+msgstr ""
+
+msgid ""
+"Enable this option if you want to allow your customers to reschedule their "
+"own appointments."
+msgstr ""
+
+msgid "Allow customers to delete their profile"
+msgstr ""
+
+msgid "Allow customers to cancel packages"
+msgstr ""
+
+msgid "Allow employees to manage their appointments"
+msgstr ""
+
+msgid "Allow employees to manage their events"
+msgstr ""
+
+msgid "Allow employees to manage customers"
+msgstr ""
+
+msgid "API base URL: "
+msgstr ""
+
+msgid "Maximum capacity"
+msgstr ""
+
+msgid "Events waiting list"
+msgstr ""
+
+msgid "Appointments waiting list"
+msgstr ""
+
+msgid "Redirect URL for successfully approved booking"
+msgstr ""
+
+msgid "Redirect URL for unsuccessfully approved booking"
+msgstr ""
+
+msgid "Automatically create Amelia Customer user"
+msgstr ""
+
+msgid ""
+"If you enable this option every time a new customer schedules the "
+"appointment he will get Amelia Customer user role and automatic email with "
+"login details."
+msgstr ""
+
+msgid "Support Amelia by displaying a backlink"
+msgstr ""
+
+msgid ""
+"Allow the short description below the booking form to support Amelia Booking "
+"Plugin and spread the word about it."
+msgstr ""
+
+msgid "Send all notifications to additional addresses"
+msgstr ""
+
+msgid ""
+"Here you can enter additional email addresses where all notifications will "
+"be sent. To add an address click Enter."
+msgstr ""
+
+msgid "Send all SMS messages to additional numbers"
+msgstr ""
+
+msgid ""
+"Here you can enter additional phone numbers where all SMS messages will be "
+"sent. To add a number click Enter."
+msgstr ""
+
+msgid "Before with space"
+msgstr ""
+
+msgid "People counting logic"
+msgstr ""
+
+msgid "Customer plus additional people"
+msgstr ""
+
+msgid "Counts one primary customer plus any additional people they add."
+msgstr ""
+
+msgid ""
+"Counts the total number of people entered, including the primary customer."
+msgstr ""
+
+msgid "Include service buffer time in time slots"
+msgstr ""
+
+msgid ""
+"Include buffer time in slot calculation. When disabled, slots are based only "
+"on service duration."
+msgstr ""
+
+msgid "Set coupons to be case insensitive"
+msgstr ""
+
+msgid "Unsuccessful cancellation redirect URL"
+msgstr ""
+
+msgid ""
+"URL on which will user be redirected if appointment can't be canceled "
+"because of 'Minimum time required before canceling' value"
+msgstr ""
+
+msgid "Successful cancellation redirect URL"
+msgstr ""
+
+msgid "Comma-dot"
+msgstr ""
+
+msgid "Company"
+msgstr ""
+
+msgid "Meta Pixel"
+msgstr ""
+
+msgid "Google Analytics"
+msgstr ""
+
+msgid "Generate"
+msgstr ""
+
+msgid "Employee selection logic"
+msgstr ""
+
+msgid "Random"
+msgstr ""
+
+msgid "Currency"
+msgstr ""
+
+msgid "Add event attendees"
+msgstr ""
+
+msgid "Customer Panel Page URL"
+msgstr ""
+
+msgid "Employee panel page URL"
+msgstr ""
+
+msgid "Default appointment status"
+msgstr ""
+
+msgid "All appointments will be scheduled with the status selected here."
+msgstr ""
+
+msgid "Default number of items per page on the front end"
+msgstr ""
+
+msgid "Default number of items per page on the back end"
+msgstr ""
+
+msgid "Default back end page"
+msgstr ""
+
+msgid "Default payment method"
+msgstr ""
+
+msgid "Default phone country code"
+msgstr ""
+
+msgid "Default time slot step"
+msgstr ""
+
+msgid ""
+"The time slot step defined here will apply to all time slots across the "
+"plugin."
+msgstr ""
+
+msgid "Dot-comma"
+msgstr ""
+
+msgid "Hide locked features"
+msgstr ""
+
+msgid "Activate with Envato"
+msgstr ""
+
+msgid "Event title and description"
+msgstr ""
+
+msgid "Mailchimp"
+msgstr ""
+
+msgid "Meeting title"
+msgstr ""
+
+msgid "Meeting agenda"
+msgstr ""
+
+msgid "Facebook app ID"
+msgstr ""
+
+msgid "Facebook app secret"
+msgstr ""
+
+msgid "Google Map API key"
+msgstr ""
+
+msgid "Add Google Map API Key to show Google static map on \"Locations\" page."
+msgstr ""
+
+msgid "Client ID"
+msgstr ""
+
+msgid "Client secret"
+msgstr ""
+
+msgid "Application (client) ID"
+msgstr ""
+
+msgid "Redirect URI"
+msgstr ""
+
+msgid "Account ID"
+msgstr ""
+
+msgid "Lesson Space API key"
+msgstr ""
+
+msgid "Limit appointments per customer"
+msgstr ""
+
+msgid "Limit package purchases per customer"
+msgstr ""
+
+msgid "Limit events per customer"
+msgstr ""
+
+msgid "This limit is based on the customer's email address."
+msgstr ""
+
+msgid "Log In"
+msgstr ""
+
+msgid "Identify country code by user's IP address"
+msgstr ""
+
+msgid "Insert pending appointments"
+msgstr ""
+
+msgid "Create meetings for pending appointments"
+msgstr ""
+
+msgid "Check customer's name for existing email/phone when booking"
+msgstr ""
+
+msgid ""
+"Enable this option to ensure that customers using an existing email or phone "
+"number maintain consistent first and last names."
+msgstr ""
+
+msgid "Mail service"
+msgstr ""
+
+msgid "Mailgun"
+msgstr ""
+
+msgid ""
+"Here you can define languages that you want to have in the plugin for "
+"translating dynamic strings (names, descriptions, notifications)."
+msgstr ""
+
+msgid "Minimum time required before booking"
+msgstr ""
+
+msgid ""
+"Define the time before the appointment during which customers can't book."
+msgstr ""
+
+msgid ""
+"Define the time before the appointment during which customers can't cancel."
+msgstr ""
+
+msgid "Minimum time required before rescheduling"
+msgstr ""
+
+msgid ""
+"Define the time before the appointment during which customers can't "
+"reschedule."
+msgstr ""
+
+msgid "Maximum number of events returned"
+msgstr ""
+
+msgid "Outlook Mailer"
+msgstr ""
+
+msgid "Pay with payment link"
+msgstr ""
+
+msgid ""
+"If enabled, customers can complete their payment using the link in their "
+"email notifications or through the customer panel."
+msgstr ""
+
+msgid "Period available for booking in advance"
+msgstr ""
+
+msgid "Define how far into the future customers can book appointments."
+msgstr ""
+
+msgid "PHP Mail"
+msgstr ""
+
+msgid "Price number of decimals"
+msgstr ""
+
+msgid "Price separator"
+msgstr ""
+
+msgid "Price symbol position"
+msgstr ""
+
+msgid "Purchase code"
+msgstr ""
+
+msgid "Redirect URLs"
+msgstr ""
+
+msgid "Redirect URL after booking"
+msgstr ""
+
+msgid ""
+"Customers will be redirected to this URL after scheduling an appointment."
+msgstr ""
+
+msgid "Customers will be redirected to this URL after booking an event."
+msgstr ""
+
+msgid "Remove Google Calendar busy slots"
+msgstr ""
+
+msgid "Remove Outlook Calendar busy slots"
+msgstr ""
+
+msgid "Remove Apple Calendar busy slots"
+msgstr ""
+
+msgid "Redirect URL for successfully rejected booking"
+msgstr ""
+
+msgid "Redirect URL for unsuccessfully rejected booking"
+msgstr ""
+
+msgid "Reply-to email"
+msgstr ""
+
+msgid "Require password for login"
+msgstr ""
+
+msgid "Send event invitation email"
+msgstr ""
+
+msgid "Send invoice to customer by default"
+msgstr ""
+
+msgid ""
+"Enable this option to make sure that the invoice will be sent to the "
+"customer after booking."
+msgstr ""
+
+msgid "Send ICS file for approved bookings"
+msgstr ""
+
+msgid "Send ICS file for pending bookings"
+msgstr ""
+
+msgid ""
+"Enable this option if you want to send ics file in email after approved "
+"bookings."
+msgstr ""
+
+msgid ""
+"Enable this option if you want to send ics file in email after pending "
+"bookings."
+msgstr ""
+
+msgid "Remind me when my SMS balance is low"
+msgstr ""
+
+msgid ""
+"Enable this option to receive a reminder email when your SMS balance reaches "
+"set minimum"
+msgstr ""
+
+msgid "Credit minimum to send reminder"
+msgstr ""
+
+msgid "Send to e-mail"
+msgstr ""
+
+msgid "Sender email"
+msgstr ""
+
+msgid "Please enter a sender email."
+msgstr ""
+
+msgid "Sender name"
+msgstr ""
+
+msgid "Please enter a sender name."
+msgstr ""
+
+msgid "Use service duration for booking a time slot"
+msgstr ""
+
+msgid ""
+"Enable this option if you want to make time slot step the same as service "
+"duration in the booking process"
+msgstr ""
+
+msgid "Set ICS file description"
+msgstr ""
+
+msgid "Allow customers to see other attendees"
+msgstr ""
+
+msgid "Show booking slots in client's time zone"
+msgstr ""
+
+msgid "Enable to display booking slots based on the client's time zone."
+msgstr ""
+
+msgid "Show Add To Calendar option to customers"
+msgstr ""
+
+msgid ""
+"Suggest customers to add an appointment to their calendar when booking is "
+"finalized."
+msgstr ""
+
+msgid "SMTP"
+msgstr ""
+
+msgid "Space-comma"
+msgstr ""
+
+msgid "Space-dot"
+msgstr ""
+
+msgid "Preload entities when page loads"
+msgstr ""
+
+msgid ""
+"When enabled, all entities (services, employees, locations, packages, and "
+"tags) load as soon as the page opens, instead of being loaded dynamically "
+"via AJAX."
+msgstr ""
+
+msgid "Square"
+msgstr ""
+
+msgid "Square account successfully disconnected"
+msgstr ""
+
+msgid ""
+"The currency in Amelia does not match the currency of your chosen Square "
+"location"
+msgstr ""
+
+msgid "Default Square location"
+msgstr ""
+
+msgid "Please log in to Square"
+msgstr ""
+
+msgid "Select your Square Location"
+msgstr ""
+
+msgid "Locations must be active and have card processing enabled"
+msgstr ""
+
+msgid "Update for All"
+msgstr ""
+
+msgid "Validate required custom fields in the backend"
+msgstr ""
+
+msgid "Attachment upload path"
+msgstr ""
+
+msgid ""
+"If left empty, attachments will be uploaded to the default WordPress uploads "
+"folder."
+msgstr ""
+
+msgid "VAT number"
+msgstr ""
+
+msgid "Website"
+msgstr ""
+
+msgid "WP Mail"
+msgstr ""
+
+msgid "Custom currency symbol"
+msgstr ""
+
+msgid "Your API key"
+msgstr ""
+
+msgid "Booking time slots will depend on the service duration"
+msgstr ""
+
+msgid ""
+"When this option is deactivated, the booking will be<br/>determined based on "
+"the Default Time Slot Step"
+msgstr ""
+
+msgid "WooCommerce"
+msgstr ""
+
+msgid "Amelia SMS"
+msgstr ""
+
+msgid "Balance"
+msgstr ""
+
+msgid "Your balance has been recharged."
+msgstr ""
+
+msgid "Carrier"
+msgstr ""
+
+msgid "Cost"
+msgstr ""
+
+msgid "Current password"
+msgstr ""
+
+msgid "Please enter current password"
+msgstr ""
+
+msgid "Follow up"
+msgstr ""
+
+msgid "Next day reminder"
+msgstr ""
+
+msgid "Panel access"
+msgstr ""
+
+msgid "Birthday greeting"
+msgstr ""
+
+msgid "Canceled by attendee"
+msgstr ""
+
+msgid "Canceled by admin"
+msgstr ""
+
+msgid "Event e-ticket"
+msgstr ""
+
+msgid "Other"
+msgstr ""
+
+msgid "Waiting list confirmation"
+msgstr ""
+
+msgid "Waiting list availability"
+msgstr ""
+
+msgid "Cart purchased"
+msgstr ""
+
+msgid "Booking invoice"
+msgstr ""
+
+msgid "Don't have an account?"
+msgstr ""
+
+msgid "Don't Import"
+msgstr ""
+
+msgid "Please enter a recipient phone."
+msgstr ""
+
+msgid "Forgot password?"
+msgstr ""
+
+msgid "You have entered an incorrect email."
+msgstr ""
+
+msgid "You have entered an incorrect password."
+msgstr ""
+
+msgid "Repeat new password"
+msgstr ""
+
+msgid "Please enter a new password."
+msgstr ""
+
+msgid "Notification has been saved."
+msgstr ""
+
+msgid "Notification template"
+msgstr ""
+
+msgid "Payment history"
+msgstr ""
+
+msgid "Appointment date & time"
+msgstr ""
+
+msgid "Appointment duration"
+msgstr ""
+
+msgid "Appointment end time"
+msgstr ""
+
+msgid "Payment due amount"
+msgstr ""
+
+msgid "Appointment notes"
+msgstr ""
+
+msgid "Payment type"
+msgstr ""
+
+msgid "Appointment status"
+msgstr ""
+
+msgid "Appointment start time"
+msgstr ""
+
+msgid "Attendee code"
+msgstr ""
+
+msgid "Booked customer (full name, email, phone)"
+msgstr ""
+
+msgid "Category ID"
+msgstr ""
+
+msgid "Category name"
+msgstr ""
+
+msgid "Company address"
+msgstr ""
+
+msgid "Company name"
+msgstr ""
+
+msgid "Company phone"
+msgstr ""
+
+msgid "Company website"
+msgstr ""
+
+msgid "Company email"
+msgstr ""
+
+msgid "Company VAT number"
+msgstr ""
+
+msgid "Customer first name"
+msgstr ""
+
+msgid "Customer full name"
+msgstr ""
+
+msgid "Customer last name"
+msgstr ""
+
+msgid "Customer note"
+msgstr ""
+
+msgid "Employee description"
+msgstr ""
+
+msgid "Employee ID"
+msgstr ""
+
+msgid "Employee email"
+msgstr ""
+
+msgid "Employee first name"
+msgstr ""
+
+msgid "Employee full name"
+msgstr ""
+
+msgid "Employee last name"
+msgstr ""
+
+msgid "Employee name, email & phone"
+msgstr ""
+
+msgid "Employee note"
+msgstr ""
+
+msgid "Employee phone"
+msgstr ""
+
+msgid "Event location"
+msgstr ""
+
+msgid "Event end date"
+msgstr ""
+
+msgid "Event end date & time"
+msgstr ""
+
+msgid "Event end time"
+msgstr ""
+
+msgid "Event ID"
+msgstr ""
+
+msgid "Event date period"
+msgstr ""
+
+msgid "Event date & time period"
+msgstr ""
+
+msgid "Event price"
+msgstr ""
+
+msgid "Booking price"
+msgstr ""
+
+msgid "Event start date"
+msgstr ""
+
+msgid "Event start date & time"
+msgstr ""
+
+msgid "Event start time"
+msgstr ""
+
+msgid "Group event details"
+msgstr ""
+
+msgid "Service description"
+msgstr ""
+
+msgid "Service duration"
+msgstr ""
+
+msgid "Service ID"
+msgstr ""
+
+msgid "Service name"
+msgstr ""
+
+msgid "Service price"
+msgstr ""
+
+msgid "Panel recovery"
+msgstr ""
+
+msgid "Queued"
+msgstr ""
+
+msgid "Please enter a new password again."
+msgstr ""
+
+msgid "Recharge"
+msgstr ""
+
+msgid "Recharge balance"
+msgstr ""
+
+msgid "Recipient email"
+msgstr ""
+
+msgid "Schedule setup required"
+msgstr ""
+
+msgid "Segments"
+msgstr ""
+
+msgid "Test email"
+msgstr ""
+
+msgid "Test SMS"
+msgstr ""
+
+msgid "Alpha sender ID"
+msgstr ""
+
+msgid "Sign up"
+msgstr ""
+
+msgid "SMS history"
+msgstr ""
+
+msgid ""
+"If you are in a country where VAT or GST applies, the applicable tax will be "
+"added to your transaction."
+msgstr ""
+
+msgid "Subject"
+msgstr ""
+
+msgid "Failed to send test email."
+msgstr ""
+
+msgid "Test email sent successfully."
+msgstr ""
+
+msgid ""
+"To send a test email, please configure the 'Sender Email' in Notification "
+"Settings."
+msgstr ""
+
+msgid "To send a test SMS, please recharge your balance."
+msgstr ""
+
+msgid "Local time"
+msgstr ""
+
+msgid "To customer"
+msgstr ""
+
+msgid "To employee"
+msgstr ""
+
+msgid "User"
+msgstr ""
+
+msgid "User profile"
+msgstr ""
+
+msgid "View pricing for"
+msgstr ""
+
+msgid "Permanent access token"
+msgstr ""
+
+msgid "Enable auto-reply message"
+msgstr ""
+
+msgid ""
+"Messages sent through WhatsApp are without a reply option, so we advise "
+"setting the “Auto-reply” message"
+msgstr ""
+
+msgid "WhatsApp webhook verify token"
+msgstr ""
+
+msgid "WhatsApp auto-reply message"
+msgstr ""
+
+msgid "WhatsApp business account ID"
+msgstr ""
+
+msgid "Default language"
+msgstr ""
+
+msgid "Phone number ID"
+msgstr ""
+
+msgid "WhatsApp webhook callback URL"
+msgstr ""
+
+msgid "Configure"
+msgstr ""
+
+msgid "Location ID"
+msgstr ""
+
+msgid "Location latitude"
+msgstr ""
+
+msgid "Location longitude"
+msgstr ""
+
+msgid "Segment"
+msgstr ""
+
+msgid "Already have an account?"
+msgstr ""
+
+msgid "This email is already in use. Please enter a different email address."
+msgstr ""
+
+msgid "# of appointments"
+msgstr ""
+
+msgid "Sum of payments"
+msgstr ""
+
+msgid "# of Hours in appointment"
+msgstr ""
+
+msgid "New"
+msgstr ""
+
+msgid "Pending appointments"
+msgstr ""
+
+msgid "Percentage of Load"
+msgstr ""
+
+msgid "Returning"
+msgstr ""
+
+msgid "Revenue"
+msgstr ""
+
+msgid "Upcoming appointments"
+msgstr ""
+
+msgid "Add day off"
+msgstr ""
+
+msgid "Add special day"
+msgstr ""
+
+msgid "Apply to all days"
+msgstr ""
+
+msgid "Day off name"
+msgstr ""
+
+msgid "Repeat yearly"
+msgstr ""
+
+msgid "Days off"
+msgstr ""
+
+msgid "Work hours"
+msgstr ""
+
+msgid "Show"
+msgstr ""
+
+msgid "Block"
+msgstr ""
+
+msgid "Unblock"
+msgstr ""
+
+msgid "Visible"
+msgstr ""
+
+msgid "Search locations"
+msgstr ""
+
+msgid ""
+"To enable Google Maps, enter your Google Maps API key in the Google General "
+"Settings."
+msgstr ""
+
+msgid "Add category"
+msgstr ""
+
+msgid "Add Extra"
+msgstr ""
+
+msgid "Categories positions updated successfully."
+msgstr ""
+
+msgid "Category has been deleted."
+msgstr ""
+
+msgid "Are you sure you want to delete this service?"
+msgstr ""
+
+msgid "Are you sure you want to duplicate this service?"
+msgstr ""
+
+msgid ""
+"You're changing settings that have been individually configured for "
+"employees. Do you want to apply these changes to all employees?"
+msgstr ""
+
+msgid "Are you sure you want to hide this service?"
+msgstr ""
+
+msgid "Are you sure you want to show this service?"
+msgstr ""
+
+msgid "Are you sure you want to delete this category?"
+msgstr ""
+
+msgid "Are you sure you want to duplicate this category?"
+msgstr ""
+
+msgid "Pricing & duration "
+msgstr ""
+
+msgid "Edit service"
+msgstr ""
+
+msgid "Edit Category"
+msgstr ""
+
+msgid "Gallery"
+msgstr ""
+
+msgid ""
+"Set the maximum number of people allowed per appointment for this service."
+msgstr ""
+
+msgid "Minimum capacity"
+msgstr ""
+
+msgid ""
+"Set the minimum number of people required per appointment for this service."
+msgstr ""
+
+msgid "New category"
+msgstr ""
+
+msgid "New service"
+msgstr ""
+
+msgid "Please select a duration."
+msgstr ""
+
+msgid "Please select a category."
+msgstr ""
+
+msgid "Buffer time after"
+msgstr ""
+
+msgid ""
+"Time needed after the appointment for rest, cleanup, or transition. During "
+"this period, the employee cannot be booked for any service."
+msgstr ""
+
+msgid "Buffer time before"
+msgstr ""
+
+msgid ""
+"Time needed before the appointment for preparation. During this period, the "
+"employee cannot be booked for any service."
+msgstr ""
+
+msgid "Service has been deleted."
+msgstr ""
+
+msgid "Service has been hidden."
+msgstr ""
+
+msgid "Service is now visible."
+msgstr ""
+
+msgid "Price Asc"
+msgstr ""
+
+msgid "Price Desc"
+msgstr ""
+
+msgid ""
+"Choose how recurring appointments can be booked. 'Disabled' turns recurring "
+"booking off, while 'All' allows customers to choose between available "
+"recurrence options."
+msgstr ""
+
+msgid "Service details"
+msgstr ""
+
+msgid "Please enter a first name."
+msgstr ""
+
+msgid "Please enter a last name"
+msgstr ""
+
+msgid "First name"
+msgstr ""
+
+msgid "Last name"
+msgstr ""
+
+msgid "Notification language"
+msgstr ""
+
+msgid "WordPress user"
+msgstr ""
+
+msgid ""
+"Link this customer to a WordPress user so they can log in and view their "
+"appointments in Amelia’s back end."
+msgstr ""
+
+msgid ""
+"Map a WordPress user to this employee to give them access to view their "
+"appointments in the plugin’s back-end."
+msgstr ""
+
+msgid ""
+"Defines the language used for notifications sent to this customer for "
+"bookings created from the admin or employee panel. If a supported language "
+"was used in a previous booking, it will be automatically selected; "
+"otherwise, you can set it manually."
+msgstr ""
+
+msgid "Edit employee"
+msgstr ""
+
+msgid "Employee panel password"
+msgstr ""
+
+msgid "Special days"
+msgstr ""
+
+msgid "New employee"
+msgstr ""
+
+msgid "Are you sure you want to hide this employee?"
+msgstr ""
+
+msgid "Are you sure you want to show this employee?"
+msgstr ""
+
+msgid "Employee is now visible."
+msgstr ""
+
+msgid "Employee has been hidden."
+msgstr ""
+
+msgid "Are you sure you want to delete this employee?"
+msgstr ""
+
+msgid "Are you sure you want to delete this customer?"
+msgstr ""
+
+msgid "Are you sure you want to block this customer?"
+msgstr ""
+
+msgid "Are you sure you want to unblock this customer?"
+msgstr ""
+
+msgid "Customer has been deleted."
+msgstr ""
+
+msgid "Customer has been blocked."
+msgstr ""
+
+msgid "Customer has been unblocked."
+msgstr ""
+
+msgid "Customer name"
+msgstr ""
+
+msgid "Search customers"
+msgstr ""
+
+msgid "Edit customer"
+msgstr ""
+
+msgid "Customers imported from file:"
+msgstr ""
+
+msgid "Last booking"
+msgstr ""
+
+msgid "New customer"
+msgstr ""
+
+msgid "Required fields: <b>First Name</b> and <b>Last Name</b>."
+msgstr ""
+
+msgid "Total appointments"
+msgstr ""
+
+msgid "Total bookings"
+msgstr ""
+
+msgid "Total events"
+msgstr ""
+
+msgid "View appointments"
+msgstr ""
+
+msgid "View events"
+msgstr ""
+
+msgid "Drop files here or click to upload"
+msgstr ""
+
+msgid "Import Rules"
+msgstr ""
+
+msgid "Import successful"
+msgstr ""
+
+msgid "Please map corresponding data to columns:"
+msgstr ""
+
+msgid "Some records have an incorrect format."
+msgstr ""
+
+msgid "Booking start"
+msgstr ""
+
+msgid "Method"
+msgstr ""
+
+msgid "Payment date"
+msgstr ""
+
+msgid "Payment created"
+msgstr ""
+
+msgid "Rate"
+msgstr ""
+
+msgid "Invoices"
+msgstr ""
+
+msgid "Finance"
+msgstr ""
+
+msgid "Payment details"
+msgstr ""
+
+msgid "Appointment has been deleted."
+msgstr ""
+
+msgid "Edit appointment"
+msgstr ""
+
+msgid "End time"
+msgstr ""
+
+msgid "Notify the attendees"
+msgstr ""
+
+msgid "Notify attendees by email when event information is updated."
+msgstr ""
+
+msgid ""
+"By continuing, you will set the appointment to a time slot that already has "
+"an existing appointment!"
+msgstr ""
+
+msgid "Please select a service."
+msgstr ""
+
+msgid "Start time"
+msgstr ""
+
+msgid "Please select a customer."
+msgstr ""
+
+msgid "Please select an employee."
+msgstr ""
+
+msgid "Deposit payment"
+msgstr ""
+
+msgid "Custom pricing"
+msgstr ""
+
+msgid "Pricing by duration"
+msgstr ""
+
+msgid "Pricing by number of people"
+msgstr ""
+
+msgid "Pricing by date & time"
+msgstr ""
+
+msgid "Please cancel the event first before deleting it."
+msgstr ""
+
+msgid "Full"
+msgstr ""
+
+msgid "Edit event"
+msgstr ""
+
+msgid "Number of Tickets"
+msgstr ""
+
+msgid "Allow multiple bookings per customer"
+msgstr ""
+
+msgid "Allow additional people"
+msgstr ""
+
+msgid "Close event when minimum capacity is reached"
+msgstr ""
+
+msgid "Minimum number of attendees"
+msgstr ""
+
+msgid "Minimum number of bookings"
+msgstr ""
+
+msgid "Each spot counts as one attendee."
+msgstr ""
+
+msgid "A single booking may include multiple attendees (spots)."
+msgstr ""
+
+msgid "Set minimum"
+msgstr ""
+
+msgid "Custom address"
+msgstr ""
+
+msgid "Event has been deleted."
+msgstr ""
+
+msgid "Closes on"
+msgstr ""
+
+msgid "Event booking has been deleted."
+msgstr ""
+
+msgid "Opens on"
+msgstr ""
+
+msgid "Event has been opened."
+msgstr ""
+
+msgid "Event has been canceled."
+msgstr ""
+
+msgid "Search events"
+msgstr ""
+
+msgid ""
+"Select the employee who will be added as the organizer of the Google/Outlook/"
+"Apple Calendar event. Employees selected under Staff will be added as guests."
+msgstr ""
+
+msgid "New event"
+msgstr ""
+
+msgid "Add custom field"
+msgstr ""
+
+msgid "Reset form settings"
+msgstr ""
+
+msgid "Are you sure you want to reset your form settings?"
+msgstr ""
+
+msgid "Your current changes will be lost."
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Reset Form"
+msgstr ""
+
+msgid "Buttons"
+msgstr ""
+
+msgid "Default Label"
+msgstr ""
+
+msgid "Checkbox"
+msgstr ""
+
+msgid "Start by clicking the add custom field button"
+msgstr ""
+
+msgid "Text content"
+msgstr ""
+
+msgid "Font"
+msgstr ""
+
+msgid "You don't have any custom fields here yet..."
+msgstr ""
+
+msgid "Options:"
+msgstr ""
+
+msgid "Pick date & time"
+msgstr ""
+
+msgid "Primary color"
+msgstr ""
+
+msgid "Radio button"
+msgstr ""
+
+msgid "Select Box"
+msgstr ""
+
+msgid "Steps"
+msgstr ""
+
+msgid "Text area"
+msgstr ""
+
+msgid "Text color"
+msgstr ""
+
+msgid "Placeholder Color"
+msgstr ""
+
+msgid "Text color on background"
+msgstr ""
+
+msgid "Attachment"
+msgstr ""
+
+msgid "Date picker"
+msgstr ""
+
+msgid "Prepared"
+msgstr ""
+
+msgid "Background Color"
+msgstr ""
+
+msgid "Background Gradient Color 1"
+msgstr ""
+
+msgid "Background Gradient Color 2"
+msgstr ""
+
+msgid "Background Gradient Angle"
+msgstr ""
+
+msgid "Input Color"
+msgstr ""
+
+msgid "Input Text Color"
+msgstr ""
+
+msgid "Dropdown Color"
+msgstr ""
+
+msgid "Dropdown Text Color"
+msgstr ""
+
+msgid "Image Color"
+msgstr ""
+
+msgid "Go back"
+msgstr ""
+
+msgid "Display Field:"
+msgstr ""
+
+msgid "Filterable Field:"
+msgstr ""
+
+msgid "Mandatory Field:"
+msgstr ""
+
+msgid "Event type"
+msgstr ""
+
+msgid "Service badge"
+msgstr ""
+
+msgid "Congratulations!"
+msgstr ""
+
+msgid "Add to calendar"
+msgstr ""
+
+msgid "Finish"
+msgstr ""
+
+msgid "Step By Step Booking Form"
+msgstr ""
+
+msgid "Event status"
+msgstr ""
+
+msgid "Book event"
+msgstr ""
+
+msgid "Form"
+msgstr ""
+
+msgid "Form Flow"
+msgstr ""
+
+msgid "Use Global Colors"
+msgstr ""
+
+msgid "Service selection"
+msgstr ""
+
+msgid "Employee selection"
+msgstr ""
+
+msgid "Location selection"
+msgstr ""
+
+msgid "Bringing anyone with you"
+msgstr ""
+
+msgid "Date & time"
+msgstr ""
+
+msgid "Your information"
+msgstr ""
+
+msgid "Enter first name"
+msgstr ""
+
+msgid "Enter last name"
+msgstr ""
+
+msgid "Enter email"
+msgstr ""
+
+msgid "Enter phone"
+msgstr ""
+
+msgid "Please enter phone"
+msgstr ""
+
+msgid "Service subtotal"
+msgstr ""
+
+msgid "Total amount"
+msgstr ""
+
+msgid "The payment will be done on-site."
+msgstr ""
+
+msgid "Your name"
+msgstr ""
+
+msgid "Email address"
+msgstr ""
+
+msgid "Phone number"
+msgstr ""
+
+msgid "Choose a Form"
+msgstr ""
+
+msgid ""
+"Choose a form you want to customize. The Step-by-Step 2.0 form is the new "
+"and improved version which provides you with better design and user "
+"experience, as well as better speed."
+msgstr ""
+
+msgid "Step-by-step"
+msgstr ""
+
+msgid "Booking Forms 1.0"
+msgstr ""
+
+msgid ""
+"Provide a simplified, guided booking experience on your website. Customize "
+"the design and labels to improve usability and align with your business "
+"needs."
+msgstr ""
+
+msgid ""
+"The original booking forms—Step-by-Step, Catalog, Event List, and Event "
+"Calendar—feature basic customization and label changes, serving as the "
+"foundation for our newer versions."
+msgstr ""
+
+msgid "Primary and state colors"
+msgstr ""
+
+msgid "Sidebar area"
+msgstr ""
+
+msgid "Content"
+msgstr ""
+
+msgid "Heading Text Color"
+msgstr ""
+
+msgid "Content Text Color"
+msgstr ""
+
+msgid "Input fields"
+msgstr ""
+
+msgid "Border color"
+msgstr ""
+
+msgid "Dropdowns"
+msgstr ""
+
+msgid "Lower price background"
+msgstr ""
+
+msgid "Higher price background"
+msgstr ""
+
+msgid "Lower price text"
+msgstr ""
+
+msgid "Higher price text"
+msgstr ""
+
+msgid "Waiting list background"
+msgstr ""
+
+msgid "Waiting list text"
+msgstr ""
+
+msgid "Primary text"
+msgstr ""
+
+msgid "Secondary color"
+msgstr ""
+
+msgid "Danger button background color"
+msgstr ""
+
+msgid "Danger button text color"
+msgstr ""
+
+msgid "Layout & Inputs"
+msgstr ""
+
+msgid "Colors"
+msgstr ""
+
+msgid "Fonts"
+msgstr ""
+
+msgid "Title section"
+msgstr ""
+
+msgid "Footer buttons"
+msgstr ""
+
+msgid "Step content"
+msgstr ""
+
+msgid "Finish Button Type"
+msgstr ""
+
+msgid "Panel Button Type"
+msgstr ""
+
+msgid "Summary segment"
+msgstr ""
+
+msgid "Payment segment"
+msgstr ""
+
+msgid "Heading title"
+msgstr ""
+
+msgid "Sub Steps"
+msgstr ""
+
+msgid "Step Popups"
+msgstr ""
+
+msgid "Set up Sidebar visibility and its content"
+msgstr ""
+
+msgid "Packages popup"
+msgstr ""
+
+msgid "Set up Services, Locations, Employees selection options"
+msgstr ""
+
+msgid "Set up Services selection options"
+msgstr ""
+
+msgid "Set up Employees selection options"
+msgstr ""
+
+msgid "Set up Locations selection options"
+msgstr ""
+
+msgid "Set up Calendar layout and Recurring popup options"
+msgstr ""
+
+msgid "Customer information"
+msgstr ""
+
+msgid "Payment summary"
+msgstr ""
+
+msgid "Set up labels and buttons"
+msgstr ""
+
+msgid "Set up button types and labels"
+msgstr ""
+
+msgid "Global Settings"
+msgstr ""
+
+msgid "Section"
+msgstr ""
+
+msgid "Field Order"
+msgstr ""
+
+msgid "Congratulations"
+msgstr ""
+
+msgid "Footer"
+msgstr ""
+
+msgid "Get in touch"
+msgstr ""
+
+msgid "Collapse menu"
+msgstr ""
+
+msgid "Filled"
+msgstr ""
+
+msgid "Plain"
+msgstr ""
+
+msgid "'Continue' button style"
+msgstr ""
+
+msgid "Slot end time"
+msgstr ""
+
+msgid "Busy slots"
+msgstr ""
+
+msgid "Estimated price"
+msgstr ""
+
+msgid "Time slot price"
+msgstr ""
+
+msgid "Price indicators"
+msgstr ""
+
+msgid "Number of people on waiting list"
+msgstr ""
+
+msgid "'Finish' button style"
+msgstr ""
+
+msgid "'Customer panel' button style"
+msgstr ""
+
+msgid "Sidebar visibility"
+msgstr ""
+
+msgid "Publish Form"
+msgstr ""
+
+msgid "View all"
+msgstr ""
+
+msgid "Set up categories cards"
+msgstr ""
+
+msgid "Cards"
+msgstr ""
+
+msgid "Button style"
+msgstr ""
+
+msgid "Services overview"
+msgstr ""
+
+msgid "Set up Services view"
+msgstr ""
+
+msgid "Set up Service detailed view"
+msgstr ""
+
+msgid "Booking Form"
+msgstr ""
+
+msgid "Set options, colors and labels for booking form"
+msgstr ""
+
+msgid ""
+"Showcase your services in stylish card layouts. Easily organize them by "
+"category and tailor the appearance to match your brand."
+msgstr ""
+
+msgid "Service count"
+msgstr ""
+
+msgid "Back button"
+msgstr ""
+
+msgid "'Back' button style"
+msgstr ""
+
+msgid "'Book now' button style"
+msgstr ""
+
+msgid "Main category button"
+msgstr ""
+
+msgid "Ribbon"
+msgstr ""
+
+msgid "Color"
+msgstr ""
+
+msgid "'Filter' button style"
+msgstr ""
+
+msgid "Categories sidebar"
+msgstr ""
+
+msgid "Filters block"
+msgstr ""
+
+msgid "Page header"
+msgstr ""
+
+msgid "Service category"
+msgstr ""
+
+msgid "About service"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Card color"
+msgstr ""
+
+msgid "Page scroll"
+msgstr ""
+
+msgid "No results"
+msgstr ""
+
+msgid "View all photos"
+msgstr ""
+
+msgid "View message"
+msgstr ""
+
+msgid "Contact message"
+msgstr ""
+
+msgid "Company Phone:"
+msgstr ""
+
+msgid "Company Email:"
+msgstr ""
+
+msgid "Events list"
+msgstr ""
+
+msgid ""
+"Offer a clean, list-based booking experience with a design that grabs "
+"attention. Customers can easily explore and book from your full event lineup."
+msgstr ""
+
+msgid "Event info"
+msgstr ""
+
+msgid "Set up staff, location, gallery and other event information visibility"
+msgstr ""
+
+msgid "Events available"
+msgstr ""
+
+msgid "Event available"
+msgstr ""
+
+msgid "Search for events"
+msgstr ""
+
+msgid "slot left"
+msgstr ""
+
+msgid "slots left"
+msgstr ""
+
+msgid "Learn more"
+msgstr ""
+
+msgid "Read more"
+msgstr ""
+
+msgid "About event"
+msgstr ""
+
+msgid "Event starts"
+msgstr ""
+
+msgid "Event ends"
+msgstr ""
+
+msgid "How many attendees do you want to book event for?"
+msgstr ""
+
+msgid "Event card"
+msgstr ""
+
+msgid "Step pagination"
+msgstr ""
+
+msgid "Event slots capacity"
+msgstr ""
+
+msgid "'Read more' button style"
+msgstr ""
+
+msgid "'Learn more' button style"
+msgstr ""
+
+msgid "Image"
+msgstr ""
+
+msgid "Step header"
+msgstr ""
+
+msgid "Step info tab"
+msgstr ""
+
+msgid "'Book' button style"
+msgstr ""
+
+msgid "Event gallery"
+msgstr ""
+
+msgid "person"
+msgstr ""
+
+msgid "Event employees"
+msgstr ""
+
+msgid "Service information"
+msgstr ""
+
+msgid "'Learn more' button"
+msgstr ""
+
+msgid "Card field"
+msgstr ""
+
+msgid "Layout"
+msgstr ""
+
+msgid "Search Input Field"
+msgstr ""
+
+msgid "Category Input Field"
+msgstr ""
+
+msgid "Visibility"
+msgstr ""
+
+msgid "Events calendar"
+msgstr ""
+
+msgid ""
+"Display events in a calendar view, allowing customers to browse, search, and "
+"book directly. A great way to highlight upcoming events in an interactive "
+"format."
+msgstr ""
+
+msgid ""
+"Enable customers to manage their appointments and events efficiently. "
+"Personalize colors and labels to create a seamless and branded experience."
+msgstr ""
+
+msgid "Employee panel"
+msgstr ""
+
+msgid ""
+"Allow employees to manage appointments and events with ease. Customize "
+"colors to match your branding and improve usability."
+msgstr ""
+
+msgid "Re-type new password"
+msgstr ""
+
+msgid "Choose Category"
+msgstr ""
+
+msgid "Choose Service"
+msgstr ""
+
+msgid "Choose Package"
+msgstr ""
+
+msgid "Preselect Booking Parameters"
+msgstr ""
+
+msgid "Skip Categories step"
+msgstr ""
+
+msgid "Insert Amelia Booking Shortcode"
+msgstr ""
+
+msgid "Select Catalog View"
+msgstr ""
+
+msgid "Select Package"
+msgstr ""
+
+msgid "Select Event"
+msgstr ""
+
+msgid "Select Events"
+msgstr ""
+
+msgid "Select Tag"
+msgstr ""
+
+msgid "Select Tags"
+msgstr ""
+
+msgid "Select View"
+msgstr ""
+
+msgid "Show All"
+msgstr ""
+
+msgid "Load booking form manually"
+msgstr ""
+
+msgid ""
+"Add element (button, link...) ID, that will manually load amelia shortcode "
+"content"
+msgstr ""
+
+msgid "For multiselect: hold CTRL / Command (⌘)."
+msgstr ""
+
+msgid "Show all categories"
+msgstr ""
+
+msgid "Show all employees"
+msgstr ""
+
+msgid "Show all locations"
+msgstr ""
+
+msgid "Show all services"
+msgstr ""
+
+msgid "Show all events"
+msgstr ""
+
+msgid "Show all packages"
+msgstr ""
+
+msgid "Show all tags"
+msgstr ""
+
+msgid "Show catalog of all categories"
+msgstr ""
+
+msgid "Show specific category"
+msgstr ""
+
+msgid "Show specific categories"
+msgstr ""
+
+msgid "Show specific package"
+msgstr ""
+
+msgid "Show specific packages"
+msgstr ""
+
+msgid "Show event"
+msgstr ""
+
+msgid "Show Type"
+msgstr ""
+
+msgid "List (default)"
+msgstr ""
+
+msgid "Show tag"
+msgstr ""
+
+msgid "Show specific service"
+msgstr ""
+
+msgid "Show specific services"
+msgstr ""
+
+msgid "Trigger type"
+msgstr ""
+
+msgid "Id"
+msgstr ""
+
+msgid "Class"
+msgstr ""
+
+msgid "Trigger by attribute"
+msgstr ""
+
+msgid "Step Booking"
+msgstr ""
+
+msgid "Catalog Booking"
+msgstr ""
+
+msgid "Events List Booking"
+msgstr ""
+
+msgid "Show recurring events"
+msgstr ""
+
+msgid "Show in Amelia Popup"
+msgstr ""
+
+msgid "AM - Booking view"
+msgstr ""
+
+msgid "AM - Step Booking"
+msgstr ""
+
+msgid "AM - Catalog Booking"
+msgstr ""
+
+msgid "AM - Catalog view"
+msgstr ""
+
+msgid "AM - Events view"
+msgstr ""
+
+msgid "AM - Events List Booking"
+msgstr ""
+
+msgid "AM - Events Calendar Booking"
+msgstr ""
+
+msgid "Amelia - Booking view"
+msgstr ""
+
+msgid ""
+"Step-By-Step Booking Wizard gives your customers the option to choose "
+"everything about the booking in a few steps"
+msgstr ""
+
+msgid "Amelia - Step-By-Step Booking"
+msgstr ""
+
+msgid ""
+"Step-by-Step booking view guides the customers through several steps in "
+"order to make their bookings."
+msgstr ""
+
+msgid "Amelia - Catalog Booking"
+msgstr ""
+
+msgid ""
+"Front-end Booking Catalog is shortcode when you want to show your service in "
+"a form of a catalog"
+msgstr ""
+
+msgid "Amelia - Catalog view"
+msgstr ""
+
+msgid ""
+"Front-end Booking Catalog is shortcode when you want to show your service in "
+"a form of a cataloge"
+msgstr ""
+
+msgid "Amelia - Events"
+msgstr ""
+
+msgid ""
+"Event Booking is shortcode that gives your customers the option to book one "
+"of the events that you've created on the back-end in a simple event list "
+"view."
+msgstr ""
+
+msgid "Amelia - Events List"
+msgstr ""
+
+msgid "Amelia - Events Calendar"
+msgstr ""
+
+msgid ""
+"Event Booking is shortcode that gives your customers the option to book one "
+"of the events that you've created on the back-end in a simple event calendar "
+"view."
+msgstr ""
+
+msgid "You are using a form that will be outdated soon!"
+msgstr ""
+
+msgid "Activation settings"
+msgstr ""
+
+msgid "Action Triggered"
+msgstr ""
+
+msgid "Add custom notification"
+msgstr ""
+
+msgid "Add work hours"
+msgstr ""
+
+msgid "Agencies"
+msgstr ""
+
+msgid "API"
+msgstr ""
+
+msgid "Appointment has been created."
+msgstr ""
+
+msgid "Appointment status has been updated."
+msgstr ""
+
+msgid "Appointment note has been updated."
+msgstr ""
+
+msgid ""
+"The total number of persons ({approvedPersonsCount}) exceeds the maximum "
+"capacity of {maxAppointmentCapacity}."
+msgstr ""
+
+msgid "Are you sure you want to delete these items?"
+msgstr ""
+
+msgid "at {time}"
+msgstr ""
+
+msgid "Attendee Asc"
+msgstr ""
+
+msgid "Attendee Desc"
+msgstr ""
+
+msgid "Beauty"
+msgstr ""
+
+msgid "Blog"
+msgstr ""
+
+msgid "Booking Closes Asc"
+msgstr ""
+
+msgid "Booking Closes Desc"
+msgstr ""
+
+msgid "Booking closes"
+msgstr ""
+
+msgid "Booking #{count}"
+msgstr ""
+
+msgid "Booking Opens Asc"
+msgstr ""
+
+msgid "Booking Opens Desc"
+msgstr ""
+
+msgid "Booking opens"
+msgstr ""
+
+msgid "Booking type"
+msgstr ""
+
+msgid "# of bookings"
+msgstr ""
+
+msgid "BuddyBoss"
+msgstr ""
+
+msgid "Cancel and Delete"
+msgstr ""
+
+msgid ""
+"Click \"Configure\" to edit the text that will appear when this placeholder "
+"is used in notifications."
+msgstr ""
+
+msgid "Content placeholders"
+msgstr ""
+
+msgid "This category cannot be deleted because it is included in a package."
+msgstr ""
+
+msgid "Clear filters"
+msgstr ""
+
+msgid "Clear"
+msgstr ""
+
+msgid "Click to upload"
+msgstr ""
+
+msgid "Coaching"
+msgstr ""
+
+msgid "Compared to previous range"
+msgstr ""
+
+msgid "Consulting"
+msgstr ""
+
+msgid "Contact support."
+msgstr ""
+
+msgid "{count} Attendee | {count} Attendees"
+msgstr ""
+
+msgid "{count} day | {count} days"
+msgstr ""
+
+msgid "{count} hour | {count} hours"
+msgstr ""
+
+msgid "{count} minute | {count} minutes"
+msgstr ""
+
+msgid "{count} month | {count} months"
+msgstr ""
+
+msgid "Booking has been updated."
+msgstr ""
+
+msgid ""
+"{count} appointment has been deleted. | {count} appointments have been "
+"deleted."
+msgstr ""
+
+msgid ""
+"{count} appointment has not been deleted. | {count} appointments have not "
+"been deleted."
+msgstr ""
+
+msgid ""
+"{count} event booking has been deleted. | {count} event bookings have been "
+"deleted."
+msgstr ""
+
+msgid ""
+"{count} event booking has not been deleted. | {count} event bookings have "
+"not been deleted."
+msgstr ""
+
+msgid "{count} event has been deleted. | {count} events have been deleted."
+msgstr ""
+
+msgid "{count} Selected"
+msgstr ""
+
+msgid "{count} service has been deleted. | {count} services have been deleted."
+msgstr ""
+
+msgid ""
+"{count} service has not been deleted. | {count} services have not been "
+"deleted."
+msgstr ""
+
+msgid "{count} week | {count} weeks"
+msgstr ""
+
+msgid "Table settings have been updated."
+msgstr ""
+
+msgid "Custom notifications"
+msgstr ""
+
+msgid "Customer configuration"
+msgstr ""
+
+msgid "Customer Asc"
+msgstr ""
+
+msgid "Customer Desc"
+msgstr ""
+
+msgid "Customers detected in file:"
+msgstr ""
+
+msgid "Daily occupancy"
+msgstr ""
+
+msgid "Enter a phone number, then press Enter to add"
+msgstr ""
+
+msgid "Dark Theme"
+msgstr ""
+
+msgid "Date Asc"
+msgstr ""
+
+msgid "Date Desc"
+msgstr ""
+
+msgid "Delete appointment"
+msgstr ""
+
+msgid "Delete booking"
+msgstr ""
+
+msgid ""
+"This service has {count} appointment in the past. | This service has {count} "
+"appointments in the past."
+msgstr ""
+
+msgid "Documentation"
+msgstr ""
+
+msgid "Duplicate appointment"
+msgstr ""
+
+msgid "Duration Asc"
+msgstr ""
+
+msgid "Duration Desc"
+msgstr ""
+
+msgid "E-ticket QR code"
+msgstr ""
+
+msgid "Edit booking"
+msgstr ""
+
+msgid "Drag to rearrange columns and/or choose which ones to display."
+msgstr ""
+
+msgid "Edit transaction"
+msgstr ""
+
+msgid "Edit table"
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "End date"
+msgstr ""
+
+msgid "Event Asc"
+msgstr ""
+
+msgid "Event Booking Details"
+msgstr ""
+
+msgid "Event Desc"
+msgstr ""
+
+msgid "Event details"
+msgstr ""
+
+msgid "Export bookings"
+msgstr ""
+
+msgid ""
+"Allow customers and employees to quickly sign in using their Facebook "
+"account, making the login process faster, simpler, and more secure."
+msgstr ""
+
+msgid "Facebook social login"
+msgstr ""
+
+msgid "Connect APIs effortlessly for smooth, integrated workflows."
+msgstr ""
+
+msgid ""
+"Connect Apple Calendars to sync your personal and professional events, along "
+"with your employees’."
+msgstr ""
+
+msgid "Simple, secure payments powered by Barion."
+msgstr ""
+
+msgid "Display Amelia booking forms and panels on BuddyBoss member profiles."
+msgstr ""
+
+msgid ""
+"Allow customers to book multiple services in a single transaction for a "
+"streamlined experience."
+msgstr ""
+
+msgid "Offer discounts or free appointments with customizable coupons."
+msgstr ""
+
+msgid ""
+"Offer services with multiple duration options for customers to choose from."
+msgstr ""
+
+msgid ""
+"Use custom fields as intake forms to collect customer information during "
+"booking."
+msgstr ""
+
+msgid ""
+"Send personalized email and SMS notifications tailored to your business."
+msgstr ""
+
+msgid "Set dynamic pricing for services based on various conditions."
+msgstr ""
+
+msgid "Allow clients to secure bookings with partial payments."
+msgstr ""
+
+msgid ""
+"Enable quick, contactless event check-ins with unique QR codes for each "
+"ticket."
+msgstr ""
+
+msgid ""
+"Enhance bookings with customizable badges to strengthen your brand identity."
+msgstr ""
+
+msgid ""
+"Set flexible ticket pricing with categories and date-based ranges to "
+"maximize accessibility and revenue."
+msgstr ""
+
+msgid "Offer upsells or additional benefits within a service using extras."
+msgstr ""
+
+msgid "Add Meta Pixel to track ad conversions and optimize marketing."
+msgstr ""
+
+msgid ""
+"Add a Google Analytics tracking code to your booking page to gain insights "
+"into visitor behavior."
+msgstr ""
+
+msgid ""
+"Connect Google Calendars to sync your personal and professional events, "
+"along with your employees’."
+msgstr ""
+
+msgid "Disconnect account"
+msgstr ""
+
+msgid ""
+"Sync your and your employees' personal and professional events by connecting "
+"Google calendars."
+msgstr ""
+
+msgid ""
+"Generate invoices automatically for bookings to streamline payments and "
+"improve client experience."
+msgstr ""
+
+msgid ""
+"Create online classrooms automatically for each booked appointment or event."
+msgstr ""
+
+msgid "Send your customer data to Mailchimp quickly and effortlessly."
+msgstr ""
+
+msgid "Accept payments seamlessly through the Mollie payment gateway."
+msgstr ""
+
+msgid ""
+"Track customers who miss appointments or events without sending "
+"notifications."
+msgstr ""
+
+msgid ""
+"Connect Outlook Calendars to sync your personal and professional events, "
+"along with your employees’."
+msgstr ""
+
+msgid ""
+"Bundle multiple appointments or services at discounted rates to encourage "
+"customers to book more."
+msgstr ""
+
+msgid "Accept payments for bookings and services via PayPal."
+msgstr ""
+
+msgid "Accept payments via Razorpay, ideal for Indian businesses."
+msgstr ""
+
+msgid "Protect your booking system from bots by integrating reCAPTCHA keys."
+msgstr ""
+
+msgid ""
+"Allow customers to book repeating appointments with customizable recurrence."
+msgstr ""
+
+msgid ""
+"Create resources like rooms or chairs that can be shared across services, "
+"locations, and employees."
+msgstr ""
+
+msgid "Process payments easily with Square."
+msgstr ""
+
+msgid "Securely process payments using Stripe."
+msgstr ""
+
+msgid ""
+"Automatically calculate and apply taxes for hassle-free compliance and "
+"accurate billing."
+msgstr ""
+
+msgid ""
+"Set individual time zones for employees so availability and bookings are "
+"shown correctly for clients worldwide."
+msgstr ""
+
+msgid ""
+"Manage event cancellations efficiently by allowing customers to join waiting "
+"lists and filling open spots manually."
+msgstr ""
+
+msgid ""
+"Efficiently manage appointment cancellations by allowing customers to join a "
+"waiting list and manually fill newly opened time slots."
+msgstr ""
+
+msgid ""
+"Connect with web apps to automate messaging and send updates to custom URLs."
+msgstr ""
+
+msgid "Send appointment notifications directly via WhatsApp."
+msgstr ""
+
+msgid "Integrate with WooCommerce to enable advanced e-commerce capabilities."
+msgstr ""
+
+msgid ""
+"Automatically create Zoom meetings for bookings and notify customers and "
+"employees."
+msgstr ""
+
+msgid "Features & Integrations"
+msgstr ""
+
+msgid "Features"
+msgstr ""
+
+msgid "Fri"
+msgstr ""
+
+msgid "Full events"
+msgstr ""
+
+msgid "Go to Custom Fields"
+msgstr ""
+
+msgid "Google Calendar & Google Meet"
+msgstr ""
+
+msgid "Google Meet"
+msgstr ""
+
+msgid ""
+"Allow customers and employees to quickly sign in using their Google account, "
+"making the login process faster, simpler, and more secure."
+msgstr ""
+
+msgid "Google social login"
+msgstr ""
+
+msgid "Gyms"
+msgstr ""
+
+msgid "Healthcare"
+msgstr ""
+
+msgid "Hidden"
+msgstr ""
+
+msgid "ID Asc"
+msgstr ""
+
+msgid "ID Desc"
+msgstr ""
+
+msgid ""
+"You can import the following columns: First name, Last name, Email, Phone, "
+"Gender, Birthday, Note."
+msgstr ""
+
+msgid "Industries"
+msgstr ""
+
+msgid "The first row should not contain column names."
+msgstr ""
+
+msgid "Valid first and last names are required fields."
+msgstr ""
+
+msgid "First and last names must be in two separate fields."
+msgstr ""
+
+msgid ""
+"Date of birth must be in the same format as chosen in your WP settings. If a "
+"date format with a comma is used, the dates should be in quotes."
+msgstr ""
+
+msgid "Phone number must include a country code."
+msgstr ""
+
+msgid "Gender should be specified as either 'male' or 'female'."
+msgstr ""
+
+msgid ""
+"If multiple customers have the same email address, only the first one will "
+"be imported."
+msgstr ""
+
+msgid "If invalid, other values will be skipped and not imported."
+msgstr ""
+
+msgid "Last Booking Asc"
+msgstr ""
+
+msgid "Last Booking Desc"
+msgstr ""
+
+msgid "Less options"
+msgstr ""
+
+msgid "Light Theme"
+msgstr ""
+
+msgid "Manage bookings"
+msgstr ""
+
+msgid "Max Capacity Asc"
+msgstr ""
+
+msgid "Max Capacity Desc"
+msgstr ""
+
+msgid "Microsoft Teams"
+msgstr ""
+
+msgid "Message"
+msgstr ""
+
+msgid "Message content"
+msgstr ""
+
+msgid "Message template"
+msgstr ""
+
+msgid "Mon"
+msgstr ""
+
+msgid "More Features Zero Limits"
+msgstr ""
+
+msgid "More options"
+msgstr ""
+
+msgid "Need additional fields?"
+msgstr ""
+
+msgid "New Attendee"
+msgstr ""
+
+msgid "New event booking"
+msgstr ""
+
+msgid "New Update"
+msgstr ""
+
+msgid ""
+"Once you receive bookings, your appointments will be displayed here. You can "
+"also get started by clicking the Add button below."
+msgstr ""
+
+msgid "No appointments yet"
+msgstr ""
+
+msgid "No attendees found"
+msgstr ""
+
+msgid ""
+"Once you receive event bookings, they will be displayed here. You can also "
+"get started by clicking the Book Event button below."
+msgstr ""
+
+msgid "No event bookings yet"
+msgstr ""
+
+msgid ""
+"Once you add your first event, it will appear here. Click + Event below to "
+"get started."
+msgstr ""
+
+msgid "No events yet"
+msgstr ""
+
+msgid "No results found"
+msgstr ""
+
+msgid "No results found for"
+msgstr ""
+
+msgid "Try adjusting your search or filters."
+msgstr ""
+
+msgid ""
+"Please ensure that services and employees are created and that services are "
+"assigned to employees."
+msgstr ""
+
+msgid "No services or employees available"
+msgstr ""
+
+msgid "Once you add your first service, it will appear here."
+msgstr ""
+
+msgid "Click + Service below to get started."
+msgstr ""
+
+msgid ""
+"Try adjusting your filters or search criteria to find the services you're "
+"looking for."
+msgstr ""
+
+msgid "You can also clear all filters to view all services."
+msgstr ""
+
+msgid "No services yet"
+msgstr ""
+
+msgid "No Show (1)"
+msgstr ""
+
+msgid "No Show (2)"
+msgstr ""
+
+msgid "No Show (3+)"
+msgstr ""
+
+msgid "No-show tag"
+msgstr ""
+
+msgid "No top trends"
+msgstr ""
+
+msgid "Once you start receiving bookings, transactions will be displayed here."
+msgstr ""
+
+msgid "No transactions yet"
+msgstr ""
+
+msgid "There are no future events scheduled. Please create a new event."
+msgstr ""
+
+msgid "No upcoming events"
+msgstr ""
+
+msgid "No WordPress users with the Amelia Customer role are available."
+msgstr ""
+
+msgid "This widget shows monthly data instead of using the global date range."
+msgstr ""
+
+msgid "Occupancy rate"
+msgstr ""
+
+msgid "Occupied"
+msgstr ""
+
+msgid "Organizers"
+msgstr ""
+
+msgid "Payment methods"
+msgstr ""
+
+msgid "Some payment methods cannot be used together due to compatibility rules"
+msgstr ""
+
+msgid "Outlook Calendar & Microsoft Teams"
+msgstr ""
+
+msgid "Paragraph"
+msgstr ""
+
+msgid "Select a placeholder to insert it where your cursor is placed."
+msgstr ""
+
+msgid "Plans"
+msgstr ""
+
+msgid "Please enter a content."
+msgstr ""
+
+msgid "Please enter a notification name."
+msgstr ""
+
+msgid "Please enter a subject."
+msgstr ""
+
+msgid "Please enter a ticket name."
+msgstr ""
+
+msgid "reCAPTCHA"
+msgstr ""
+
+msgid ""
+"Before enabling the recurring option, ensure that all required fields are "
+"set, including the service, employee, date, time, and location (if "
+"applicable)."
+msgstr ""
+
+msgid "Reorder on website"
+msgstr ""
+
+msgid "Reordering services affects how they are displayed on the website."
+msgstr ""
+
+msgid "Reorder Services"
+msgstr ""
+
+msgid "Failed to reorder services."
+msgstr ""
+
+msgid "Services have been reordered."
+msgstr ""
+
+msgid "Replace"
+msgstr ""
+
+msgid "Previous range"
+msgstr ""
+
+msgid "This range"
+msgstr ""
+
+msgid "Roles & permissions"
+msgstr ""
+
+msgid "Same day"
+msgstr ""
+
+msgid "Sat"
+msgstr ""
+
+msgid "Scheduled"
+msgstr ""
+
+msgid "Scope"
+msgstr ""
+
+msgid "Scopes"
+msgstr ""
+
+msgid "Search bookings"
+msgstr ""
+
+msgid "Search features"
+msgstr ""
+
+msgid "Search integrations"
+msgstr ""
+
+msgid "Search invoices"
+msgstr ""
+
+msgid "Search notifications"
+msgstr ""
+
+msgid "Search packages"
+msgstr ""
+
+msgid "Search services"
+msgstr ""
+
+msgid "Please select an attendee."
+msgstr ""
+
+msgid "Please select a closing date."
+msgstr ""
+
+msgid "Please select a closing time."
+msgstr ""
+
+msgid "Please select an opening date."
+msgstr ""
+
+msgid "Please select an opening time."
+msgstr ""
+
+msgid "Select box"
+msgstr ""
+
+msgid "Please select a color."
+msgstr ""
+
+msgid "Please select a date range."
+msgstr ""
+
+msgid "Please select an end time."
+msgstr ""
+
+msgid "Please select an event."
+msgstr ""
+
+msgid "Please select a start time."
+msgstr ""
+
+msgid "Send test"
+msgstr ""
+
+msgid "Send Reset Link"
+msgstr ""
+
+msgid "Service Asc"
+msgstr ""
+
+msgid "Service Categories"
+msgstr ""
+
+msgid "Service Desc"
+msgstr ""
+
+msgid "Service/Event"
+msgstr ""
+
+msgid "This service cannot be deleted because it is included in a package."
+msgstr ""
+
+msgid "Service has been updated."
+msgstr ""
+
+msgid "Show bookings"
+msgstr ""
+
+msgid "Are you sure you want to show this event?"
+msgstr ""
+
+msgid "View in Calendar"
+msgstr ""
+
+msgid "Single booking"
+msgstr ""
+
+msgid "SMS"
+msgstr ""
+
+msgid "SMS balance"
+msgstr ""
+
+msgid "SMS Settings"
+msgstr ""
+
+msgid "Back to"
+msgstr ""
+
+msgid "Status Asc"
+msgstr ""
+
+msgid "Status Desc"
+msgstr ""
+
+msgid "Studios"
+msgstr ""
+
+msgid "Subject placeholders"
+msgstr ""
+
+msgid "Sun"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Thu"
+msgstr ""
+
+msgid "Time zones"
+msgstr ""
+
+msgid "Appointment management guide"
+msgstr ""
+
+msgid "Custom service duration"
+msgstr ""
+
+msgid "Event calendar booking from"
+msgstr ""
+
+msgid "Event list booking from"
+msgstr ""
+
+msgid "Events setup"
+msgstr ""
+
+msgid "Events custom pricing"
+msgstr ""
+
+msgid "Event ticketing"
+msgstr ""
+
+msgid "Events list view"
+msgstr ""
+
+msgid "Events pricing"
+msgstr ""
+
+msgid "Front-end customer panel"
+msgstr ""
+
+msgid "Importing customers"
+msgstr ""
+
+msgid "Notification settings"
+msgstr ""
+
+msgid "Notifications in Amelia"
+msgstr ""
+
+msgid "Recurring appointments setup"
+msgstr ""
+
+msgid ""
+"Create and manage recurring events with customizable schedules for "
+"flexibility and convenience."
+msgstr ""
+
+msgid "Recurring events"
+msgstr ""
+
+msgid "Services & categories setup"
+msgstr ""
+
+msgid "Services setup"
+msgstr ""
+
+msgid "Step-by-step booking form guide"
+msgstr ""
+
+msgid "Tips & suggestions"
+msgstr ""
+
+msgid "Total capacity"
+msgstr ""
+
+msgid "Trainers"
+msgstr ""
+
+msgid "Transaction"
+msgstr ""
+
+msgid "Transaction details"
+msgstr ""
+
+msgid "Transaction #{count}"
+msgstr ""
+
+msgid "Transactions"
+msgstr ""
+
+msgid "Try adjusting your search to find what you are looking for."
+msgstr ""
+
+msgid "Tue"
+msgstr ""
+
+msgid "Update Service Settings"
+msgstr ""
+
+msgid "Updates"
+msgstr ""
+
+msgid "Upload image"
+msgstr ""
+
+msgid "Upload"
+msgstr ""
+
+msgid "Videos"
+msgstr ""
+
+msgid "View booking"
+msgstr ""
+
+msgid "View invoice"
+msgstr ""
+
+msgid "Video tutorials"
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid "Webhooks"
+msgstr ""
+
+msgid "Wed"
+msgstr ""
+
+msgid "Wellness"
+msgstr ""
+
+msgid "WhatsApp"
+msgstr ""
+
+msgid "Working hours"
+msgstr ""
+
+msgid "Yoga"
+msgstr ""
+
+msgid "Top trends"
+msgstr ""
+
+msgid "No customers yet"
+msgstr ""
+
+msgid ""
+"Once you start receiving bookings, your customers will be displayed here. "
+"You can also get started by clicking the Add or Import button below."
+msgstr ""
+
+msgid "Customer setup"
+msgstr ""
+
+msgid "How to"
+msgstr ""
+
+msgid "Boost revenue with bundled service packages"
+msgstr ""
+
+msgid ""
+"Turn your services into high-value packages that customers love. Combine "
+"multiple appointments into a single, discounted offer that drives bigger, "
+"more confident purchases."
+msgstr ""
+
+msgid ""
+"Increase sales volume by encouraging customers to book more appointments at "
+"once"
+msgstr ""
+
+msgid ""
+"Flexible pricing lets you set a fixed package price and offer attractive "
+"discounts"
+msgstr ""
+
+msgid ""
+"Improved customer retention as clients return to use the remaining sessions "
+"in their package"
+msgstr ""
+
+msgid "Manage shared resources with ease"
+msgstr ""
+
+msgid ""
+"Create rooms, equipment, or other resources that can be shared across "
+"employees, services, or locations, ensuring customers only see time slots "
+"when everything they need is truly available."
+msgstr ""
+
+msgid ""
+"Avoid double-booking by automatically coordinating shared rooms, equipment, "
+"or tools"
+msgstr ""
+
+msgid ""
+"Streamline operations with one central place to manage all resources across "
+"your business"
+msgstr ""
+
+msgid ""
+"Deliver a smoother booking experience by showing customers only real, "
+"available time slots"
+msgstr ""
+
+msgid "Boost revenue with valuable extras"
+msgstr ""
+
+msgid ""
+"Offer optional or mandatory extras during the booking process - upsell "
+"additional services, products, or experiences to enhance appointments and "
+"delight your customers."
+msgstr ""
+
+msgid ""
+"Increase revenue by encouraging customers to purchase additional services or "
+"products"
+msgstr ""
+
+msgid ""
+"Customize offerings to match specific services and meet diverse client needs"
+msgstr ""
+
+msgid ""
+"Enhance the customer experience with tailored add-ons that add convenience "
+"and value"
+msgstr ""
+
+msgid "Effortless management for every location"
+msgstr ""
+
+msgid ""
+"Easily organize multiple business locations in one place, ensuring smooth "
+"operations and a consistent booking experience no matter where your services "
+"are offered."
+msgstr ""
+
+msgid ""
+"Centralize scheduling across all branches for clearer, simpler management"
+msgstr ""
+
+msgid ""
+"Improve customer experience by letting clients choose the location that "
+"suits them best"
+msgstr ""
+
+msgid ""
+"Keep operations aligned with unified settings, availability, and resource "
+"control"
+msgstr ""
+
+msgid "Collect the information your business truly needs"
+msgstr ""
+
+msgid ""
+"Build tailored forms across services, events, and customer profiles using "
+"custom fields. Capture exactly the details you need with checkboxes, text "
+"areas, and more, turning every booking and registration into a powerful "
+"intake process."
+msgstr ""
+
+msgid ""
+"Customize every interaction by gathering the right information for services, "
+"events, and customer records"
+msgstr ""
+
+msgid ""
+"Keep your data organized and meaningful with structured fields that "
+"standardize the information you collect"
+msgstr ""
+
+msgid ""
+"Enhance the customer experience with clear, intuitive forms designed around "
+"your business needs"
+msgstr ""
+
+msgid "Automated invoices for a smoother payment experience"
+msgstr ""
+
+msgid ""
+"Automatically generate invoices for every booking, making payments easier, "
+"more transparent, and fully streamlined for both you and your clients."
+msgstr ""
+
+msgid "Save time and reduce manual work with instant, auto-generated invoices"
+msgstr ""
+
+msgid ""
+"Improve accuracy and professionalism with consistent, clearly formatted "
+"billing"
+msgstr ""
+
+msgid ""
+"Enhance client trust by providing transparent, documented payment details "
+"for every booking"
+msgstr ""
+
+msgid "Drive bookings with irresistible coupon offers"
+msgstr ""
+
+msgid ""
+"Create unique coupon codes that customers can redeem during booking-offer "
+"discounts or even free appointments to boost engagement, satisfaction, and "
+"sales."
+msgstr ""
+
+msgid ""
+"Increase conversions by motivating customers with attractive, limited-time "
+"deals"
+msgstr ""
+
+msgid ""
+"Flexible discount options let you set custom values or offer full-price "
+"waivers"
+msgstr ""
+
+msgid ""
+"Enhance customer loyalty by rewarding clients with exclusive, personalized "
+"offers"
+msgstr ""
+
+msgid "Effortless tax management for every booking"
+msgstr ""
+
+msgid ""
+"Automatically calculate and apply taxes to your services and events, "
+"ensuring accurate billing and hassle-free compliance with every transaction."
+msgstr ""
+
+msgid "Eliminate manual calculations with smart, automated tax application"
+msgstr ""
+
+msgid "Ensure accurate billing by applying the correct tax rates every time"
+msgstr ""
+
+msgid ""
+"Stay compliant with ease through consistent, reliable tax handling across "
+"your business"
+msgstr ""
+
+msgid "Stay connected with WhatsApp notifications"
+msgstr ""
+
+msgid ""
+"Keep customers and employees informed by sending appointment and event "
+"notifications directly through WhatsApp - choose predefined messages or "
+"customize your own for a personal touch."
+msgstr ""
+
+msgid ""
+"Boost engagement by reaching clients instantly on a platform they use every "
+"day"
+msgstr ""
+
+msgid "Reduce no-shows with timely reminders sent automatically"
+msgstr ""
+
+msgid ""
+"Simplify communication with customizable messages for both customers and "
+"employees"
+msgstr ""
+
+msgid "Simplify scheduling with recurring events"
+msgstr ""
+
+msgid ""
+"Effortlessly set up and manage events that repeat on your preferred schedule-"
+"offering flexibility, consistency, and a smooth experience for both your "
+"business and your customers."
+msgstr ""
+
+msgid ""
+"Save time by automating repeating events instead of creating them manually"
+msgstr ""
+
+msgid ""
+"Maintain consistent scheduling with customizable frequencies and patterns"
+msgstr ""
+
+msgid ""
+"Improve customer convenience by offering predictable, easy-to-book recurring "
+"options"
+msgstr ""
+
+msgid "Empower your team with seamless integrations"
+msgstr ""
+
+msgid ""
+"Connect employee calendars, meeting tools, and other integrations to keep "
+"schedules perfectly synced and communication effortless across your entire "
+"team."
+msgstr ""
+
+msgid ""
+"Prevent scheduling conflicts with real-time calendar syncing for every "
+"employee."
+msgstr ""
+
+msgid ""
+"Streamline virtual meetings by integrating popular meeting platforms "
+"directly into bookings."
+msgstr ""
+
+msgid "Boost team productivity with automated updates and fewer manual tasks."
+msgstr ""
+
+msgid "Employee note has been updated."
+msgstr ""
+
+msgid "Customer note has been updated."
+msgstr ""
+
+msgid "Need to update your company's days off?"
+msgstr ""
+
+msgid "Manage company days off"
+msgstr ""
+
+msgid "No employees yet"
+msgstr ""
+
+msgid ""
+"Once you add your first employee, it will appear here. Click + Employee "
+"below to get started."
+msgstr ""
+
+msgid "Search attendees"
+msgstr ""
+
+msgid "Total payments"
+msgstr ""
+
+msgid "Closes at"
+msgstr ""
+
+msgid "Booking source"
+msgstr ""
+
+msgid "Edit event booking"
+msgstr ""
+
+msgid "Availability"
+msgstr ""
+
+msgid "Employee details"
+msgstr ""
+
+msgid "Show more ({count})"
+msgstr ""
+
+msgid "Actions"
+msgstr ""
+
+msgid "Employee setup"
+msgstr ""
+
+msgid "Managing assigned services"
+msgstr ""
+
+msgid "Special days setup"
+msgstr ""
+
+msgid "Setting up days off"
+msgstr ""
+
+msgid "Employee badges management"
+msgstr ""
+
+msgid "Google Meet setup"
+msgstr ""
+
+msgid "Work hours setup"
+msgstr ""
+
+msgid "All assigned services"
+msgstr ""
+
+msgid "You can also cancel and delete its future events."
+msgstr ""
+
+msgid "Default location"
+msgstr ""
+
+msgid "Zoom setup"
+msgstr ""
+
+msgid "Front-end employee panel"
+msgstr ""
+
+msgid "Roles settings"
+msgstr ""
+
+msgid "Hide service"
+msgstr ""
+
+msgid "Duplicate service"
+msgstr ""
+
+msgid "Duplicate category"
+msgstr ""
+
+msgid ""
+"Could not delete category. This category has services with {count} future "
+"appointment. | Could not delete category. This category has services with "
+"{count} future appointments."
+msgstr ""
+
+msgid ""
+"This category has services with {count} past appointment. | This category "
+"has services with {count} past appointments."
+msgstr ""
+
+msgid ""
+"Could not delete service. This service has {count} appointment in the "
+"future. | Could not delete service. This service has {count} appointments in "
+"the future."
+msgstr ""
+
+msgid "Hide employee"
+msgstr ""
+
+msgid "Show employee"
+msgstr ""
+
+msgid "Show service"
+msgstr ""
+
+msgid "Delete customer"
+msgstr ""
+
+msgid "Delete employee"
+msgstr ""
+
+msgid ""
+"Could not delete user. This user has {count} appointment in the future. | "
+"Could not delete user. This user has {count} appointments in the future."
+msgstr ""
+
+msgid "Block customer"
+msgstr ""
+
+msgid "Unblock customer"
+msgstr ""
+
+msgid "Hide event"
+msgstr ""
+
+msgid "Are you sure you want to hide this event?"
+msgstr ""
+
+msgid "Are you sure you want to cancel and delete this event?"
+msgstr ""
+
+msgid "Are you sure you want to delete this event booking?"
+msgstr ""
+
+msgid "Notification status has been updated."
+msgstr ""
+
+msgid "Notification status has not been updated."
+msgstr ""
+
+msgid "{count} customer deleted. | {count} customers deleted."
+msgstr ""
+
+msgid "Event has been hidden."
+msgstr ""
+
+msgid "Event is now visible."
+msgstr ""
+
+msgid "Customer details"
+msgstr ""
+
+msgid "Last on {date}"
+msgstr ""
+
+msgid ""
+"{count} customer could not be deleted due to future bookings. | {count} "
+"customers could not be deleted due to future bookings."
+msgstr ""
+
+msgid "Customer has been updated."
+msgstr ""
+
+msgid "Watch on YouTube"
+msgstr ""
+
+msgid "Repeat every year"
+msgstr ""
+
+msgid "Edit work hours"
+msgstr ""
+
+msgid "Edit day off"
+msgstr ""
+
+msgid "Hide tips & suggestions"
+msgstr ""
+
+msgid "Export appointment data with ease"
+msgstr ""
+
+msgid ""
+"Quickly download all appointment details from the Bookings page, making "
+"reporting, analysis, and record-keeping simple and efficient."
+msgstr ""
+
+msgid "Save time with fast, one-click appointment exports"
+msgstr ""
+
+msgid ""
+"Improve reporting accuracy by accessing complete appointment data instantly"
+msgstr ""
+
+msgid "Stay organized with export files ready for analysis or external tools"
+msgstr ""
+
+msgid "Easily export your customer data in one click"
+msgstr ""
+
+msgid ""
+"Download your customer list instantly for reporting, marketing, or external "
+"system use, making data management faster and more convenient than ever."
+msgstr ""
+
+msgid "Save time with quick, hassle-free customer data exports"
+msgstr ""
+
+msgid ""
+"Support deeper insights by using exported data for analysis and reporting"
+msgstr ""
+
+msgid ""
+"Enhance flexibility with customer information ready for marketing tools or "
+"external platforms"
+msgstr ""
+
+msgid "Export event booking data with ease"
+msgstr ""
+
+msgid ""
+"Quickly download all event booking details from the Event Bookings page, "
+"making reporting, analysis, and record-keeping simple and efficient."
+msgstr ""
+
+msgid "Save time with fast, one-click event booking exports"
+msgstr ""
+
+msgid ""
+"Improve reporting accuracy by accessing complete event booking data instantly"
+msgstr ""
+
+msgid "Send smart, personalized notifications your way"
+msgstr ""
+
+msgid ""
+"Create custom notifications that trigger based on booking status or schedule "
+"reminders, keeping customers and employees informed at exactly the right "
+"time."
+msgstr ""
+
+msgid ""
+"Automate communication with notifications triggered by booking status, time, "
+"or custom rules"
+msgstr ""
+
+msgid ""
+"Keep everyone on track using scheduled reminders that reduce no-shows and "
+"confusion"
+msgstr ""
+
+msgid ""
+"Deliver personalized messages tailored to your business tone, branding, and "
+"workflow"
+msgstr ""
+
+msgid "Access your financial data in seconds"
+msgstr ""
+
+msgid ""
+"Export all transaction records from the Finance page for effortless "
+"accounting, reconciliation, or sharing with your finance tools."
+msgstr ""
+
+msgid "Simplify financial management with easy, one-click transaction exports"
+msgstr ""
+
+msgid "Ensure accurate bookkeeping with clear, organized financial data"
+msgstr ""
+
+msgid ""
+"Support external workflows by seamlessly moving financial records into other "
+"systems"
+msgstr ""
+
+msgid "Grow your team with unlimited employee management"
+msgstr ""
+
+msgid ""
+"Add multiple employees to your booking system, manage their schedules, and "
+"assign them to services or events, making it easy to scale your business and "
+"coordinate your team."
+msgstr ""
+
+msgid "Expand your capacity by adding as many employees as your business needs"
+msgstr ""
+
+msgid ""
+"Simplify scheduling with individual availability, working hours, and "
+"assignments"
+msgstr ""
+
+msgid ""
+"Improve customer choice by letting clients book with the employee that suits "
+"them best"
+msgstr ""
+
+msgid "Notification"
+msgstr ""
+
+msgid "Delete category"
+msgstr ""
+
+msgid "Delete service"
+msgstr ""
+
+msgid "Configuration"
+msgstr ""
+
+msgid ""
+"This user has {count} appointment in the past. | This user has {count} "
+"appointments in the past."
+msgstr ""
+
+msgid ""
+"This user is an attendee in future event. Are you sure you want to delete "
+"this user? | This user is an attendee in future events. Are you sure you "
+"want to delete this user?"
+msgstr ""
+
+msgid "No WordPress users with the Amelia Employee role are available."
+msgstr ""
+
+msgid "Set up"
+msgstr ""
+
+msgid "Disable"
+msgstr ""
+
+msgid "Enter email, then press Enter to add"
+msgstr ""
+
+msgid ""
+"This option requires adding the payment link placeholder to your message "
+"templates."
+msgstr ""
+
+msgid "Redirect URL after payment"
+msgstr ""
+
+msgid ""
+"Customers will be redirected to this URL after they complete their payment."
+msgstr ""
+
+msgid "Basic"
+msgstr ""
+
+msgid "Advanced"
+msgstr ""
+
+msgid "Options"
+msgstr ""
+
+msgid "Field order"
+msgstr ""
+
+msgid "Button"
+msgstr ""
+
+msgid "Go to Step-by-step form"
+msgstr ""
+
+msgid "Go to Catalog form"
+msgstr ""
+
+msgid "Redirect"
+msgstr ""
+
+msgid "Your data will be saved before redirecting to another form."
+msgstr ""
+
+msgid "Steps order"
+msgstr ""
+
+msgid "Labels"
+msgstr ""
+
+msgid "Forms"
+msgstr ""
+
+msgid "Accent"
+msgstr ""
+
+msgid "Accent text"
+msgstr ""
+
+msgid "Secondary"
+msgstr ""
+
+msgid "Secondary text"
+msgstr ""
+
+msgid "Body text"
+msgstr ""
+
+msgid "Publish"
+msgstr ""
+
+msgid "Employee has been created."
+msgstr ""
+
+msgid "Employee has been updated."
+msgstr ""
+
+msgid "Employee has been deleted."
+msgstr ""
+
+msgid "Update"
+msgstr ""
+
+msgid "Background"
+msgstr ""
+
+msgid "Outline"
+msgstr ""
+
+msgid "Placeholder text"
+msgstr ""
+
+msgid "Available date background"
+msgstr ""
+
+msgid "Available date text"
+msgstr ""
+
+msgid "Selected date background"
+msgstr ""
+
+msgid "Selected date text"
+msgstr ""
+
+msgid "Unavailable date background"
+msgstr ""
+
+msgid "Unavailable date text"
+msgstr ""
+
+msgid "Employee description popup"
+msgstr ""
+
+msgid "Content area"
+msgstr ""
+
+msgid "Failed to update category positions."
+msgstr ""
+
+msgid "Category has been created."
+msgstr ""
+
+msgid "Category has been updated."
+msgstr ""
+
+msgid "Customer has been created."
+msgstr ""
+
+msgid "Event booking has been updated."
+msgstr ""
+
+msgid "Event has been created."
+msgstr ""
+
+msgid "Event has been updated."
+msgstr ""
+
+msgid "Event booking has been created."
+msgstr ""
+
+msgid "Service has been added."
+msgstr ""
+
+msgid "Reschedule appointment"
+msgstr ""
+
+msgid "Upcoming events section"
+msgstr ""
+
+msgid "Step heading"
+msgstr ""
+
+msgid "Taxes"
+msgstr ""
+
+msgid "Title text"
+msgstr ""
+
+msgid "Info text"
+msgstr ""
+
+msgid "Primary button style"
+msgstr ""
+
+msgid "Secondary button style"
+msgstr ""
+
+msgid "Font family"
+msgstr ""
+
+msgid "Opens at"
+msgstr ""
+
+msgid "Add pricing category"
+msgstr ""
+
+msgid "Shared category capacity"
+msgstr ""
+
+msgid "Maximum spots"
+msgstr ""
+
+msgid "Continue setup"
+msgstr ""
+
+msgid "Skip setup"
+msgstr ""
+
+msgid "Welcome to Amelia!"
+msgstr ""
+
+msgid ""
+"It looks like this is your first time here, so let’s walk through a few "
+"simple steps to help you get started."
+msgstr ""
+
+msgid "Set general settings"
+msgstr ""
+
+msgid ""
+"Set your company working hours. This schedule will be used for all new "
+"employees, however you can customize schedule for each employee later."
+msgstr ""
+
+msgid ""
+"Choose a time interval that will be used when defining all time based "
+"settings."
+msgstr ""
+
+msgid "Choose a currency that will be used for all price based settings."
+msgstr ""
+
+msgid "Create employee"
+msgstr ""
+
+msgid ""
+"In Amelia, an employee is a team member who provides services or hosts "
+"events, with their own schedule, working hours, and assigned offerings."
+msgstr ""
+
+msgid ""
+"Are you sure you want to skip the setup? Once skipped, the guided setup will "
+"no longer be available. All settings will need to be configured later."
+msgstr ""
+
+msgid "Step 1"
+msgstr ""
+
+msgid "Step 2"
+msgstr ""
+
+msgid "Step 3"
+msgstr ""
+
+msgid "Step 4"
+msgstr ""
+
+msgid "How will you use Amelia?"
+msgstr ""
+
+msgid "Choose whether you want to manage services, events, or both."
+msgstr ""
+
+msgid "Create service"
+msgstr ""
+
+msgid ""
+"Book time-based appointments with configurable durations, prices, and "
+"availability."
+msgstr ""
+
+msgid ""
+"In Amelia, a “service” is a specific appointment-type offering your business "
+"provides to clients - such as consultations, treatments, or classes - that "
+"can be fully customized with its own name, duration, price, capacity, "
+"availability, and extras, and booked online with assigned employees."
+msgstr ""
+
+msgid "Create event"
+msgstr ""
+
+msgid "Create scheduled events with fixed dates, prices and capacities."
+msgstr ""
+
+msgid ""
+"In Amelia, an event is a booking-type offering designed for group activities "
+"or multi-day occasions - such as workshops, conferences, tours, or training "
+"series - that can be configured with its own schedule, capacity, pricing "
+"structure and assigned staff."
+msgstr ""
+
+msgid "Select at least one option."
+msgstr ""
+
+msgid "Employee name"
+msgstr ""
+
+msgid "Appointment title"
+msgstr ""
+
+msgid ""
+"Sync your and your employee's personal and professional events by connection "
+"Outlook calendars."
+msgstr ""
+
+msgid "Sign in with Microsoft"
+msgstr ""
+
+msgid "SMTP credentials validation failed. Please check your settings."
+msgstr ""
+
+msgid "Invalid Stripe secret key."
+msgstr ""
+
+msgid "Event time scope"
+msgstr ""
+
+msgid "Future events"
+msgstr ""
+
+msgid "Past events"
+msgstr ""
+
+msgid "Custom range"
+msgstr ""
+
+msgid "Notice: Please select start and end date."
+msgstr ""
+
+msgid "Block time"
+msgstr ""
+
+msgid "Block time has been updated."
+msgstr ""
+
+msgid "Block time has been added."
+msgstr ""
+
+msgid "Block time has been deleted."
+msgstr ""
+
+msgid "Delete block time"
+msgstr ""
+
+msgid "Are you sure you want to delete this block time?"
+msgstr ""
+
+msgid "New block time"
+msgstr ""
+
+msgid "Edit block time"
+msgstr ""
+
+msgid "Add to Calendar"
+msgstr ""
+
+msgid "All Services"
+msgstr ""
+
+msgid "All Locations"
+msgstr ""
+
+msgid ""
+"It seems like there are no employees or services created, or no  employees "
+"are assigned to the service, at this moment."
+msgstr ""
+
+msgid "If you are the admin of this page, see how to"
+msgstr ""
+
+msgid "Add services"
+msgstr ""
+
+msgid "employees."
+msgstr ""
+
+msgid "Maximum bookings reached"
+msgstr ""
+
+msgid ""
+"Don't use Text mode option if you already have HTML code in the description, "
+"since once this option is enabled the existing HTML tags could be lost."
+msgstr ""
+
+msgid "Enable Google Meet"
+msgstr ""
+
+msgid "Enable Microsoft Teams"
+msgstr ""
+
+msgid "You have already booked this event"
+msgstr ""
+
+msgid "Date:"
+msgstr ""
+
+msgid "Email:"
+msgstr ""
+
+msgid "Email already exists with different name. Please check your name."
+msgstr ""
+
+msgid ""
+"Employee daily appointment limit has been reached. Please choose another "
+"date or employee."
+msgstr ""
+
+msgid "Please enter email"
+msgstr ""
+
+msgid "Please enter first name"
+msgstr ""
+
+msgid "Please enter last name"
+msgstr ""
+
+msgid "Please enter phone number"
+msgstr ""
+
+msgid "Event Info"
+msgstr ""
+
+msgid "First Name:"
+msgstr ""
+
+msgid "Last Name:"
+msgstr ""
+
+msgid "On-Site"
+msgstr ""
+
+msgid "Oops..."
+msgstr ""
+
+msgid "Phone:"
+msgstr ""
+
+msgid "Phone already exists with different name. Please check your name."
+msgstr ""
+
+msgid "Price:"
+msgstr ""
+
+msgid "service"
+msgstr ""
+
+msgid "Local Time:"
+msgstr ""
+
+msgid "Total Number of People:"
+msgstr ""
+
+msgid "View"
+msgstr ""
+
+msgid "Email Address"
+msgstr ""
+
+msgid "Get in Touch"
+msgstr ""
+
+msgid "Or pay with card"
+msgstr ""
+
+msgid "Phone Number"
+msgstr ""
+
+msgid "Pick date & time:"
+msgstr ""
+
+msgid "Please select"
+msgstr ""
+
+msgid "Total Amount:"
+msgstr ""
+
+msgid "Your Name"
+msgstr ""
+
+msgid "Service Selection"
+msgstr ""
+
+msgid "Employee Selection"
+msgstr ""
+
+msgid "Location Selection"
+msgstr ""
+
+msgid "Date & Time"
+msgstr ""
+
+msgid "Your Information"
+msgstr ""
+
+msgid "Local Time"
+msgstr ""
+
+msgid "Event Starts"
+msgstr ""
+
+msgid "Event Ends"
+msgstr ""
+
+msgid "About Event"
+msgstr ""
+
+msgid "Events Available"
+msgstr ""
+
+msgid "Event Available"
+msgstr ""
+
+msgid "Search for Events"
+msgstr ""
+
+msgid "Event Location"
+msgstr ""
+
+msgid "Date Picker"
+msgstr ""
+
+msgid "View More"
+msgstr ""
+
+msgid "View All"
+msgstr ""
+
+msgid "Book Now"
+msgstr ""
+
+msgid "About Service"
+msgstr ""
+
+msgid "Generate payment links"
+msgstr ""
+
+msgid ""
+"Check this box to generate a payment link.<br> To include it in the "
+"notification, add the payment link placeholder."
+msgstr ""
+
+msgid "There are no results..."
+msgstr ""
+
+msgid "Select Customer"
+msgstr ""
+
+msgid "Select Service"
+msgstr ""
