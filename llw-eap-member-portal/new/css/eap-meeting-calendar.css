@@ -1,0 +1,1150 @@
+.eap-meeting-calendar {
+    --eap-calendar-border: #d6dbe7;
+    --eap-calendar-muted: #6b7280;
+    --eap-calendar-accent: #1d63c1;
+    --eap-calendar-soft: #eef2ff;
+    background: #ffffff;
+    border: 1px solid var(--eap-calendar-border);
+    border-radius: 16px;
+    padding: 1.75rem;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+    color: #0f172a;
+    position: relative;
+    overflow: hidden;
+}
+
+.eap-meeting-calendar.is-loading .eap-meeting-calendar__toolbar,
+.eap-meeting-calendar.is-loading .eap-meeting-calendar__body {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.eap-meeting-calendar__loading {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.95));
+    color: #0f172a;
+    text-align: center;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.eap-meeting-calendar.is-loading .eap-meeting-calendar__loading {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.eap-meeting-calendar__loading[aria-hidden="true"] {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.eap-meeting-calendar__spinner {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 4px solid var(--eap-calendar-border);
+    border-top-color: var(--eap-calendar-accent);
+    animation: eap-calendar-spin 0.8s linear infinite;
+}
+
+@keyframes eap-calendar-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.eap-meeting-calendar__toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eap-meeting-calendar .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 12px;
+    background: var(--eap-calendar-accent);
+    color: #fff;
+    font-weight: 600;
+    padding: 0.5rem 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.eap-meeting-calendar .button.button-secondary {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.eap-meeting-calendar .button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(29, 99, 193, 0.25);
+}
+
+.eap-meeting-calendar .button:disabled,
+.eap-meeting-calendar .button[aria-disabled="true"] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+}.eap-meeting-calendar {
+    --eap-calendar-border: #d6dbe7;
+    --eap-calendar-muted: #6b7280;
+    --eap-calendar-accent: #1d63c1;
+    --eap-calendar-soft: #eef2ff;
+    background: #ffffff;
+    border: 1px solid var(--eap-calendar-border);
+    border-radius: 16px;
+    padding: 1.75rem;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+    color: #0f172a;
+    position: relative;
+    overflow: hidden;
+}
+
+.eap-meeting-calendar__toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eap-meeting-calendar .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 12px;
+    background: var(--eap-calendar-accent);
+    color: #fff;
+    font-weight: 600;
+    padding: 0.5rem 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.eap-meeting-calendar .button.button-secondary {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.eap-meeting-calendar .button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(29, 99, 193, 0.25);
+}
+
+.eap-meeting-calendar .button:disabled,
+.eap-meeting-calendar .button[aria-disabled="true"] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.eap-meeting-calendar__range {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.eap-meeting-calendar__nav {
+    width: 28px;
+    height: 28px;
+    border-radius: 12px;
+    border: 1px solid var(--eap-calendar-border);
+    background: #fff;
+    cursor: pointer;
+    font-size: 1.15rem;
+    line-height: 1;
+    color: #0f172a;
+    transition: all 0.2s ease;
+}
+
+.eap-meeting-calendar__nav:hover:not(:disabled) {
+    border-color: var(--eap-calendar-accent);
+    color: var(--eap-calendar-accent);
+    transform: translateY(-1px);
+}
+
+.eap-meeting-calendar__nav:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.eap-meeting-calendar__label {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.eap-meeting-calendar__view-switch {
+    display: inline-flex;
+    background: var(--eap-calendar-soft);
+    border-radius: 999px;
+    padding: 4px;
+    gap: 4px;
+}
+
+.eap-meeting-calendar__view-switch button {
+    border: none;
+    background: transparent;
+    color: var(--eap-calendar-muted);
+    font-weight: 600;
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.eap-meeting-calendar__view-switch button.is-active {
+    background: #fff;
+    color: #0f172a;
+    box-shadow: 0 6px 16px rgba(29, 99, 193, 0.25);
+}
+
+.eap-meeting-calendar__body {
+    margin-top: 1.5rem;
+}
+
+.eap-meeting-calendar [data-calendar-view][hidden] {
+    display: none !important;
+}
+
+.eap-meeting-calendar__grid:not([hidden]) {
+    display: block;
+}
+
+.eap-meeting-calendar__weekdays,
+.eap-meeting-calendar__week {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 0.5rem;
+}
+
+.eap-meeting-calendar__weekdays {
+    margin-bottom: 0.5rem;
+}
+
+.eap-meeting-calendar__weekdays div {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    color: var(--eap-calendar-muted);
+}
+
+.eap-meeting-calendar__day {
+    border: 1px solid var(--eap-calendar-border);
+    border-radius: 12px;
+    min-height: 110px;
+    padding: 0.75rem;
+    background: #fdfdff;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.4rem;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    color: #0f172a;
+}
+
+.eap-meeting-calendar__day--month {
+    min-height: 110px;
+}
+
+.eap-meeting-calendar__day--month:focus-visible {
+    outline: 2px solid rgba(29, 99, 193, 0.65);
+    outline-offset: 2px;
+}
+
+.eap-meeting-calendar__day--month[aria-disabled="true"] {
+    background: #fff;
+    box-shadow: none;
+}
+
+.eap-meeting-calendar__day[disabled],
+.eap-meeting-calendar__day[aria-disabled="true"] {
+    cursor: default;
+    color: #333;
+    background-color: white;
+}
+.eap-meeting-calendar__day-count {
+    opacity:0;
+}
+.eap-meeting-calendar__day-event a {
+    text-decoration:none;
+}
+.eap-meeting-calendar__day:hover:not([disabled]):not([aria-disabled="true"]) {
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+    transform: translateY(-2px);
+    border-color: rgba(29, 99, 193, 0.4);
+}
+
+.eap-meeting-calendar__day.is-outside-month {
+    color: var(--eap-calendar-muted);
+}
+
+.eap-meeting-calendar__day.is-today {
+    border-color: #0f2f74;
+    box-shadow: 0 0 0 2px rgba(15, 47, 116, 0.15);
+}
+
+.eap-meeting-calendar__day.has-event.is-today {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.35), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.eap-meeting-calendar__day.has-event {
+    background: linear-gradient(135deg, #0f2f74, #1d63c1);
+    border-color: #0f2f74;
+    color: #fff;
+}
+li.eap-meeting-calendar__day-event:hover {
+    background: #082e61 !important;
+}
+.eap-meeting-calendar__day-number {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #0f172a;
+}
+
+.eap-meeting-calendar__day.has-event .eap-meeting-calendar__day-number {
+    color: #fff;
+}
+
+.eap-meeting-calendar__day-count {
+    font-size: 0.7rem;
+    color: var(--eap-calendar-accent);
+    font-weight: 600;
+    background: rgba(29, 99, 193, 0.12);
+    border-radius: 999px;
+    padding: 0.05rem 0.4rem;
+}
+
+.eap-meeting-calendar__day.has-event .eap-meeting-calendar__day-count {
+    background: rgba(255, 255, 255, 0.18);
+    color: #fff;
+}
+
+.eap-meeting-calendar__day-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.35rem;
+}
+
+.eap-meeting-calendar__day-events {
+    list-style: none;
+    margin: 0.35rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.eap-meeting-calendar__day-event {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    padding: 0.25rem 0.4rem;
+    border-radius: 6px;
+    background: rgba(15, 23, 42, 0.06);
+    color: #0f172a;
+}
+
+.eap-meeting-calendar__day.has-event .eap-meeting-calendar__day-event {
+    background: rgba(255, 255, 255, 0.18);
+    color: #fff;
+}
+
+.eap-meeting-calendar__day-event a {
+    color: inherit;
+    text-decoration-thickness: 1px;
+}
+.eap-meeting-calendar__day-event a:hover {
+    color:#fff;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .eap-meeting-calendar__day[data-open-modal="true"].has-event::after {
+        content: attr(data-event-label);
+        position: absolute;
+        left: 50%;
+        bottom: calc(100% + 8px);
+        transform: translate(-50%, 4px);
+        padding: 5px 10px;
+        background: #111827;
+        color: #fff;
+        font-size: 0.75rem;
+        border-radius: 8px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.15s ease, transform 0.15s ease;
+        z-index: 10;
+    }
+
+    .eap-meeting-calendar__day[data-open-modal="true"].has-event:hover::after {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+.eap-meeting-calendar__year {
+    display: block;
+}
+
+.eap-meeting-calendar__year-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1rem;
+}
+
+.eap-meeting-calendar__year-month {
+    border: 1px solid var(--eap-calendar-border);
+    border-radius: 14px;
+    padding: 0.75rem;
+    background: #f9fafb;
+}
+
+.eap-meeting-calendar__year-month-label {
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.eap-meeting-calendar__mini-weekdays,
+.eap-meeting-calendar__mini-week {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 0.15rem;
+}
+
+.eap-meeting-calendar__mini-weekdays {
+    margin-bottom: 0.25rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color: var(--eap-calendar-muted);
+    letter-spacing: 0.05em;
+}
+
+.eap-meeting-calendar__mini-day {
+    border-radius: 6px;
+    padding: 0.15rem 0;
+    font-size: 0.65rem;
+    border: none;
+    background: transparent;
+    color: #0f172a;
+    min-height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+}
+
+.eap-meeting-calendar__mini-day.is-placeholder {
+    opacity: 0.25;
+}
+
+.eap-meeting-calendar__mini-day.has-event {
+    background: var(--eap-calendar-accent);
+    color: #fff;
+    font-weight: 600;
+}
+
+.eap-meeting-calendar__mini-day.has-event:hover {
+    background: #0f2f74;
+    color: #fff;
+}
+
+.eap-meeting-calendar__mini-day.is-today {
+    border: 1px solid #0f2f74;
+    box-shadow: 0 0 0 2px rgba(29, 99, 193, 0.35);
+    border-radius: 50%;
+}
+
+.eap-meeting-calendar__mini-day .eap-meeting-calendar__day-count {
+    display: none;
+}
+
+.eap-meeting-calendar__mini-day .eap-meeting-calendar__day-number {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.eap-meeting-calendar__list {
+    display: block;
+}
+
+.eap-meeting-calendar__list-header,
+.eap-meeting-calendar__list-row {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.eap-meeting-calendar__list-header {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: var(--eap-calendar-muted);
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+}
+
+.eap-meeting-calendar__list-row {
+    border: 1px solid var(--eap-calendar-border);
+    border-radius: 14px;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.75rem;
+    background: #fff;
+}
+
+.eap-meeting-calendar__list-title {
+    font-weight: 600;
+    margin: 0 0 0.25rem;
+}
+
+.eap-meeting-calendar__list-meta {
+    margin: 0;
+    color: var(--eap-calendar-muted);
+    font-size: 0.85rem;
+}
+
+.eap-meeting-calendar__list-date {
+    font-weight: 600;
+}
+
+.eap-meeting-calendar__list-action .button {
+    width: 100%;
+}
+
+.eap-meeting-calendar__empty {
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--eap-calendar-muted);
+    font-style: italic;
+}
+
+.eap-meeting-calendar__modal[hidden] {
+    display: none;
+}
+
+.eap-meeting-calendar__modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+}
+
+.eap-meeting-calendar__modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.65);
+}
+
+.eap-meeting-calendar__modal-dialog {
+    position: relative;
+    margin: 5vh auto;
+    max-width: 520px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 1.5rem;
+    z-index: 1;
+    box-shadow: 0 35px 80px rgba(15, 23, 42, 0.25);
+}
+
+.eap-meeting-calendar__modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #0f172a;
+}
+
+.eap-meeting-calendar__modal-card {
+    border: 1px solid var(--eap-calendar-border);
+    border-radius: 14px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #f9fafb;
+}
+
+.eap-meeting-calendar__modal-card:last-child {
+    margin-bottom: 0;
+}
+
+.eap-meeting-calendar__modal-card h4 {
+    margin: 0 0 0.35rem;
+}
+
+.eap-meeting-calendar__modal-card p {
+    margin: 0;
+}
+
+.eap-meeting-calendar__modal-actions {
+    margin-top: 0.75rem;
+}
+
+.eap-meeting-calendar__modal-actions .button {
+    width: 100%;
+}
+
+body.eap-meeting-calendar-modal-open {
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .eap-meeting-calendar {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .eap-meeting-calendar__toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .eap-meeting-calendar__view-switch {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .eap-meeting-calendar__week,
+    .eap-meeting-calendar__weekdays {
+        gap: 0.3rem;
+    }
+
+    .eap-meeting-calendar__day {
+        min-height: 78px;
+    }
+
+    .eap-meeting-calendar__list-header {
+        display: none;
+    }
+
+    .eap-meeting-calendar__list-row {
+        grid-template-columns: 1fr;
+    }
+
+    .eap-meeting-calendar__list-action {
+        margin-top: 0.75rem;
+    }
+
+    .eap-meeting-calendar__modal-dialog {
+        margin: 10vh 1rem;
+    }
+}
+
+.eap-meeting-calendar__range {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.eap-meeting-calendar__nav {
+    width: 28px;
+    height: 28px;
+    border-radius: 12px;
+    border: 1px solid var(--eap-calendar-border);
+    background: #fff;
+    cursor: pointer;
+    font-size: 1.15rem;
+    line-height: 1;
+    color: #0f172a;
+    transition: all 0.2s ease;
+}
+
+.eap-meeting-calendar__nav:hover:not(:disabled) {
+    border-color: var(--eap-calendar-accent);
+    color: var(--eap-calendar-accent);
+    transform: translateY(-1px);
+}
+
+.eap-meeting-calendar__nav:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.eap-meeting-calendar__label {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.eap-meeting-calendar__view-switch {
+    display: inline-flex;
+    background: var(--eap-calendar-soft);
+    border-radius: 999px;
+    padding: 4px;
+    gap: 4px;
+}
+
+.eap-meeting-calendar__view-switch button {
+    border: none;
+    background: transparent;
+    color: var(--eap-calendar-muted);
+    font-weight: 600;
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.eap-meeting-calendar__view-switch button.is-active {
+    background: #fff;
+    color: #0f172a;
+    box-shadow: 0 6px 16px rgba(29, 99, 193, 0.25);
+}
+
+.eap-meeting-calendar__body {
+    margin-top: 1.5rem;
+}
+
+.eap-meeting-calendar__grid:not([hidden]) {
+    display: block;
+}
+
+.eap-meeting-calendar__weekdays,
+.eap-meeting-calendar__week {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 0.5rem;
+}
+
+.eap-meeting-calendar__weekdays {
+    margin-bottom: 0.5rem;
+}
+
+.eap-meeting-calendar__weekdays div {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    color: var(--eap-calendar-muted);
+}
+
+.eap-meeting-calendar__day {
+    border: 1px solid var(--eap-calendar-border);
+    border-radius: 12px;
+    min-height: 110px;
+    padding: 0.75rem;
+    background: #fdfdff;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.4rem;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    color: #0f172a;
+}
+
+.eap-meeting-calendar__day--month {
+    min-height: 110px;
+}
+
+.eap-meeting-calendar__day--month:focus-visible {
+    outline: 2px solid rgba(29, 99, 193, 0.65);
+    outline-offset: 2px;
+}
+
+.eap-meeting-calendar__day--month[aria-disabled="true"] {
+    background: #fff;
+    box-shadow: none;
+}
+
+.eap-meeting-calendar__day[disabled],
+.eap-meeting-calendar__day[aria-disabled="true"] {
+    cursor: default;
+    color: #333;
+    background-color: white;
+}
+.eap-meeting-calendar__day-count {
+    opacity:0;
+}
+.eap-meeting-calendar__day-event a {
+    text-decoration:none;
+}
+.eap-meeting-calendar__day:hover:not([disabled]):not([aria-disabled="true"]) {
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+    transform: translateY(-2px);
+    border-color: rgba(29, 99, 193, 0.4);
+}
+
+.eap-meeting-calendar__day.is-outside-month {
+    color: var(--eap-calendar-muted);
+}
+
+.eap-meeting-calendar__day.is-today {
+    border-color: #0f2f74;
+    box-shadow: 0 0 0 2px rgba(15, 47, 116, 0.15);
+}
+
+.eap-meeting-calendar__day.has-event.is-today {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.35), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.eap-meeting-calendar__day.has-event {
+    background: linear-gradient(135deg, #0f2f74, #1d63c1);
+    border-color: #0f2f74;
+    color: #fff;
+}
+li.eap-meeting-calendar__day-event:hover {
+    background: #082e61 !important;
+}
+.eap-meeting-calendar__day-number {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #0f172a;
+}
+
+.eap-meeting-calendar__day.has-event .eap-meeting-calendar__day-number {
+    color: #fff;
+}
+
+.eap-meeting-calendar__day-count {
+    font-size: 0.7rem;
+    color: var(--eap-calendar-accent);
+    font-weight: 600;
+    background: rgba(29, 99, 193, 0.12);
+    border-radius: 999px;
+    padding: 0.05rem 0.4rem;
+}
+
+.eap-meeting-calendar__day.has-event .eap-meeting-calendar__day-count {
+    background: rgba(255, 255, 255, 0.18);
+    color: #fff;
+}
+
+.eap-meeting-calendar__day-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.35rem;
+}
+
+.eap-meeting-calendar__day-events {
+    list-style: none;
+    margin: 0.35rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.eap-meeting-calendar__day-event {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    padding: 0.25rem 0.4rem;
+    border-radius: 6px;
+    background: rgba(15, 23, 42, 0.06);
+    color: #0f172a;
+}
+
+.eap-meeting-calendar__day.has-event .eap-meeting-calendar__day-event {
+    background: rgba(255, 255, 255, 0.18);
+    color: #fff;
+}
+
+.eap-meeting-calendar__day-event a {
+    color: inherit;
+    text-decoration-thickness: 1px;
+}
+.eap-meeting-calendar__day-event a:hover {
+    color:#fff;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .eap-meeting-calendar__day[data-open-modal="true"].has-event::after {
+        content: attr(data-event-label);
+        position: absolute;
+        left: 50%;
+        bottom: calc(100% + 8px);
+        transform: translate(-50%, 4px);
+        padding: 5px 10px;
+        background: #111827;
+        color: #fff;
+        font-size: 0.75rem;
+        border-radius: 8px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.15s ease, transform 0.15s ease;
+        z-index: 10;
+    }
+
+    .eap-meeting-calendar__day[data-open-modal="true"].has-event:hover::after {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+.eap-meeting-calendar__year {
+    display: block;
+}
+
+.eap-meeting-calendar__year-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1rem;
+}
+
+.eap-meeting-calendar__year-month {
+    border: 1px solid var(--eap-calendar-border);
+    border-radius: 14px;
+    padding: 0.75rem;
+    background: #f9fafb;
+}
+
+.eap-meeting-calendar__year-month-label {
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.eap-meeting-calendar__mini-weekdays,
+.eap-meeting-calendar__mini-week {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 0.15rem;
+}
+
+.eap-meeting-calendar__mini-weekdays {
+    margin-bottom: 0.25rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color: var(--eap-calendar-muted);
+    letter-spacing: 0.05em;
+}
+
+.eap-meeting-calendar__mini-day {
+    border-radius: 6px;
+    padding: 0.15rem 0;
+    font-size: 0.65rem;
+    border: none;
+    background: transparent;
+    color: #0f172a;
+    min-height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+}
+
+.eap-meeting-calendar__mini-day.is-placeholder {
+    opacity: 0.25; 
+}
+.eap-meeting-calendar__modal-actions:hover {
+    color:white;
+}
+.eap-meeting-calendar__mini-day.has-event {
+    background: var(--eap-calendar-accent);
+    color: #fff;
+    font-weight: 600;
+}
+
+.eap-meeting-calendar__mini-day.has-event:hover {
+    background: #0f2f74;
+    color: #fff;
+}
+
+.eap-meeting-calendar__mini-day.is-today {
+    border: 1px solid #0f2f74;
+    box-shadow: 0 0 0 2px rgba(29, 99, 193, 0.35);
+    border-radius: 50%;
+}
+
+.eap-meeting-calendar__mini-day .eap-meeting-calendar__day-count {
+    display: none;
+}
+
+.eap-meeting-calendar__mini-day .eap-meeting-calendar__day-number {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.eap-meeting-calendar__list {
+    display: block;
+}
+
+.eap-meeting-calendar__list-header,
+.eap-meeting-calendar__list-row {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.eap-meeting-calendar__list-header {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: var(--eap-calendar-muted);
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+}
+
+.eap-meeting-calendar__list-row {
+    border: 1px solid var(--eap-calendar-border);
+    border-radius: 14px;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.75rem;
+    background: #fff;
+}
+
+.eap-meeting-calendar__list-title {
+    font-weight: 600;
+    margin: 0 0 0.25rem;
+}
+
+.eap-meeting-calendar__list-meta {
+    margin: 0;
+    color: var(--eap-calendar-muted);
+    font-size: 0.85rem;
+}
+
+.eap-meeting-calendar__list-date {
+    font-weight: 600;
+}
+
+.eap-meeting-calendar__list-action .button {
+    width: 100%;
+}
+
+.eap-meeting-calendar__empty {
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--eap-calendar-muted);
+    font-style: italic;
+}
+
+.eap-meeting-calendar__modal[hidden] {
+    display: none;
+}
+
+.eap-meeting-calendar__modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+}
+
+.eap-meeting-calendar__modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.65);
+}
+
+.eap-meeting-calendar__modal-dialog {
+    position: relative;
+    margin: 5vh auto;
+    max-width: 520px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 1.5rem;
+    z-index: 1;
+    box-shadow: 0 35px 80px rgba(15, 23, 42, 0.25);
+}
+
+.eap-meeting-calendar__modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #0f172a;
+}
+
+.eap-meeting-calendar__modal-card {
+    border: 1px solid var(--eap-calendar-border);
+    border-radius: 14px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #f9fafb;
+}
+
+.eap-meeting-calendar__modal-card:last-child {
+    margin-bottom: 0;
+}
+
+.eap-meeting-calendar__modal-card h4 {
+    margin: 0 0 0.35rem;
+}
+
+.eap-meeting-calendar__modal-card p {
+    margin: 0;
+}
+
+.eap-meeting-calendar__modal-actions {
+    margin-top: 0.75rem;
+}
+
+.eap-meeting-calendar__modal-actions .button {
+    width: 100%;
+}
+
+body.eap-meeting-calendar-modal-open {
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .eap-meeting-calendar {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .eap-meeting-calendar__toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .eap-meeting-calendar__view-switch {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .eap-meeting-calendar__week,
+    .eap-meeting-calendar__weekdays {
+        gap: 0.3rem;
+    }
+
+    .eap-meeting-calendar__day {
+        min-height: 78px;
+    }
+
+    .eap-meeting-calendar__list-header {
+        display: none;
+    }
+
+    .eap-meeting-calendar__list-row {
+        grid-template-columns: 1fr;
+    }
+
+    .eap-meeting-calendar__list-action {
+        margin-top: 0.75rem;
+    }
+
+    .eap-meeting-calendar__modal-dialog {
+        margin: 10vh 1rem;
+    }
+}

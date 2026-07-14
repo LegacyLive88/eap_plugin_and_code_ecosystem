@@ -1,0 +1,5513 @@
+/* /css/eap-portal-styles.css */
+
+/* ========================================
+   PROFILE EDITOR - ENHANCED UI
+   ======================================== */
+
+.eap-profile-form {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 0;
+}
+
+/* Profile Editor Header */
+.eap-profile-editor-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 0;
+}
+
+.eap-profile-editor-header h2 {
+    margin: 0 0 10px 0;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.eap-profile-editor-header p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.eap-profile-highlights {
+    margin: 24px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.eap-profile-highlight {
+    position: relative;
+    border-radius: 18px;
+    padding: 18px 20px 18px 64px;
+    background: rgba(248, 250, 255, 0.92);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    backdrop-filter: blur(6px);
+}
+
+.eap-profile-highlight__icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 10px 24px rgba(102, 126, 234, 0.4);
+}
+
+.eap-profile-highlight__title {
+    margin: 0 0 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.eap-profile-highlight__text {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.eap-account-security-cta {
+    margin: 24px 30px;
+    padding: 22px 26px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #0f172a 0%, #1f2a44 100%);
+    color: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.4);
+}
+
+.eap-account-security-cta__title {
+    margin: 0 0 6px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+.eap-account-security-cta__body {
+    margin: 0;
+    color: rgba(248, 250, 252, 0.9);
+    font-size: 0.95rem;
+}
+
+.eap-account-security-button {
+    border: none;
+    border-radius: 14px;
+    padding: 14px 24px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #0f172a;
+    background: #fef3c7;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 10px 20px rgba(254, 243, 199, 0.3);
+}
+
+.eap-account-security-button:hover,
+.eap-account-security-button:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 25px rgba(254, 243, 199, 0.4);
+}
+
+.eap-account-security-button__icon {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .eap-profile-highlights {
+        margin: 18px 20px 8px;
+        grid-template-columns: 1fr;
+    }
+
+    .eap-profile-highlight {
+        padding: 16px 18px 16px 60px;
+    }
+
+    .eap-account-security-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 18px 20px;
+    }
+
+    .eap-account-security-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Progress Bar Section */
+.eap-progress-section {
+    background: #f8f9fa;
+    padding: 20px 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.eap-progress-section h3 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.eap-progress-bar-container {
+    background: #e0e0e0;
+    height: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.eap-progress-bar-fill {
+    height: 100%;
+    background: #667eea;
+    transition: width 0.5s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.eap-progress-bar-fill.low {
+    background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+}
+
+.eap-progress-bar-fill.medium {
+    background: linear-gradient(90deg, #fa709a 0%, #fee140 100%);
+}
+
+.eap-progress-bar-fill.high {
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.eap-progress-bar-fill.complete {
+    background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.eap-progress-percentage {
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.eap-progress-text {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+}
+
+/* Auto-save Indicator */
+.eap-autosave-indicator {
+    display: none;
+    background: #fff3cd;
+    color: #856404;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin: 15px 0;
+    border: 1px solid #ffeaa7;
+}
+
+/* Collapsible Sections */
+.eap-profile-section {
+    border-bottom: 1px solid #e0e0e0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 20px 10px 10px 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInScale 0.6s ease backwards;
+    margin-bottom:10px;
+}
+
+
+
+.eap-profile-section:last-child {
+    border-bottom: none;
+}
+
+.eap-section-header {
+    padding: 20px 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    transition: background 0.2s ease;
+    user-select: none;
+    border-left: 4px solid transparent;
+}
+
+.eap-section-header:hover {
+    background: #f8f9fa;
+    border-left-color: #667eea;
+}
+
+.eap-section-header:focus {
+    outline: 2px solid #667eea;
+    outline-offset: -2px;
+}
+
+.eap-section-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.eap-section-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: auto;
+}
+
+.eap-section-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.eap-section-description {
+    margin: 5px 0 0 0;
+    font-size: 13px;
+    color: #666;
+    font-weight: normal;
+}
+
+.eap-toggle-icon {
+    font-size: 24px;
+    color: #667eea;
+    transition: transform 0.3s ease;
+    transform: rotate(90deg);
+}
+
+.eap-profile-section.collapsed .eap-toggle-icon {
+    transform: rotate(0deg);
+}
+
+.eap-section-content {
+    padding: 0 30px 30px 30px;
+}
+
+.eap-profile-section.collapsed .eap-section-content {
+    display: none;
+}
+
+/* Form Table within Sections */
+.eap-profile-form .form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.eap-profile-form th,
+.eap-profile-form td {
+    padding: 15px;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.eap-profile-form tr:last-child th,
+.eap-profile-form tr:last-child td {
+    border-bottom: none;
+}
+
+.eap-profile-form th {
+    width: 35%;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.eap-profile-form td {
+    width: 65%;
+}
+
+/* Required Field Indicator */
+.eap-required {
+    color: #dc3545;
+    margin-left: 3px;
+}
+
+/* Form Inputs - Enhanced Styling */
+.eap-profile-form input[type="text"],
+.eap-profile-form input[type="email"],
+.eap-profile-form input[type="tel"],
+.eap-profile-form textarea,
+.eap-profile-form select {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.eap-profile-form input[type="text"]:focus,
+.eap-profile-form input[type="email"]:focus,
+.eap-profile-form input[type="tel"]:focus,
+.eap-profile-form textarea:focus,
+.eap-profile-form select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.eap-profile-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Field Validation States */
+.eap-profile-form input.eap-field-valid,
+.eap-profile-form textarea.eap-field-valid,
+.eap-profile-form select.eap-field-valid {
+    border-color: #28a745;
+    background: #f0fff4;
+}
+
+.eap-profile-form input.eap-field-invalid,
+.eap-profile-form textarea.eap-field-invalid,
+.eap-profile-form select.eap-field-invalid {
+    border-color: #dc3545;
+    background: #fff5f5;
+}
+
+/* Validation Feedback */
+.eap-validation-feedback {
+    margin-top: 8px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.eap-validation-feedback.eap-valid {
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.eap-validation-feedback.eap-invalid {
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.eap-feedback-icon {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Privacy Controls */
+.eap-profile-form .eap-privacy-controls {
+    margin-top: 12px;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+}
+
+.eap-profile-form .eap-privacy-controls label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: normal;
+    font-size: 13px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.eap-profile-form .eap-privacy-controls label:hover {
+    color: #667eea;
+}
+
+.eap-profile-form .eap-privacy-controls input[type="radio"] {
+    margin-right: 6px;
+}
+
+.eap-profile-form .eap-privacy-controls legend {
+    font-weight: 600;
+    padding-bottom: 8px;
+    font-size: 13px;
+    color: #495057;
+}
+
+/* Photo Upload Section - Enhanced */
+.eap-photo-upload-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px dashed #dee2e6;
+}
+
+.eap-photo-drop-zone {
+    border: 3px dashed #ced4da;
+    border-radius: 8px;
+    padding: 40px 20px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.eap-photo-drop-zone:hover {
+    border-color: #667eea;
+    background: #f8f9ff;
+}
+
+.eap-photo-drop-zone.eap-drag-over {
+    border-color: #667eea;
+    background: #e7f1ff;
+    transform: scale(1.02);
+}
+
+.eap-photo-drop-zone.eap-uploading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.eap-drop-zone-icon {
+    font-size: 48px;
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.eap-drop-zone-text {
+    font-size: 16px;
+    color: #495057;
+    line-height: 1.6;
+}
+
+.eap-drop-zone-text small {
+    display: block;
+    margin-top: 8px;
+    color: #6c757d;
+    font-size: 12px;
+}
+
+.eap-loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Image Uploader */
+.eap-image-uploader {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.eap-image-uploader input[type="text"] {
+    margin-bottom: 0;
+}
+
+.eap-image-uploader .eap-upload-button {
+    align-self: flex-start;
+    margin: 0;
+    padding: 10px 20px;
+    background: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.eap-image-uploader .eap-upload-button:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.eap-image-preview {
+    margin-top: 15px;
+}
+
+.eap-image-preview img {
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.eap-image-preview img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Read-only Section */
+.eap-profile-form .eap-readonly-section {
+    background: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 6px;
+    border-left: 4px solid #6c757d;
+}
+
+.eap-readonly-section p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+/* Privacy Tip */
+.eap-privacy-tip {
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    border-radius: 4px;
+    line-height: 1.6;
+}
+
+.eap-privacy-tip a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.eap-privacy-tip a:hover {
+    text-decoration: underline;
+}
+
+/* Data Download Section */
+.eap-data-download-section {
+    margin-top: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.eap-data-download-section h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #333;
+    font-size: 20px;
+}
+
+.eap-data-download-section p {
+    margin-bottom: 15px;
+    color: #495057;
+    line-height: 1.6;
+}
+
+.eap-data-download-section .button {
+    background: #667eea;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.eap-data-download-section .button:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    color: #fff;
+}
+
+/* Submit Button */
+.eap-profile-form .submit {
+    margin: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #e0e0e0;
+    text-align: center;
+}
+
+.eap-profile-form input[type="submit"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.eap-profile-form input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+}
+
+.eap-profile-form input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+.eap-profile-form input[type="submit"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Notices */
+.eap-notice {
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    border-left: 4px solid;
+    animation: slideInDown 0.5s ease;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.eap-notice.eap-success {
+    background: #d4edda;
+    border-left-color: #28a745;
+    color: #155724;
+}
+
+.eap-notice.eap-error {
+    background: #f8d7da;
+    border-left-color: #dc3545;
+    color: #721c24;
+}
+
+.eap-notice p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ========================================
+   SECURE LOGIN SHORTCODE
+   ======================================== */
+
+.eap-secure-login {
+    max-width: 1100px;
+    margin: 0 auto 48px;
+    display: grid;
+    grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
+    gap: 24px;
+    align-items: stretch;
+}
+
+.eap-secure-login--logged-in {
+    grid-template-columns: 1fr;
+}
+
+.eap-secure-login__hero {
+    position: relative;
+    border-radius: 24px;
+    padding: 36px;
+    background: linear-gradient(135deg, #4338ca 0%, #7c3aed 65%, #a855f7 100%);
+    color: #f8f9ff;
+    box-shadow: 0 25px 60px rgba(79, 56, 202, 0.35);
+    overflow: hidden;
+}
+
+.eap-secure-login__hero::after {
+    content: '';
+    position: absolute;
+    inset: 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+}
+
+.eap-secure-login__eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 11px;
+    margin: 0 0 12px;
+    opacity: 0.8;
+}
+
+.eap-secure-login__title {
+    margin: 0 0 8px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.eap-secure-login__subtitle {
+    margin: 0 0 24px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.eap-secure-login__hero-list {
+    list-style: none;
+    margin: 0 0 28px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.eap-secure-login__hero-item {
+    display: flex;
+    gap: 14px;
+    padding: 14px 18px;
+    border-radius: 16px;
+    background: rgba(15, 23, 42, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.eap-secure-login__hero-icon {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.eap-secure-login__hero-label {
+    margin: 0;
+    font-weight: 600;
+    color: #fff;
+}
+
+.eap-secure-login__hero-copy {
+    margin: 4px 0 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.eap-secure-login__hero-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 0.85rem;
+}
+
+.eap-secure-login__surface {
+    position: relative;
+    padding: 34px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.12);
+    backdrop-filter: blur(16px);
+}
+
+.eap-secure-login__surface > *:first-child {
+    margin-top: 0;
+}
+
+.eap-secure-login__message {
+    padding: 14px 16px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+    border: 1px solid;
+}
+
+.eap-secure-login__message--error {
+    background: #fef2f2;
+    border-color: #dc2626;
+    color: #991b1b;
+}
+
+.eap-secure-login__message--success {
+    background: #ecfdf5;
+    border-color: #059669;
+    color: #065f46;
+}
+
+.eap-secure-login__tabs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    background: #f1f5f9;
+    padding: 6px;
+    border-radius: 16px;
+    margin-bottom: 28px;
+    gap: 6px;
+}
+
+.eap-secure-login__tabs button {
+    border: none;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-weight: 600;
+    background: transparent;
+    color: #475569;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.eap-secure-login__tabs button.is-active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.35);
+}
+
+.eap-secure-login__panel {
+    display: none;
+}
+
+.eap-secure-login__panel.is-active {
+    display: block;
+}
+
+.eap-secure-login label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.eap-secure-login input[type="text"],
+.eap-secure-login input[type="email"],
+.eap-secure-login input[type="password"],
+.eap-secure-login input[type="number"] {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid #cbd5f5;
+    background: #f8fafc;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.eap-secure-login input:focus {
+    outline: none;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+    background: #fff;
+}
+
+.eap-secure-login__password-field {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.eap-secure-login__password-field input {
+    margin-bottom: 0;
+}
+
+.eap-secure-login__password-toggle {
+    height: 58px;
+    max-height: 58px;
+    padding: 0 !important;
+    min-width: 58px;    
+    border: 1px solid #cbd5f5;
+    background: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.eap-secure-login__password-toggle:hover,
+.eap-secure-login__password-toggle:focus-visible {
+    background: #eef2ff;
+    border-color: #818cf8;
+}
+
+.eap-secure-login__note {
+    font-size: 0.85rem;
+    color: #475569;
+    margin: -4px 0 16px;
+}
+
+.eap-secure-login__remember {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+.eap-secure-login__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.eap-secure-login button[type="submit"],
+.eap-secure-login__primary-link {
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    box-shadow: 0 12px 25px rgba(102, 126, 234, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eap-secure-login button[type="submit"]:hover,
+.eap-secure-login__primary-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 30px rgba(102, 126, 234, 0.45);
+}
+
+.eap-secure-login__button-secondary {
+    border-radius: 12px;
+    padding: 12px 20px;
+    border: 1px solid #cbd5f5;
+    background: #fff;
+    color: #0f172a;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.eap-secure-login__button-secondary:hover,
+.eap-secure-login__button-secondary:focus-visible {
+    border-color: #7c3aed;
+    /*color: #7c3aed;*/
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.15);
+}
+
+.eap-secure-login__forgot {
+    margin-top: 12px;
+    text-align: left;
+    transform: translateX(-16px);    
+}
+
+.eap-secure-login__forgot-link {
+    background: none !important;
+    border: none;
+    color: #0028E3 !important;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0;
+}
+
+.eap-secure-login__status-heading {
+    margin: 0 0 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.eap-secure-login__status-text {
+    margin: 0 0 18px;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.eap-secure-login__forgot-modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 9999;
+}
+
+.eap-secure-login__forgot-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.72);
+    backdrop-filter: blur(4px);
+}
+
+.eap-secure-login__forgot-dialog {
+    position: relative;
+    background: #fff;
+    border-radius: 18px;
+    padding: 28px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 30px 70px rgba(15, 23, 42, 0.35);
+    z-index: 1;
+}
+
+.eap-secure-login__forgot-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    border: none;
+    background: none;
+    font-size: 1.6rem;
+    color: #475569;
+    cursor: pointer;
+}
+
+body.eap-secure-login--modal-open {
+    overflow: hidden;
+}
+
+.eap-secure-login [hidden] {
+    display: none !important;
+}
+
+@media (max-width: 960px) {
+    .eap-secure-login {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .eap-secure-login__hero,
+    .eap-secure-login__surface {
+        padding: 26px;
+    }
+
+    .eap-secure-login__password-field {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .eap-secure-login__actions {
+        flex-direction: column;
+    }
+
+    .eap-secure-login__tabs {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tooltip */
+.eap-tooltip {
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 10000;
+    max-width: 250px;
+    line-height: 1.4;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.eap-tooltip::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 20px;
+    border: 6px solid transparent;
+    border-bottom-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .eap-profile-editor-header {
+        padding: 20px;
+    }
+    
+    .eap-profile-editor-header h2 {
+        font-size: 22px;
+    }
+    
+    .eap-progress-section {
+        padding: 15px 20px;
+    }
+    
+    .eap-section-header {
+        padding: 15px 20px;
+    }
+    
+    .eap-section-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    
+    .eap-section-title {
+        font-size: 16px;
+    }
+    
+    .eap-section-content {
+        padding: 0 20px 20px 20px;
+    }
+    
+    .eap-profile-form th,
+    .eap-profile-form td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .eap-profile-form th {
+        padding-bottom: 5px;
+    }
+    
+    .eap-profile-form td {
+        padding-bottom: 15px;
+    }
+    
+    .eap-profile-form input[type="text"],
+    .eap-profile-form input[type="email"],
+    .eap-profile-form input[type="tel"],
+    .eap-profile-form textarea,
+    .eap-profile-form select {
+        max-width: 100%;
+    }
+    
+    .eap-photo-drop-zone {
+        padding: 30px 15px;
+    }
+    
+    .eap-drop-zone-icon {
+        font-size: 36px;
+    }
+    
+    .eap-drop-zone-text {
+        font-size: 14px;
+    }
+    
+    .eap-profile-form .submit {
+        margin: 20px;
+    }
+    
+    .eap-profile-form input[type="submit"] {
+        width: 100%;
+        padding: 14px 30px;
+    }
+}
+
+.eap-account-security-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 16px;
+    z-index: 99999;
+}
+
+.eap-account-security-modal.is-open {
+    display: flex;
+}
+
+.eap-account-security-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 8, 20, 0.75);
+    backdrop-filter: blur(6px);
+}
+.eap-secure-viewer__dialog:has(>div>[data-preview-type="pdf"]):has(>div>[data-preview-type="pdf"]) {
+    height: 90vh;
+}
+.eap-secure-viewer__content:has(>.eap-secure-viewer__image) {
+    height: 85vh;
+}
+.eap-account-security-dialog {
+    position: relative;
+    width: 100%;
+    max-width: 760px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 28px;
+    padding: 32px;
+    box-shadow: 0 30px 80px rgba(15, 23, 42, 0.5);
+    z-index: 1;
+}
+
+.eap-account-security-close {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    border: none;
+    background: rgba(15, 23, 42, 0.08);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.eap-account-security-close:hover,
+.eap-account-security-close:focus-visible {
+    background: rgba(15, 23, 42, 0.18);
+}
+
+.eap-account-security-header {
+    margin-bottom: 24px;
+}
+
+.eap-account-security-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.7rem;
+    margin: 0 0 10px;
+    color: #94a3b8;
+}
+
+.eap-account-security-header h3 {
+    margin: 0 0 8px;
+    font-size: 1.6rem;
+    color: #0f172a;
+}
+
+.eap-account-security-description {
+    margin: 0;
+    color: #475569;
+}
+
+.eap-account-security-section {
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    padding: 22px 24px;
+    background: #f8fafc;
+    margin-bottom: 20px;
+}
+
+.eap-account-security-section-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.eap-account-security-status-text {
+    margin: 4px 0 0;
+    color: #475569;
+    font-size: 0.9rem;
+}
+
+.eap-account-security-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.eap-account-security-field label {
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+.eap-account-security-field input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid #cbd5f5;
+    background: #fff;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.eap-account-security-field input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.eap-account-security-help {
+    margin: 6px 0 0;
+    font-size: 0.85rem;
+    color: #475569;
+}
+
+.eap-account-security-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.eap-account-security-primary,
+.eap-account-security-secondary,
+.eap-account-security-refresh {
+    border: none;
+    border-radius: 12px;
+    padding: 12px 22px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.eap-account-security-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.35);
+}
+
+.eap-account-security-secondary {
+    background: #fff;
+    color: #0f172a;
+    border: 1px solid #cbd5f5;
+}
+
+.eap-account-security-refresh {
+    background: rgba(102, 126, 234, 0.1);
+    color: #4c1d95;
+    border: 1px solid rgba(76, 29, 149, 0.2);
+}
+
+.eap-account-security-primary:hover,
+.eap-account-security-secondary:hover,
+.eap-account-security-refresh:hover,
+.eap-account-security-primary:focus-visible,
+.eap-account-security-secondary:focus-visible,
+.eap-account-security-refresh:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 24px rgba(15, 23, 42, 0.15);
+}
+
+.eap-account-security-badge {
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.eap-account-security-badge.is-enabled {
+    background: rgba(16, 185, 129, 0.15);
+    color: #047857;
+}
+
+.eap-account-security-badge.is-disabled {
+    background: rgba(248, 250, 252, 0.8);
+    color: #475569;
+}
+
+.eap-account-security-feedback {
+    display: none;
+    padding: 12px 14px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+
+.eap-account-security-feedback.is-success {
+    display: block;
+    background: #ecfdf5;
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.eap-account-security-feedback.is-error {
+    display: block;
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid rgba(185, 28, 28, 0.3);
+}
+
+.eap-account-security-qr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background: #fff;
+    border: 1px dashed #cbd5f5;
+    border-radius: 16px;
+    min-height: 220px;
+}
+
+.eap-account-security-secret {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+
+.eap-account-security-secret-value {
+    font-size: 1.1rem;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.eap-account-security-note {
+    margin: 0 0 12px;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+body.eap-account-security-open {
+    overflow: hidden;
+}
+
+@media (max-width: 640px) {
+    .eap-account-security-dialog {
+        padding: 24px 18px;
+        border-radius: 20px;
+    }
+
+    .eap-account-security-actions {
+        flex-direction: column;
+    }
+
+    .eap-account-security-primary,
+    .eap-account-security-secondary,
+    .eap-account-security-refresh {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* === SINGLE MEMBER PROFILE VIEW === */
+
+/* Profile Container with Glassmorphism */
+.eap-single-profile {
+    max-width: 1000px;
+    margin: 0 auto;
+    animation: fadeInUp 0.6s ease;
+}
+
+/* Back Button - Sticky at Top */
+.eap-profile-back-button {
+    margin-bottom: 30px;
+    animation: fadeInUp 0.4s ease;
+}
+
+.eap-profile-back-button a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    color: #333;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.eap-profile-back-button a::before {
+    content: '←';
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.eap-profile-back-button a:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 6px 25px rgba(102, 126, 234, 0.3);
+    border-color: rgba(102, 126, 234, 0.4);
+    /*color: #667eea;*/
+}
+
+.eap-profile-back-button a:hover::before {
+    transform: translateX(-5px);
+}
+
+/* Profile Header Card with Glassmorphism */
+.eap-profile-header {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInScale 0.6s ease 0.1s backwards;
+}
+
+/* Animated gradient border at top */
+.eap-profile-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+    background-size: 200% 100%;
+    animation: shimmer 3s linear infinite;
+}
+
+.eap-profile-photo {
+    flex-shrink: 0;
+}
+
+.eap-profile-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    transition: all 0.4s ease;
+}
+
+.eap-profile-photo img:hover {
+    transform: scale(1.05);
+    border-color: #667eea;
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
+}
+
+.eap-profile-header-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.eap-profile-name {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #2d3748;
+    line-height: 1.2;
+}
+
+.eap-profile-role {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.eap-role-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-radius: 25px;
+    font-size: 0.95em;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+}
+
+.eap-role-badge::before {
+    content: '✦';
+    font-size: 14px;
+}
+
+.eap-role-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+/* Profile Sections with Glassmorphism */
+.eap-profile-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.eap-profile-section:nth-child(1) { animation-delay: 0.15s; }
+.eap-profile-section:nth-child(2) { animation-delay: 0.2s; }
+.eap-profile-section:nth-child(3) { animation-delay: 0.25s; }
+.eap-profile-section:nth-child(4) { animation-delay: 0.3s; }
+
+.eap-profile-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.eap-profile-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.2);
+    border-color: rgba(102, 126, 234, 0.4);
+    background: rgba(255, 255, 255, 0.57);
+}
+
+.eap-profile-section:hover::before {
+    opacity: 1;
+}
+
+.eap-profile-section h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #2d3748;
+    font-size: 1.6em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.eap-profile-section h3::before {
+    content: '';
+    width: 5px;
+    height: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 3px;
+}
+
+.eap-profile-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.eap-profile-field {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    line-height: 1.8;
+    padding: 12px 0;
+}
+
+.eap-profile-field strong {
+    min-width: 180px;
+    color: #2d3748;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.eap-profile-field strong::before {
+    content: '▸';
+    color: #667eea;
+    font-size: 0.9em;
+}
+
+.eap-profile-value {
+    flex: 1;
+    color: #4a5568;
+    font-size: 15px;
+}
+
+.eap-profile-field .eap-profile-value {
+    margin-top: 0;
+}
+
+/* Working Groups List */
+.eap-working-groups-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.eap-working-groups-list li {
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    color: #2d3748;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.eap-working-groups-list li:hover {
+    background: rgba(255, 255, 255, 0.7);
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.eap-working-groups-list li::before {
+    content: '● ';
+    color: #667eea;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Profile Actions - Bottom Buttons */
+.eap-profile-actions {
+    text-align: center;
+    padding: 30px 0 20px;
+    animation: fadeInUp 0.6s ease 0.35s backwards;
+}
+
+.eap-profile-actions .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    border: none;
+    cursor: pointer;
+}
+
+    
+.eap-profile-actions .button::before {
+    content: '←';
+    margin-top:-5px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.eap-profile-actions .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+    color: #fff;
+}
+
+.eap-profile-actions .button:hover::before {
+    transform: translateX(-5px);
+}
+
+/* Language Tags Display (consistent with directory) */
+.eap-language-tags-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.eap-language-tags-display .eap-language-tag {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.eap-language-tags-display .eap-language-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for Single Profile */
+@media (max-width: 1024px) {
+    .eap-profile-header {
+        padding: 30px;
+    }
+    
+    .eap-profile-section {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .eap-single-profile {
+        padding: 0 10px;
+    }
+    
+    .eap-profile-back-button {
+        margin-bottom: 20px;
+    }
+    
+    .eap-profile-header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+    
+    .eap-profile-photo img {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .eap-profile-header-info {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .eap-profile-name {
+        font-size: 2em;
+    }
+    
+    .eap-profile-role {
+        justify-content: center;
+    }
+    
+    .eap-profile-section {
+        padding: 20px;
+    }
+    
+    .eap-profile-section h3 {
+        font-size: 1.4em;
+    }
+    
+    .eap-profile-field {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .eap-profile-field strong {
+        min-width: auto;
+    }
+    
+    .eap-profile-actions .button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .eap-profile-back-button a {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .eap-profile-header {
+        padding: 20px 15px;
+    }
+    
+    .eap-profile-photo img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .eap-profile-name {
+        font-size: 1.6em;
+    }
+    
+    .eap-profile-section {
+        padding: 15px;
+    }
+    
+    .eap-profile-section h3 {
+        font-size: 1.2em;
+    }
+    
+    .eap-working-groups-list li {
+        padding: 10px 12px;
+    }
+}
+
+/* === DELEGATES DIRECTORY === */
+
+/* Directory Page Header */
+.eap-directory-header {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.eap-directory-header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 10px rgba(102, 126, 234, 0.2);
+}
+
+.eap-directory-header p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Glassmorphism Filter Panel */
+.eap-directory-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.eap-directory-filters .eap-filter-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.eap-directory-filters .eap-filter-item label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.eap-directory-filters .eap-filter-item label::before {
+    content: '●';
+    color: #667eea;
+    font-size: 12px;
+}
+
+.eap-directory-filters .eap-filter-item input,
+.eap-directory-filters .eap-filter-item select {
+    padding: 12px 15px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.eap-directory-filters .eap-filter-item input:focus,
+.eap-directory-filters .eap-filter-item select:focus {
+    outline: none;
+    border-color: #667eea;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+    transform: translateY(-2px);
+}
+
+.eap-directory-filters .eap-filter-item input::placeholder {
+    color: #999;
+}
+
+.eap-directory-filters .eap-filter-item .button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.eap-directory-filters .eap-filter-item button[type="submit"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.eap-directory-filters .eap-filter-item button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+}
+
+.eap-directory-filters .eap-filter-item a.button {
+    background: rgba(255, 255, 255, 0.6);
+    color: #555;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    display: inline-block;
+}
+
+.eap-directory-filters .eap-filter-item a.button:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Results Counter */
+.eap-results-counter {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: #555;
+    font-weight: 600;
+}
+
+/* Directory Grid Container */
+.directory-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 10px 0;
+}
+
+/* Glassmorphism Member Cards */
+.member-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    position: relative;
+    animation: fadeInScale 0.6s ease backwards;
+}
+
+.member-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+    background-size: 200% 100%;
+    animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.member-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 45px rgba(102, 126, 234, 0.3);
+    border-color: rgba(102, 126, 234, 0.4);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Card Header with Avatar */
+.member-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 20px;
+    background: linear-gradient(180deg, rgba(102, 126, 234, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.member-card img.eap-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.member-card:hover img.eap-avatar {
+    transform: scale(1.08);
+    border-color: #667eea;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.member-card h4 {
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #2d3748;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* Card Body */
+.member-card-body {
+    padding: 0 25px 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.member-card-body p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #4a5568;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.6;
+    padding: 8px 0;
+}
+
+.member-card-body p strong {
+    color: #2d3748;
+    font-weight: 600;
+    min-width: 90px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.member-card-body p strong::before {
+    content: '▸';
+    color: #667eea;
+    font-size: 0.8em;
+}
+
+.member-info-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+/* Card Footer / Actions */
+.member-card .eap-view-profile-link {
+    margin-top: auto;
+    padding: 0 25px 25px;
+    text-align: center;
+}
+
+.member-card .eap-view-profile-link a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #667eea 33%, #764ba2 67%);
+    background-size:300%;
+    background-position:center center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.member-card .eap-view-profile-link a::after {
+    content: '→';
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.member-card .eap-view-profile-link a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
+    color:white;
+}
+
+.member-card .eap-view-profile-link a:hover::after {
+    transform: translateX(5px);
+}
+
+/* Empty State */
+.eap-no-members {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 2px dashed rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+}
+
+.eap-no-members-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.eap-no-members p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 0;
+}
+
+/* Pagination - Glassmorphism Style */
+.eap-pagination {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.eap-pagination .page-numbers {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 45px;
+    height: 45px;
+    padding: 0 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    color: #555;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.eap-pagination .page-numbers:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: #667eea;
+}
+
+.eap-pagination .page-numbers.current {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.eap-pagination .page-numbers.dots {
+    border: none;
+    background: transparent;
+    pointer-events: none;
+}
+
+/* Stagger Animation for Cards */
+.member-card:nth-child(1) { animation-delay: 0.05s; }
+.member-card:nth-child(2) { animation-delay: 0.1s; }
+.member-card:nth-child(3) { animation-delay: 0.15s; }
+.member-card:nth-child(4) { animation-delay: 0.2s; }
+.member-card:nth-child(5) { animation-delay: 0.25s; }
+.member-card:nth-child(6) { animation-delay: 0.3s; }
+.member-card:nth-child(7) { animation-delay: 0.35s; }
+.member-card:nth-child(8) { animation-delay: 0.4s; }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .directory-container {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .eap-directory-header h1 {
+        font-size: 2em;
+    }
+    
+    .eap-directory-filters {
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .eap-directory-filters .eap-filter-item {
+        min-width: 100%;
+        flex: 1 1 100%;
+    }
+    
+    .directory-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .member-card img.eap-avatar {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .eap-pagination .page-numbers {
+        min-width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .eap-directory-header {
+        padding: 30px 15px;
+    }
+    
+    .eap-directory-header h1 {
+        font-size: 1.6em;
+    }
+    
+    .eap-directory-filters {
+        padding: 15px;
+    }
+    
+    .member-card-header {
+        padding: 20px 15px 15px;
+    }
+    
+    .member-card-body {
+        padding: 0 15px 15px;
+    }
+    
+    .member-card .eap-view-profile-link {
+        padding: 0 15px 15px;
+    }
+}
+
+/* === WORKING GROUPS DIRECTORY === */
+
+/* Working Groups Directory Header */
+.eap-wg-directory {
+    max-width: 1400px;
+    margin: 0 auto;
+    animation: fadeInUp 0.6s ease;
+}
+
+.eap-wg-header {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+
+.eap-wg-header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.eap-wg-header p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Working Groups Grid */
+.eap-wg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 10px 0;
+}
+
+/* Working Group Card */
+.eap-wg-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    position: relative;
+    animation: fadeInScale 0.6s ease backwards;
+}
+
+.eap-wg-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+    background-size: 200% 100%;
+    animation: shimmer 3s linear infinite;
+}
+
+.eap-wg-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 45px rgba(102, 126, 234, 0.3);
+    border-color: rgba(102, 126, 234, 0.4);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Working Group Card Header */
+.eap-wg-card-header {
+    padding: 30px 25px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(180deg, rgba(102, 126, 234, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.eap-wg-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+}
+
+.eap-wg-card:hover .eap-wg-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.eap-wg-card-header h3 {
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #2d3748;
+    line-height: 1.3;
+    flex: 1;
+}
+
+/* Working Group Card Body */
+.eap-wg-card-body {
+    padding: 0 25px 20px;
+    flex: 1;
+}
+
+.eap-wg-description {
+    margin: 0;
+    font-size: 0.95em;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* Working Group Card Footer */
+.eap-wg-card-footer {
+    padding: 20px 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.eap-wg-file-count {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9em;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.eap-file-icon {
+    font-size: 1.2em;
+}
+
+.eap-wg-view-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fffd !important;
+    text-decoration: none !important;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.eap-wg-view-btn::after {
+    content: '→';
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.eap-wg-view-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+    color: #fff !important;
+}
+
+.eap-wg-view-btn:hover::after {
+    transform: translateX(5px);
+}
+
+/* === SINGLE WORKING GROUP PAGE === */
+
+.eap-single-working-group {
+    max-width: 1000px;
+    margin: 0 auto;
+    animation: fadeInUp 0.6s ease;
+}
+
+/* Back Button */
+.eap-wg-back-button {
+    margin-bottom: 30px;
+    animation: fadeInUp 0.4s ease;
+}
+
+.eap-wg-back-button a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    color: #333;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.eap-wg-back-button a::before {
+    content: '←';
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.eap-wg-back-button a:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 6px 25px rgba(102, 126, 234, 0.3);
+    border-color: rgba(102, 126, 234, 0.4);
+    color: #667eea;
+}
+
+.eap-wg-back-button a:hover::before {
+    transform: translateX(-5px);
+}
+
+/* Working Group Header Card */
+.eap-wg-header-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInScale 0.6s ease 0.1s backwards;
+}
+
+.eap-wg-header-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+    background-size: 200% 100%;
+    animation: shimmer 3s linear infinite;
+}
+
+.eap-wg-header-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    flex-shrink: 0;
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+}
+
+.eap-wg-header-card h1 {
+    margin: 0;
+    color: #002f63 !important;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #2d3748;
+    line-height: 1.2;
+}
+
+/* Working Group Content Section */
+.eap-wg-content-section {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    animation: fadeInScale 0.6s ease 0.15s backwards;
+}
+
+.eap-wg-content-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.2);
+    border-color: rgba(102, 126, 234, 0.4);
+}
+.eap-wg-content-section p {
+    padding-bottom: 20px;
+}
+.eap-wg-content-section h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #2d3748;
+    font-size: 1.5em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.eap-wg-content-section h3::before {
+    content: '';
+    width: 5px;
+    height: 28px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 3px;
+}
+
+.eap-wg-content {
+    color: #4a5568;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.eap-wg-content p {
+    margin-bottom: 15px;
+}
+
+/* Working Group Files Section */
+.eap-wg-files-section {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: fadeInScale 0.6s ease 0.2s backwards;
+}
+
+.eap-wg-files-section h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #2d3748;
+    font-size: 1.5em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.eap-wg-files-section h3::before {
+    content: '';
+    width: 5px;
+    height: 28px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 3px;
+}
+
+.eap-wg-file-filters {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.eap-wg-file-filter-field {
+    flex: 1 1 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.eap-wg-file-filter-field label {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.eap-wg-file-filter-field input,
+.eap-wg-file-filter-field select {
+    border: 1px solid rgba(102, 126, 234, 0.35);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 0.95em;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.eap-wg-file-filter-field input:focus,
+.eap-wg-file-filter-field select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+/* Subfolder checkbox field */
+.eap-wg-subfolder-field {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.eap-wg-checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #2d3748;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(102, 126, 234, 0.35);
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.eap-wg-checkbox-label:hover {
+    border-color: #667eea;
+    background: rgba(255, 255, 255, 1);
+}
+
+.eap-wg-checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    cursor: pointer;
+    accent-color: #667eea;
+}
+
+.eap-wg-checkbox-label span {
+    font-size: 0.95em;
+    white-space: nowrap;
+}
+
+/* Folder filter select with indented options */
+.eap-wg-file-folder option {
+    padding: 6px 12px;
+}
+
+.eap-wg-files-status {
+    font-size: 0.95em;
+    color: #4a5568;
+    margin-bottom: 15px;
+}
+
+.eap-wg-files-section.is-loading .eap-wg-files-grid {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.65;
+}
+
+.eap-wg-files-section.is-loading .eap-wg-files-grid::after {
+    content: attr(data-loading-text);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #4a5568;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+}
+
+/* Files Grid */
+.eap-wg-files-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.eap-file-card {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.eap-file-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.eap-file-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.25);
+    border-color: rgba(102, 126, 234, 0.4);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.eap-file-card:hover::before {
+    opacity: 1;
+}
+
+.eap-file-icon-large {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+.eap-file-name {
+    font-size: 13px;
+    color: #2d3748;
+    font-weight: 600;
+    word-break: break-word;
+    line-height: 1.4;
+    flex: 1;
+}
+
+.eap-file-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff !important; 
+    text-decoration: none !important;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(102, 126, 234, 0.3);
+}
+
+.eap-file-download-btn::after {
+    content: '↓';
+    font-size: 14px;
+}
+
+.eap-file-download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.5);
+    color: #fff;
+}
+
+/* No Files State */
+.eap-no-files {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px dashed rgba(102, 126, 234, 0.3);
+    border-radius: 15px;
+}
+
+.eap-no-files-icon {
+    font-size: 64px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.eap-no-files p {
+    margin: 0;
+    color: #4a5568;
+    font-size: 1.1em;
+}
+
+/* Secure File Viewer */
+.eap-secure-viewer {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    z-index: 999999;
+}
+
+.eap-secure-viewer.is-open {
+    display: flex;
+}
+
+.eap-secure-viewer__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.6);
+}
+
+.eap-secure-viewer__dialog {
+    position: relative;
+    background: #fff;
+    border-radius: 16px;
+    max-width: 1200px;
+    width: min(1200px, 96vw);
+    max-height: 94vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.35);
+    z-index: 1;
+}
+
+.eap-secure-viewer__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(15, 23, 42, 0.08);
+    color: #0f172a;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.eap-secure-viewer__close:hover {
+    background: rgba(15, 23, 42, 0.15);
+    transform: scale(1.05);
+}
+
+.eap-secure-viewer__body {
+    flex: 1;
+    background: #0f172a;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    overflow: hidden;
+}
+
+.eap-secure-viewer__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.eap-secure-viewer__content img,
+.eap-secure-viewer__content video,
+.eap-secure-viewer__content iframe {
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    background: #000;
+}
+
+.eap-secure-viewer__content iframe {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.eap-secure-viewer__content audio {
+    width: 100%;
+    max-width: 480px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.eap-secure-viewer__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    padding: 14px 24px;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+}
+
+.eap-secure-viewer__filename {
+    font-weight: 600;
+    color: #0f172a;
+    flex: 1;
+    min-width: 200px;
+    word-break: break-word;
+}
+
+.eap-secure-viewer__actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.eap-secure-viewer__google.button {
+    background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.eap-secure-viewer__google.button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.eap-secure-viewer__google.is-disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.eap-secure-viewer__download.button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.eap-secure-viewer__download.button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* PDF Viewer - ensure full height for PDF iframe */
+.eap-secure-viewer[data-preview-type="pdf"] .eap-secure-viewer__body {
+    height: calc(90vh - 90px);
+    min-height: 60vh;
+}
+
+.eap-secure-viewer[data-preview-type="pdf"] .eap-secure-viewer__content iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+/* Image Viewer - properly size and center images */
+.eap-secure-viewer[data-preview-type="image"] .eap-secure-viewer__body {
+    height: calc(85vh - 90px);
+    min-height: 50vh;
+}
+
+.eap-secure-viewer[data-preview-type="image"] .eap-secure-viewer__content {
+    align-items: center;
+    justify-content: center;
+}
+
+.eap-secure-viewer[data-preview-type="image"] .eap-secure-viewer__content img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background: transparent;
+}
+
+/* Video Viewer - center video and ensure proper sizing */
+.eap-secure-viewer[data-preview-type="video"] .eap-secure-viewer__body {
+    height: calc(85vh - 90px);
+    min-height: 50vh;
+}
+
+.eap-secure-viewer[data-preview-type="video"] .eap-secure-viewer__content {
+    align-items: center;
+    justify-content: center;
+}
+
+.eap-secure-viewer__content video {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background: #000;
+}
+
+/* Audio Player */
+.eap-secure-viewer[data-preview-type="audio"] .eap-secure-viewer__body {
+    min-height: 150px;
+    height: auto;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.eap-secure-viewer[data-preview-type="audio"] .eap-secure-viewer__content {
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* CSV Viewer */
+.eap-secure-viewer[data-preview-type="csv"] .eap-secure-viewer__body {
+    background: #e2e8f0;
+    height: calc(75vh - 90px);
+    min-height: 50vh;
+}
+
+.eap-secure-viewer[data-preview-type="csv"] .eap-secure-viewer__content {
+    align-items: stretch;
+}
+
+.eap-secure-viewer__csv {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.2);
+}
+
+.eap-secure-viewer__csv-loading,
+.eap-secure-viewer__csv-error {
+    text-align: center;
+    color: #0f172a;
+    font-weight: 500;
+}
+
+.eap-secure-viewer__csv-error a {
+    color: #4c51bf;
+    text-decoration: underline;
+}
+
+.eap-secure-viewer__csv-scroll {
+    flex: 1;
+    overflow: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.eap-secure-viewer__csv-scroll table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.eap-secure-viewer__csv-scroll th,
+.eap-secure-viewer__csv-scroll td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #edf2f7;
+    text-align: left;
+    background: #fff;
+}
+
+.eap-secure-viewer__csv-scroll th {
+    position: sticky;
+    top: 0;
+    background: #f7fafc;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.eap-secure-viewer__csv-note {
+    font-size: 0.85rem;
+    color: #4a5568;
+    margin: 0;
+}
+
+.eap-secure-viewer__spinner {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    border: 2px solid rgba(76, 81, 191, 0.3);
+    border-top-color: #4c51bf;
+    border-radius: 50%;
+    animation: eap-spin 0.9s linear infinite;
+}
+
+@keyframes eap-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ========================================
+   OFFICE FILE VIEWERS (XLSX, DOCX, PPTX)
+   ======================================== */
+
+/* Shared Office Viewer Styles */
+.eap-office-loading,
+.eap-office-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 40px 20px;
+    text-align: center;
+    color: #0f172a;
+    font-weight: 500;
+}
+
+.eap-office-error-icon {
+    font-size: 2.5rem;
+}
+
+.eap-office-error a {
+    color: #4c51bf;
+    text-decoration: underline;
+}
+
+/* === XLSX (Excel) Viewer === */
+.eap-secure-viewer[data-preview-type="xlsx"] .eap-secure-viewer__body {
+    background: #e8eef5;
+    height: calc(80vh - 90px);
+    min-height: 55vh;
+}
+
+.eap-secure-viewer[data-preview-type="xlsx"] .eap-secure-viewer__content {
+    align-items: stretch;
+}
+
+.eap-secure-viewer__xlsx {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.2);
+    overflow: hidden;
+}
+
+.eap-xlsx-viewer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.eap-xlsx-tabs {
+    display: flex;
+    gap: 2px;
+    padding: 0;
+    background: linear-gradient(180deg, #1a5f2c 0%, #156b2a 100%);
+    border-bottom: 3px solid #0d4a1f;
+    overflow-x: auto;
+    flex-shrink: 0;
+}
+
+.eap-xlsx-tab {
+    padding: 10px 18px;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 6px 6px 0 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s ease, color 0.2s ease;
+    margin: 4px 2px 0;
+}
+
+.eap-xlsx-tab:hover {
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+.eap-xlsx-tab.is-active {
+    background: #fff;
+    color: #156b2a;
+    font-weight: 600;
+    margin-bottom: -3px;
+    padding-bottom: 13px;
+}
+
+.eap-xlsx-sheets {
+    flex: 1;
+    min-height: 0;
+    position: relative;
+}
+
+.eap-xlsx-sheet {
+    display: none;
+    position: absolute;
+    inset: 0;
+    padding: 0;
+}
+
+.eap-xlsx-sheet.is-visible {
+    display: block;
+}
+
+.eap-xlsx-scroll {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.eap-xlsx-scroll table,
+.eap-xlsx-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.eap-xlsx-scroll th,
+.eap-xlsx-scroll td,
+.eap-xlsx-table th,
+.eap-xlsx-table td {
+    padding: 8px 12px;
+    border: 1px solid #d4dce6;
+    text-align: left;
+    min-width: 80px;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.eap-xlsx-scroll th,
+.eap-xlsx-table th {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(180deg, #f0f4f8 0%, #e2e8f0 100%);
+    font-weight: 600;
+    color: #1e293b;
+    z-index: 1;
+    border-bottom: 2px solid #cbd5e1;
+}
+
+.eap-xlsx-scroll tr:nth-child(even) td,
+.eap-xlsx-table tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+.eap-xlsx-scroll tr:hover td,
+.eap-xlsx-table tr:hover td {
+    background: #e8f4fd;
+}
+
+.eap-xlsx-empty,
+.eap-xlsx-error {
+    padding: 40px 20px;
+    text-align: center;
+    color: #64748b;
+}
+
+.eap-xlsx-note {
+    padding: 12px 20px;
+    margin: 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #64748b;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* === DOCX (Word) Viewer === */
+.eap-secure-viewer[data-preview-type="docx"] .eap-secure-viewer__body {
+    background: #5a6570;
+    height: calc(85vh - 90px);
+    min-height: 60vh;
+    padding: 30px;
+}
+
+.eap-secure-viewer[data-preview-type="docx"] .eap-secure-viewer__content {
+    align-items: flex-start;
+    justify-content: center;
+    overflow: auto;
+}
+
+.eap-secure-viewer__docx {
+    width: 100%;
+    max-width: 850px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eap-docx-viewer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.eap-docx-page {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25), 0 0 40px rgba(0, 0, 0, 0.1);
+    padding: 60px 72px;
+    min-height: 800px;
+    width: 100%;
+    max-width: 816px;
+    margin: 0 auto;
+}
+
+.eap-docx-content {
+    font-family: 'Calibri', 'Segoe UI', sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a1a;
+}
+
+.eap-docx-content p {
+    margin: 0 0 12px;
+}
+
+.eap-docx-content h1,
+.eap-docx-h1,
+.eap-docx-title {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 16px;
+    line-height: 1.3;
+}
+
+.eap-docx-content h2,
+.eap-docx-h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #2e4057;
+    margin: 24px 0 12px;
+    line-height: 1.3;
+}
+
+.eap-docx-content h3,
+.eap-docx-h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #3d5a80;
+    margin: 20px 0 10px;
+    line-height: 1.3;
+}
+
+.eap-docx-content ul,
+.eap-docx-content ol {
+    margin: 0 0 12px 24px;
+    padding: 0;
+}
+
+.eap-docx-content li {
+    margin-bottom: 6px;
+}
+
+.eap-docx-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+}
+
+.eap-docx-content th,
+.eap-docx-content td {
+    border: 1px solid #999;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.eap-docx-content th {
+    background: #f0f0f0;
+    font-weight: 600;
+}
+
+.eap-docx-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 12px 0;
+}
+
+.eap-docx-content strong,
+.eap-docx-content b {
+    font-weight: 700;
+}
+
+.eap-docx-content em,
+.eap-docx-content i {
+    font-style: italic;
+}
+
+.eap-docx-content u {
+    text-decoration: underline;
+}
+
+/* === PPTX (PowerPoint) Viewer === */
+.eap-secure-viewer[data-preview-type="pptx"] .eap-secure-viewer__body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    height: calc(85vh - 90px);
+    min-height: 55vh;
+    padding: 20px;
+}
+
+.eap-secure-viewer[data-preview-type="pptx"] .eap-secure-viewer__content {
+    align-items: stretch;
+}
+
+.eap-secure-viewer__pptx {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.eap-pptx-viewer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 16px;
+}
+
+.eap-pptx-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    min-height: 0;
+    position: relative;
+}
+
+.eap-pptx-nav {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.eap-pptx-nav:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+.eap-pptx-nav:active {
+    transform: scale(0.95);
+}
+
+.eap-pptx-slides {
+    flex: 1;
+    max-width: 960px;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.eap-pptx-slide {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(145deg, #ffffff 0%, #f5f7fa 100%);
+    padding: 40px 50px;
+    overflow: auto;
+}
+
+.eap-pptx-slide.is-active {
+    display: flex;
+    flex-direction: column;
+    animation: eap-slide-in 0.3s ease;
+}
+
+@keyframes eap-slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.eap-pptx-slide-number {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.eap-pptx-slide-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 24px;
+    line-height: 1.2;
+    border-bottom: 3px solid #4f46e5;
+    padding-bottom: 16px;
+}
+
+.eap-pptx-slide-content {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #334155;
+}
+
+.eap-pptx-slide-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.eap-pptx-slide-content li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 14px;
+}
+
+.eap-pptx-slide-content li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    border-radius: 50%;
+}
+
+.eap-pptx-slide-empty {
+    color: #94a3b8;
+    font-style: italic;
+    text-align: center;
+    margin: auto;
+}
+
+.eap-pptx-thumbs {
+    display: flex;
+    gap: 8px;
+    padding: 12px 16px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    overflow-x: auto;
+    flex-shrink: 0;
+}
+
+.eap-pptx-thumb {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 60px;
+}
+
+.eap-pptx-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.eap-pptx-thumb.is-active {
+    background: rgba(79, 70, 229, 0.3);
+    border-color: #4f46e5;
+    color: #fff;
+}
+
+.eap-pptx-thumb-num {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.eap-pptx-thumb-title {
+    font-size: 0.7rem;
+    text-align: center;
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.eap-pptx-counter {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+
+.eap-pptx-current {
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Responsive Office Viewers */
+@media (max-width: 768px) {
+    .eap-secure-viewer[data-preview-type="xlsx"] .eap-secure-viewer__body,
+    .eap-secure-viewer[data-preview-type="docx"] .eap-secure-viewer__body,
+    .eap-secure-viewer[data-preview-type="pptx"] .eap-secure-viewer__body {
+        padding: 12px;
+        height: calc(75vh - 120px);
+    }
+
+    .eap-xlsx-tabs {
+        padding: 4px;
+    }
+
+    .eap-xlsx-tab {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+
+    .eap-docx-page {
+        padding: 30px 24px;
+        min-height: auto;
+    }
+
+    .eap-docx-content {
+        font-size: 10pt;
+    }
+
+    .eap-pptx-nav {
+        width: 36px;
+        height: 36px;
+        font-size: 1.2rem;
+    }
+
+    .eap-pptx-slide {
+        padding: 24px 20px;
+    }
+
+    .eap-pptx-slide-title {
+        font-size: 1.4rem;
+    }
+
+    .eap-pptx-slide-content {
+        font-size: 1rem;
+    }
+
+    .eap-pptx-thumbs {
+        padding: 8px;
+        gap: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .eap-xlsx-scroll th,
+    .eap-xlsx-scroll td {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+        min-width: 60px;
+    }
+
+    .eap-docx-page {
+        padding: 20px 16px;
+    }
+
+    .eap-docx-content h1,
+    .eap-docx-title {
+        font-size: 16pt;
+    }
+
+    .eap-docx-content h2 {
+        font-size: 13pt;
+    }
+
+    .eap-pptx-main {
+        gap: 8px;
+    }
+
+    .eap-pptx-nav {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+
+    .eap-pptx-slide-title {
+        font-size: 1.2rem;
+        padding-bottom: 12px;
+        margin-bottom: 16px;
+    }
+
+    .eap-pptx-slide-content li {
+        padding-left: 20px;
+        font-size: 0.95rem;
+    }
+
+    .eap-pptx-thumb {
+        min-width: 50px;
+        padding: 6px 8px;
+    }
+}
+
+body.eap-secure-viewer-open {
+    overflow: hidden;
+}
+
+/* Responsive adjustments for secure file viewer */
+@media (max-width: 768px) {
+    .eap-secure-viewer {
+        padding: 10px;
+    }
+
+    .eap-secure-viewer__dialog {
+        max-height: 98vh;
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .eap-secure-viewer__body {
+        padding: 12px;
+    }
+
+    .eap-secure-viewer__footer {
+        padding: 12px 16px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .eap-secure-viewer__filename {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .eap-secure-viewer__actions {
+        justify-content: center;
+    }
+
+    /* Adjust media heights for mobile */
+    .eap-secure-viewer[data-preview-type="pdf"] .eap-secure-viewer__body {
+        height: calc(85vh - 120px);
+    }
+
+    .eap-secure-viewer[data-preview-type="image"] .eap-secure-viewer__body,
+    .eap-secure-viewer[data-preview-type="video"] .eap-secure-viewer__body {
+        height: calc(80vh - 120px);
+    }
+
+    .eap-secure-viewer[data-preview-type="csv"] .eap-secure-viewer__body {
+        height: calc(70vh - 120px);
+    }
+}
+
+@media (max-width: 480px) {
+    .eap-secure-viewer__close {
+        top: 8px;
+        right: 8px;
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+    }
+
+    .eap-secure-viewer__footer {
+        padding: 10px 12px;
+    }
+
+    .eap-secure-viewer__actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .eap-secure-viewer__google.button,
+    .eap-secure-viewer__download.button {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/* === SHARED EMPTY STATE === */
+
+.eap-no-items {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 2px dashed rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    margin: 40px 0;
+}
+
+.eap-no-items-icon {
+    font-size: 72px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.eap-no-items p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 0;
+}
+
+/* === STAGGER ANIMATIONS === */
+
+.eap-wg-card:nth-child(1) { animation-delay: 0.05s; }
+.eap-wg-card:nth-child(2) { animation-delay: 0.1s; }
+.eap-wg-card:nth-child(3) { animation-delay: 0.15s; }
+.eap-wg-card:nth-child(4) { animation-delay: 0.2s; }
+.eap-wg-card:nth-child(5) { animation-delay: 0.25s; }
+.eap-wg-card:nth-child(6) { animation-delay: 0.3s; }
+.eap-wg-card:nth-child(7) { animation-delay: 0.35s; }
+.eap-wg-card:nth-child(8) { animation-delay: 0.4s; }
+
+/* === RESPONSIVE DESIGN === */
+
+@media (max-width: 1024px) {
+    .eap-wg-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    
+    .eap-wg-header-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .eap-wg-header h1 {
+        font-size: 2em;
+    }
+    
+    .eap-wg-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .eap-wg-card-header {
+        padding: 25px 20px 15px;
+    }
+    
+    .eap-wg-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+    
+    .eap-wg-card-body {
+        padding: 0 20px 15px;
+    }
+    
+    .eap-wg-card-footer {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .eap-wg-view-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Single WG Page Mobile */
+    .eap-wg-header-card {
+        padding: 25px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .eap-wg-header-card h1 {
+        font-size: 1.8em;
+    }
+    
+    .eap-wg-content-section,
+    .eap-wg-files-section {
+        padding: 25px 20px;
+    }
+    
+    .eap-wg-files-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .eap-wg-header {
+        padding: 30px 15px;
+    }
+    
+    .eap-wg-header h1 {
+        font-size: 1.6em;
+    }
+    
+    .eap-wg-back-button a {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .eap-wg-header-card {
+        padding: 20px 15px;
+    }
+    
+    .eap-wg-header-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+    
+    .eap-wg-header-card h1 {
+        font-size: 1.5em;
+    }
+    
+    .eap-wg-content-section,
+    .eap-wg-files-section {
+        padding: 20px 15px;
+    }
+    
+    .eap-wg-files-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* === LEGACY FILE LISTS & DOWNLOADS (Fallback) === */
+.eap-file-list ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.eap-download-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+.eap-download-box h4 {
+    margin-top: 0;
+}
+.eap-download-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #0073aa; /* WP Blue */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.eap-download-button:hover {
+    background: #005177;
+    color: #fff;
+}
+
+/* === AUDIT LOG PAGE === */
+.eap-audit-log-page {
+    margin: 20px 20px 20px 0;
+}
+
+/* Audit actions toolbar */
+.eap-audit-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Audit filters section */
+.eap-audit-filters {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.eap-audit-filters h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.eap-filter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.eap-filter-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.eap-filter-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.eap-filter-field label {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.eap-filter-field input[type="text"],
+.eap-filter-field input[type="date"],
+.eap-filter-field select {
+    padding: 6px 8px;
+    border: 1px solid #8c8f94;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.eap-filter-field input[type="text"]:focus,
+.eap-filter-field input[type="date"]:focus,
+.eap-filter-field select:focus {
+    border-color: #2271b1;
+    outline: none;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+/* Audit table */
+.eap-audit-table {
+    margin-top: 20px;
+    background: #fff;
+}
+
+.eap-audit-table th {
+    font-weight: 600;
+}
+
+.eap-audit-table td {
+    vertical-align: middle;
+}
+
+.eap-audit-table code {
+    background: #f0f0f1;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    word-break: break-all;
+}
+
+/* Event type badges */
+.eap-event-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.eap-event-general {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.eap-event-user {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.eap-event-profile {
+    background: #ddd6fe;
+    color: #5b21b6;
+}
+
+.eap-event-file {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.eap-event-import {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.eap-event-system {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.eap-event-security {
+    background: #fed7aa;
+    color: #9a3412;
+}
+
+.eap-event-login {
+    background: #ccfbf1;
+    color: #115e59;
+}
+
+/* Log details panel */
+.eap-log-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    z-index: 9999;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 4px;
+}
+
+.eap-details-content {
+    padding: 20px;
+}
+
+.eap-details-content h4 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2271b1;
+    color: #2271b1;
+}
+
+.eap-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.eap-details-table th {
+    text-align: left;
+    padding: 10px;
+    background: #f6f7f7;
+    font-weight: 600;
+    width: 30%;
+    vertical-align: top;
+}
+
+.eap-details-table td {
+    padding: 10px;
+    border-bottom: 1px solid #dcdcde;
+    word-break: break-word;
+}
+
+.eap-details-table pre {
+    margin: 0;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.eap-close-details {
+    margin-top: 10px;
+}
+
+/* No logs message */
+.eap-no-logs {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    padding: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.eap-no-logs p {
+    margin: 0;
+    color: #646970;
+    font-size: 15px;
+}
+
+/* Pagination */
+.eap-audit-pagination {
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.eap-audit-pagination .tablenav-pages {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.eap-audit-pagination .displaying-num {
+    font-size: 13px;
+    color: #646970;
+}
+
+.eap-audit-pagination .page-numbers {
+    padding: 4px 8px;
+    border: 1px solid #c3c4c7;
+    background: #fff;
+    color: #2271b1;
+    text-decoration: none;
+    margin: 0 2px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.eap-audit-pagination .page-numbers:hover {
+    background: #f6f7f7;
+    border-color: #8c8f94;
+}
+
+.eap-audit-pagination .page-numbers.current {
+    background: #2271b1;
+    color: #fff;
+    border-color: #2271b1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 782px) {
+    .eap-filter-row {
+        flex-direction: column;
+    }
+    
+    .eap-filter-field {
+        width: 100%;
+    }
+    
+    .eap-filter-field input,
+    .eap-filter-field select {
+        width: 100%;
+    }
+    
+    .eap-log-details {
+        width: 95%;
+        max-width: 95%;
+        left: 2.5%;
+        transform: translateY(-50%);
+    }
+}
+
+/* === DELEGATE ADMINISTRATION PAGE === */
+.eap-delegate-admin-page {
+    margin: 20px 20px 20px 0;
+}
+
+/* Delegate filters */
+.eap-delegate-filters {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.eap-delegate-filters h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Delegates table */
+.eap-delegates-table {
+    margin-top: 20px;
+    background: #fff;
+    table-layout: auto;
+}
+
+.eap-delegates-table th {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.eap-delegates-table td {
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+.eap-delegates-table td a {
+    text-decoration: none;
+}
+
+.eap-delegates-table td a:hover {
+    text-decoration: underline;
+}
+
+/* Council badges */
+.eap-council-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+.eap-council-pcc {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.eap-council-stcc {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.eap-council-both {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+/* Toggle switch for active status */
+.eap-toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.eap-toggle-switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.eap-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .3s;
+    border-radius: 24px;
+}
+
+.eap-toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .3s;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + .eap-toggle-slider {
+    background-color: #2271b1;
+}
+
+input[type="checkbox"]:focus + .eap-toggle-slider {
+    box-shadow: 0 0 1px #2271b1;
+}
+
+input[type="checkbox"]:checked + .eap-toggle-slider:before {
+    transform: translateX(26px);
+}
+
+input[type="checkbox"]:disabled + .eap-toggle-slider {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* No delegates message */
+.eap-no-delegates {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    padding: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.eap-no-delegates p {
+    margin: 0;
+    color: #646970;
+    font-size: 15px;
+}
+
+/* Export event types for delegate admin */
+.eap-event-profile_update {
+    background: #ddd6fe;
+    color: #5b21b6;
+}
+
+.eap-event-export {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+/* Responsive adjustments for delegate admin */
+@media (max-width: 1200px) {
+    .eap-delegates-table th,
+    .eap-delegates-table td {
+        padding: 8px 5px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 782px) {
+    .eap-delegates-table {
+        font-size: 12px;
+    }
+    
+    .eap-delegates-table th,
+    .eap-delegates-table td {
+        padding: 6px 3px;
+    }
+    
+    .eap-toggle-switch {
+        width: 40px;
+        height: 20px;
+    }
+    
+    .eap-toggle-slider:before {
+        height: 14px;
+        width: 14px;
+    }
+    
+    input[type="checkbox"]:checked + .eap-toggle-slider:before {
+        transform: translateX(20px);
+    }
+}
+
+/* === LANGUAGE TAGS === */
+.eap-language-tags-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.eap-language-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+    min-height: 40px;
+    padding: 8px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.eap-language-tags-container:empty {
+    min-height: 40px;
+}
+
+.eap-language-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.2s ease;
+    cursor: default;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.eap-language-tag:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.eap-language-tag-remove {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    transition: all 0.2s ease;
+}
+
+.eap-language-tag-remove:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+.eap-language-tag-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.eap-language-tag-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.eap-language-tags-hint {
+    font-size: 13px;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Language tags for single profile view (read-only display) */
+.eap-language-tags-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.eap-language-tags-display .eap-language-tag {
+    cursor: default;
+}
+
+.eap-language-tags-display .eap-language-tag-remove {
+    display: none;
+}
+
+/* === IMAGE CROPPER MODAL === */
+.eap-cropper-modal {
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+.eap-cropper-modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 2% auto;
+    padding: 0;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.eap-cropper-header {
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eap-cropper-header h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.eap-cropper-close {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.3s;
+}
+
+.eap-cropper-close:hover {
+    color: #f0f0f0;
+}
+
+.eap-cropper-body {
+    padding: 20px;
+    max-height: 60vh;
+    overflow: hidden;
+}
+
+.eap-cropper-container {
+    max-height: 50vh;
+    background: #f5f5f5;
+}
+
+.eap-cropper-container img {
+    max-width: 100%;
+    display: block;
+}
+
+.eap-cropper-footer {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    border-top: 1px solid #e0e0e0;
+}
+
+.eap-cropper-footer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.eap-btn-crop {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+.eap-btn-crop:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.eap-btn-crop:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.eap-btn-cancel {
+    background: #6c757d;
+    color: #fff;
+}
+
+.eap-btn-cancel:hover {
+    background: #5a6268;
+}
+
+@media (max-width: 768px) {
+    .eap-cropper-modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+    
+    .eap-cropper-body {
+        max-height: 50vh;
+    }
+    
+    .eap-cropper-container {
+        max-height: 40vh;
+    }
+}
+
+
+/* ========================================
+   DISCUSSIONS & FORUM FUNCTIONALITY
+   ======================================== */
+
+/* Discussion Section Container */
+.eap-discussion-section {
+    margin-top: 50px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.eap-discussion-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    animation: shimmer 3s infinite;
+}
+
+/* Discussion Header */
+.eap-discussion-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.eap-discussion-header h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0 0 10px 0;
+}
+
+.eap-discussion-count {
+    font-size: 20px;
+    font-weight: 600;
+    color: #667eea;
+}
+
+.eap-discussion-subtitle {
+    color: #2d3748;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Discussion Form Container */
+.eap-discussion-form-container {
+    margin-bottom: 30px;
+}
+
+.eap-discussion-form {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.eap-discussion-form-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.eap-discussion-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #667eea;
+}
+
+.eap-discussion-user-info strong {
+    color: #1a202c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.eap-discussion-form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.eap-discussion-textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 15px;
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    border-radius: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px;
+    resize: vertical;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.eap-discussion-textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.eap-discussion-form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.eap-discussion-form-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.eap-file-attach-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #667eea;
+    transition: all 0.3s ease;
+}
+
+.eap-file-attach-btn:hover {
+    background: #667eea;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.eap-attach-icon {
+    font-size: 16px;
+}
+
+.eap-file-name {
+    font-size: 13px;
+    color: #2d3748;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.eap-discussion-submit-btn,
+.eap-reply-cancel-btn {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.eap-discussion-submit-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+.eap-discussion-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.eap-discussion-submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.eap-reply-cancel-btn {
+    background: #6c757d;
+    color: #fff;
+}
+
+.eap-reply-cancel-btn:hover {
+    background: #5a6268;
+}
+
+.eap-discussion-form-message {
+    display: none;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.eap-discussion-form-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.eap-discussion-form-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* No Discussions State */
+.eap-no-discussions {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    border: 2px dashed rgba(102, 126, 234, 0.4);
+}
+
+.eap-no-discussions-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+    opacity: 0.6;
+}
+
+.eap-no-discussions p {
+    color: #2d3748;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Discussions List */
+.eap-discussions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Discussion Item */
+.eap-discussion-item {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.eap-discussion-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+.eap-discussion-item.is-pinned {
+    border-left: 4px solid #667eea;
+    background: rgba(102, 126, 234, 0.15);
+}
+
+.eap-discussion-content-wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.eap-discussion-content {
+    flex: 1;
+}
+
+.eap-discussion-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.eap-discussion-author {
+    color: #1a202c;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.eap-discussion-time {
+    color: #4a5568;
+    font-size: 13px;
+}
+
+.eap-discussion-pinned-badge {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.eap-discussion-edited {
+    color: #718096;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.eap-discussion-text {
+    color: #1a202c;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+
+.eap-discussion-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Discussion Attachment */
+.eap-discussion-attachment {
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.eap-attachment-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #667eea;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.eap-attachment-link:hover {
+    background: #667eea;
+    color: #fff;
+    transform: translateX(5px);
+}
+
+.eap-attachment-icon {
+    font-size: 16px;
+}
+
+.eap-attachment-name {
+    font-weight: 500;
+}
+
+/* Discussion Actions */
+.eap-discussion-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.eap-discussion-actions button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    border-radius: 6px;
+    font-size: 13px;
+    color: #2d3748;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.eap-discussion-actions button:hover {
+    background: rgba(102, 126, 234, 0.1);
+    border-color: #667eea;
+    /*color: #667eea;*/
+    transform: translateY(-2px);
+}
+
+.eap-discussion-vote-btn {
+    font-weight: 600;
+}
+
+.eap-discussion-vote-btn.voted {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-color: transparent;
+}
+
+.eap-discussion-vote-btn.voted:hover {
+    background: linear-gradient(135deg, #5568d3 0%, #653a8b 100%);
+}
+
+.eap-vote-icon,
+.eap-reply-icon,
+.eap-pin-icon,
+.eap-delete-icon {
+    font-size: 14px;
+}
+
+/* Reply Form Container */
+.eap-reply-form-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+.eap-reply-form .eap-discussion-textarea {
+    min-height: 80px;
+}
+
+/* Discussion Replies - Nested Threading */
+.eap-discussion-replies {
+    margin-top: 15px;
+    padding-left: 25px;
+    border-left: 3px solid rgba(102, 126, 234, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+
+/* Visual connection indicator */
+.eap-discussion-replies::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(102, 126, 234, 0.3), rgba(102, 126, 234, 0.1));
+}
+
+/* Nested reply item styling */
+.eap-discussion-item.is-reply {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 2px solid rgba(102, 126, 234, 0.2);
+    transition: all 0.3s ease;
+}
+
+.eap-discussion-item.is-reply:hover {
+    background: rgba(255, 255, 255, 0.7);
+    border-left-color: rgba(102, 126, 234, 0.5);
+    transform: translateX(3px);
+}
+
+/* Smaller avatar for nested replies */
+.eap-discussion-item.is-reply .eap-discussion-avatar img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Progressive indentation for deeply nested replies */
+.eap-discussion-replies .eap-discussion-replies {
+    padding-left: 20px;
+    border-left-width: 2px;
+    border-left-color: rgba(102, 126, 234, 0.25);
+}
+
+.eap-discussion-replies .eap-discussion-replies .eap-discussion-replies {
+    padding-left: 18px;
+    border-left-width: 2px;
+    border-left-color: rgba(102, 126, 234, 0.2);
+}
+
+.eap-discussion-replies .eap-discussion-replies .eap-discussion-replies .eap-discussion-replies {
+    padding-left: 15px;
+    border-left-width: 1px;
+    border-left-color: rgba(102, 126, 234, 0.15);
+}
+
+/* Even deeper nesting (5+ levels) */
+.eap-discussion-replies .eap-discussion-replies .eap-discussion-replies .eap-discussion-replies .eap-discussion-replies {
+    padding-left: 12px;
+    border-left-width: 1px;
+    border-left-color: rgba(102, 126, 234, 0.1);
+}
+
+/* Alternate background colors for better visual separation at different nesting levels */
+.eap-discussion-replies .eap-discussion-item.is-reply {
+    background: rgba(248, 249, 255, 0.7);
+}
+
+.eap-discussion-replies .eap-discussion-replies .eap-discussion-item.is-reply {
+    background: rgba(240, 242, 255, 0.6);
+}
+
+.eap-discussion-replies .eap-discussion-replies .eap-discussion-replies .eap-discussion-item.is-reply {
+    background: rgba(235, 238, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .eap-discussion-section {
+        padding: 20px;
+        margin-top: 30px;
+    }
+    
+    .eap-discussion-header h3 {
+        font-size: 24px;
+    }
+    
+    .eap-discussion-form {
+        padding: 15px;
+    }
+    
+    .eap-discussion-textarea {
+        min-height: 80px;
+    }
+    
+    .eap-discussion-form-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .eap-discussion-submit-btn,
+    .eap-reply-cancel-btn {
+        width: 100%;
+    }
+    
+    .eap-discussion-content-wrapper {
+        gap: 10px;
+    }
+    
+    /* Reduce indentation on mobile for better readability */
+    .eap-discussion-replies {
+        padding-left: 15px;
+        border-left-width: 2px;
+    }
+    
+    .eap-discussion-replies .eap-discussion-replies {
+        padding-left: 12px;
+    }
+    
+    .eap-discussion-replies .eap-discussion-replies .eap-discussion-replies {
+        padding-left: 10px;
+    }
+    
+    .eap-discussion-replies .eap-discussion-replies .eap-discussion-replies .eap-discussion-replies {
+        padding-left: 8px;
+    }
+    
+    .eap-discussion-actions {
+        gap: 8px;
+    }
+    
+    .eap-discussion-actions button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .eap-discussion-section {
+        padding: 15px;
+        border-radius: 15px;
+    }
+    
+    .eap-discussion-header h3 {
+        font-size: 20px;
+    }
+    
+    .eap-discussion-count {
+        font-size: 16px;
+    }
+    
+    .eap-discussion-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    /* Minimal indentation on very small screens */
+    .eap-discussion-replies {
+        padding-left: 10px;
+        border-left-width: 2px;
+    }
+    
+    .eap-discussion-replies .eap-discussion-replies {
+        padding-left: 8px;
+        border-left-width: 1px;
+    }
+    
+    .eap-discussion-replies .eap-discussion-replies .eap-discussion-replies {
+        padding-left: 6px;
+    }
+    
+    /* Smaller reply items on mobile */
+    .eap-discussion-item.is-reply {
+        padding: 12px;
+    }
+}

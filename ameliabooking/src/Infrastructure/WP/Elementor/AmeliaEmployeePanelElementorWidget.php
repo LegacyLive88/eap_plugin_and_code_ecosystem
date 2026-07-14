@@ -1,0 +1,107 @@
+<?php
+
+/**
+ * @copyright © Melograno Ventures. All rights reserved.
+ * @licence   See LICENCE.md for license details.
+ */
+
+namespace Elementor;
+
+use AmeliaBooking\Infrastructure\WP\Translations\BackendStrings;
+
+/**
+ * Class AmeliaEmployeePanelElementorWidget
+ *
+ * @package AmeliaBooking\Infrastructure\WP\Elementor
+ */
+class AmeliaEmployeePanelElementorWidget extends Widget_Base
+{
+    public function get_name()
+    {
+        return 'ameliaemployeepanel';
+    }
+
+    public function get_title()
+    {
+        return BackendStrings::get('employee_cabinet_gutenberg_block')['title'];
+    }
+
+    public function get_icon()
+    {
+        return 'amelia-logo';
+    }
+
+    public function get_categories()
+    {
+        return [ 'amelia-elementor' ];
+    }
+    protected function register_controls()
+    {
+
+        $this->start_controls_section(
+            'amelia_employee_panel_section',
+            [
+                'label' => '<div class="amelia-elementor-content"><p class="amelia-elementor-content-title">'
+                    . BackendStrings::get('employee_cabinet_gutenberg_block')['title']
+                    . '</p><br><p class="amelia-elementor-content-p">'
+                    . BackendStrings::get('employee_cabinet_gutenberg_block')['description']
+                    . '</p>',
+            ]
+        );
+        $this->add_control(
+            'appointments',
+            [
+                'label' => BackendStrings::get('appointments'),
+                'type' => Controls_Manager::SWITCHER,
+                'default' => 'yes',
+                'label_on' => BackendStrings::get('yes'),
+                'label_off' => BackendStrings::get('no'),
+            ]
+        );
+        $this->add_control(
+            'events',
+            [
+                'label' => BackendStrings::get('events'),
+                'type' => Controls_Manager::SWITCHER,
+                'default' => 'yes',
+                'label_on' => BackendStrings::get('yes'),
+                'label_off' => BackendStrings::get('no'),
+            ]
+        );
+        $this->add_control(
+            'profile',
+            [
+                'label' => BackendStrings::get('profile'),
+                'type' => Controls_Manager::SWITCHER,
+                'default' => false,
+                'label_on' => BackendStrings::get('yes'),
+                'label_off' => BackendStrings::get('no'),
+            ]
+        );
+        $this->add_control(
+            'load_manually',
+            [
+                'label' => BackendStrings::get('manually_loading'),
+                'label_block' => true,
+                'type' => Controls_Manager::TEXT,
+                'placeholder' => '',
+                'description' => BackendStrings::get('manually_loading_description'),
+            ]
+        );
+        $this->end_controls_section();
+    }
+
+    protected function render()
+    {
+        $settings     = $this->get_settings_for_display();
+        $trigger      = $settings['load_manually'] !== '' ? ' trigger=' . $settings['load_manually'] : '';
+        $appointments = $settings['appointments'] ? ' appointments=1' : '';
+        $events       = $settings['events'] ? ' events=1' : '';
+        $profile      = $settings['profile'] ? ' profile-hidden=1' : '';
+        if ($settings['appointments'] || $settings['events'] || !$settings['profile']) {
+            echo esc_html('[ameliaemployeepanel' . $trigger . $appointments . $events . $profile . ']');
+        } else {
+            echo esc_html(BackendStrings::get('notice_panel'));
+        }
+    }
+}
