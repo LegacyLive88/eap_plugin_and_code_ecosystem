@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: AWS SES Mailer Integration
- * Description: Intercepts wp_mail() to send emails via Amazon SES API. Includes a settings page for testing.
- * Version: 1.1
+ * Description: Intercepts wp_mail() to send emails via Amazon SES API, including attachments. Includes a settings page for testing.
+ * Version: 1.2
  * Author: Legacy Live
  */
 
@@ -46,6 +46,13 @@ function ses_override_wp_mail( $return, $atts ) {
     }
     $to = array_map( 'trim', $to );
 
+    // Normalize attachments to an array of file paths. WordPress passes either
+    // a newline-delimited string or an array.
+    if ( ! is_array( $attachments ) ) {
+        $attachments = explode( "\n", str_replace( "\r\n", "\n", (string) $attachments ) );
+    }
+    $attachments = array_filter( array_map( 'trim', $attachments ) );
+
     // Parse Headers
     $parsed_headers = ses_parse_headers( $headers );
     
@@ -82,10 +89,31 @@ function ses_override_wp_mail( $return, $atts ) {
             ],
         ]);
 
-        // Fallback for attachments
+        // Attachments cannot be sent via the simple SendEmail API, so build a
+        // full MIME message and use the raw endpoint instead.
         if ( ! empty( $attachments ) ) {
-            error_log( 'AWS SES Plugin: Attachments detected. Falling back to default WP Mailer.' );
-            return null; 
+            $raw_message = ses_build_raw_message( $source, $to, $parsed_headers, $subject, $message, $is_html, $attachments );
+
+            // Envelope recipients (To + Cc + Bcc) as plain addresses. Passing
+            // these explicitly ensures Bcc recipients are delivered even though
+            // the Bcc header is stripped from the MIME body.
+            $destinations = [];
+            foreach ( array_merge( $to, $parsed_headers['Cc'], $parsed_headers['Bcc'] ) as $addr ) {
+                list( $addr_email ) = ses_split_address( $addr );
+                if ( $addr_email ) {
+                    $destinations[] = $addr_email;
+                }
+            }
+
+            list( $source_email ) = ses_split_address( $source );
+
+            $client->sendRawEmail([
+                'Source'       => $source_email,
+                'Destinations' => $destinations,
+                'RawMessage'   => [ 'Data' => $raw_message ],
+            ]);
+
+            return true; // Success
         }
 
         // Construct email
@@ -137,6 +165,84 @@ function ses_parse_headers( $headers ) {
         }
     }
     return $output;
+}
+
+/**
+ * Split an address string such as "Name <email@example.com>" into
+ * [ email, name ]. A bare address returns [ email, '' ].
+ *
+ * @param string $address
+ * @return array{0:string,1:string}
+ */
+function ses_split_address( $address ) {
+    $address = trim( (string) $address );
+    if ( preg_match( '/^(.*)<(.+)>\s*$/', $address, $m ) ) {
+        $name  = trim( $m[1], " \t\"'" );
+        $email = trim( $m[2] );
+        return [ $email, $name ];
+    }
+    return [ $address, '' ];
+}
+
+/**
+ * Build a raw MIME message (headers + body + attachments) using the copy of
+ * PHPMailer bundled with WordPress. This is required to send attachments via
+ * the Amazon SES SendRawEmail API.
+ *
+ * @return string The full MIME message, ready for SES RawMessage['Data'].
+ */
+function ses_build_raw_message( $source, $to, $parsed_headers, $subject, $message, $is_html, $attachments ) {
+    if ( ! class_exists( '\\PHPMailer\\PHPMailer\\PHPMailer' ) ) {
+        require_once ABSPATH . WPINC . '/PHPMailer/PHPMailer.php';
+        require_once ABSPATH . WPINC . '/PHPMailer/Exception.php';
+    }
+
+    $mail          = new \PHPMailer\PHPMailer\PHPMailer( true );
+    $mail->CharSet = 'UTF-8';
+
+    // From
+    list( $from_email, $from_name ) = ses_split_address( $source );
+    $mail->setFrom( $from_email, $from_name, false );
+
+    // Recipients
+    foreach ( (array) $to as $addr ) {
+        list( $email, $name ) = ses_split_address( $addr );
+        if ( $email ) {
+            $mail->addAddress( $email, $name );
+        }
+    }
+    foreach ( $parsed_headers['Cc'] as $addr ) {
+        list( $email, $name ) = ses_split_address( $addr );
+        if ( $email ) {
+            $mail->addCC( $email, $name );
+        }
+    }
+    foreach ( $parsed_headers['Bcc'] as $addr ) {
+        list( $email, $name ) = ses_split_address( $addr );
+        if ( $email ) {
+            $mail->addBCC( $email, $name );
+        }
+    }
+
+    $mail->Subject = $subject;
+    $mail->isHTML( (bool) $is_html );
+    $mail->Body = $message;
+    if ( $is_html ) {
+        $mail->AltBody = wp_strip_all_tags( $message );
+    }
+
+    // Attachments
+    foreach ( $attachments as $path ) {
+        if ( is_readable( $path ) ) {
+            $mail->addAttachment( $path );
+        } else {
+            error_log( 'AWS SES Plugin: Attachment not readable, skipping: ' . $path );
+        }
+    }
+
+    // Assemble the message without dispatching it, then hand the raw MIME to SES.
+    $mail->preSend();
+    return $mail->getSentMIMEMessage();
 }
 
 /**
